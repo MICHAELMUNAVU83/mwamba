@@ -13,7 +13,7 @@ function App() {
   return (
     <div>
       {showOrderModal && (
-        <div className="fixed kulim-park bg-white shadow-xl h-[500px] my-auto  inset-0 bg-opacity z-10 flex flex-col items-center justify-start w-[400px]  mx-auto">
+        <div className="fixed kulim-park bg-white shadow-xl h-[500px] my-auto  inset-0 bg-opacity z-10 flex flex-col items-center justify-start w-[80%]  mx-auto">
           <div className="flex justify-end w-full p-4">
             <button
               className="bg-black text-white px-4 py-2 rounded-lg"
