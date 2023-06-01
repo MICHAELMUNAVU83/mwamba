@@ -1,9 +1,9 @@
 import React from "react";
-import homeabout from "../components/images/homeabout.png";
-import homeat45 from "../components/images/homeat45.png";
-import homeclubnews from "../components/images/homeclubnews.png";
-import homekababeri from "../components/images/homekababeri.png";
-import homeshop from "../components/images/homeshop.png";
+import homeabout from "../components/images/home/homeabout.png";
+import homeat45 from "../components/images/home/homeat45.png";
+import homeclubnews from "../components/images/home/homeclubnews.png";
+import homekababeri from "../components/images/home/homekababeri.png";
+import homeshop from "../components/images/home/homeshop.png";
 import { IoIosArrowForward } from "react-icons/io";
 const Home = () => {
   return (
