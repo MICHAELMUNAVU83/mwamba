@@ -19,29 +19,47 @@ const History = () => {
           in production of world class players who have gone to play for the
           country and fly the Kenyan flag high. They include:
         </p>
-        <ul className="p-4">
-        <li></li>
-
-Edward Rombo (Former Kenya international who has also played professional rugby in the UK)
-
-Mwangi Muthee (Former Kenya international and KRU president)
-
-Manuel Okoth (Former Kenya international and former Kenya 15s coach)John Onyango Mbai (Former Kenya XV and VII international, former Kenya 7s Team Manager and former Mwamba RFC head coach)
-
-Humphrey Kayange (Kenya Sevens player and Anti-doping Global Ambassador)
-
-Collins Injera (Kenya Sevens players and current top try scorer in the World Series)
-
-Lavin Asego (Kenya Sevens player and 10th all-time points scorer in the World Series)
-
-Sinaida Aura (Kenya Women Sevens player)
-
-Catherine Abila (Kenya Sevens women captain)
-
-Camilyne Awuor (Kenya Sevens Women Team Manager)And many more.
-
-
-
+        <ul className="p-4 list-disc">
+          <li>
+            <span className="font-bold">Edward Rombo</span> (Former Kenya
+            international who has also played professional rugby in the UK)
+          </li>
+          <li>
+            <span className="font-bold">Mwangi Muthee</span>(Former Kenya
+            international and KRU president)
+          </li>
+          <li>
+            <span className="font-bold">Manuel Okoth</span>
+            (Former Kenya international and former Kenya 15s coach)John Onyango
+            Mbai (Former Kenya XV and VII international, former Kenya 7s Team
+            Manager and former Mwamba RFC head coach)
+          </li>
+          <li>
+            <span className="font-bold">Humphrey Kayange</span>
+            (Kenya Sevens player and Anti-doping Global Ambassador)
+          </li>
+          <li>
+            <span className="font-bold">Collins Injera</span>
+            (Kenya Sevens players and current top try scorer in the World
+            Series)
+          </li>
+          <li>
+            <span className="font-bold">Lavin Asego</span>
+            (Kenya Sevens player and 10th all-time points scorer in the World
+            Series)
+          </li>
+          <li>
+            <span className="font-bold"> Sinaida Aura</span>
+            (Kenya Women Sevens player)
+          </li>
+          <li>
+            <span className="font-bold">Catherine Abila</span>
+            (Kenya Sevens women captain)
+          </li>
+          <li>
+            <span className="font-bold">Camilyne Awuor</span>
+            (Kenya Sevens Women Team Manager)And many more.
+          </li>
         </ul>
       </div>
       <div className="w-[40%] flex flex-col items-center  justify-center">
