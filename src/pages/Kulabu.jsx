@@ -3,6 +3,7 @@ import KulabuHome from "../components/KulabuComponents/KulabuHome";
 import Benefits from "../components/KulabuComponents/Benefits";
 import Tiers from "../components/KulabuComponents/Tiers";
 import Registration from "../components/KulabuComponents/Registration";
+import Testimonials from "../components/KulabuComponents/Testimonials";
 
 const Kulabu = () => {
   return (
@@ -11,6 +12,7 @@ const Kulabu = () => {
       <Benefits />
       <Tiers />
       <Registration />
+      <Testimonials />
     </div>
   );
 };
