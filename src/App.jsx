@@ -6,6 +6,7 @@ import Hero from "./pages/Hero";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Kulabu from "./pages/Kulabu";
+import Kababeri from "./pages/Kababeri";
 
 import "./App.css";
 
@@ -18,6 +19,7 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/kulabu" element={<Kulabu />} />
+        <Route path="/kababeri" element={<Kababeri />} />
       </Routes>
       <Footer />
     </Router>
