@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Kulabu from "./pages/Kulabu";
 import Kababeri from "./pages/Kababeri";
+import News from "./pages/News";
 
 import "./App.css";
 
@@ -20,6 +21,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/kulabu" element={<Kulabu />} />
         <Route path="/kababeri" element={<Kababeri />} />
+        <Route path="/news" element={<News/>} />
       </Routes>
       <Footer />
     </Router>
