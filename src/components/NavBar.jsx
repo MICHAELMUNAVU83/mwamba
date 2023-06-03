@@ -9,12 +9,11 @@ const NavBar = () => {
       <div class="flex items-center justify-between">
         <img src={logo} alt="logo" />
         <div className="flex items-center gap-4 text-white text-2xl">
-          <Link to="/home">
-            Home
-          </Link>
-          <Link to="/about">
-            About
-          </Link>
+          <Link to="/home">Home</Link>
+          <Link to="/about">About</Link>
+          <Link to="/kulabu">Kulabu</Link>
+          <Link to="/kababeri">Kababeri</Link>
+          <Link to="/news">News</Link>
         </div>
         <img src={bars} alt="bars" />
       </div>
