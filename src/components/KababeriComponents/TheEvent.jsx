@@ -3,7 +3,7 @@ import aboutpic from "../images/about/aboutpic.png";
 
 const TheEvent = () => {
   return (
-    <div className="flex bg-[#1E1E1E] text-white justify-between items-center">
+    <div  id="kababeritheevent" className="flex bg-[#1E1E1E] text-white justify-between items-center">
       <div className="w-[545px] flex flex-col justify-center items-center">
         <img
           src={aboutpic}

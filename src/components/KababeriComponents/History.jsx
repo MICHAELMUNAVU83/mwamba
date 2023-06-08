@@ -3,7 +3,7 @@ import aboutpic from "../images/about/aboutpic.png";
 
 const History = () => {
   return (
-    <div className="flex justify-between items-center">
+    <div id="kababerihistory" className="flex justify-between items-center">
       <div className="w-[50%] flex justify-center items-center">
         <p className="w-[610px] mx-auto">
           The George Mwangi Kabeberi Memorial Sevens, popularly known as the

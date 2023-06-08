@@ -19,15 +19,15 @@ const KababeriHome = () => {
             className="w-[80%] h-[80vh] bg-cover bg-center bg-no-repeat"
           ></div>
           <div className="flex flex-col justify-center gap-8 text-2xl font-bold h-[80vh] text-white">
-            <p className="w-[295px] flex items-center rounded-r-2xl justify-center h-[80px] bg-white text-[#1F2024]">
+            <a href="#kababerihistory" className="w-[295px] flex items-center rounded-r-2xl justify-center h-[80px] bg-white text-[#1F2024]">
               History
-            </p>
-            <p className="w-[295px] flex items-center rounded-r-2xl  justify-center h-[80px] bg-white text-[#1F2024]">
+            </a>
+            <a  href="#kababeritheevent" className="w-[295px] flex items-center rounded-r-2xl  justify-center h-[80px] bg-white text-[#1F2024]">
               The event
-            </p>
-            <p className="w-[295px] flex items-center rounded-r-2xl justify-center h-[80px] bg-white text-[#1F2024]">
+            </a>
+            <a  href="#kababerivending" className="w-[295px] flex items-center rounded-r-2xl justify-center h-[80px] bg-white text-[#1F2024]">
               Opportunities
-            </p>
+            </a>
           </div>
         </div>
         <div className="flex h-[20vh] text-[100px] w-[100%] justify-start p-12 items-center text-white  font-bold">

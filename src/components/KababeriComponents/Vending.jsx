@@ -8,7 +8,7 @@ const Vending = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   return (
-    <div className="flex bg-white  justify-between items-center">
+    <div  id="kababerivending" className="flex bg-white  justify-between items-center">
       <div className="w-[48%] p-4 flex flex-col gap-4 justify-center items-start ">
         <div className="flex flex-col justify-center items-start">
           <p className="text-3xl font-bold">
