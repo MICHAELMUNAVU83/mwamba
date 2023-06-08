@@ -58,7 +58,7 @@ const Tiers = () => {
     <div className="bg-[#1E1E1E] py-24">
       <div className="flex justify-center items-center gap-[40px]">
         {tiers.map((tier) => (
-          <div className="w-[315px] p-8 h-[573px] bg-white  flex justify-between flex-col items-center">
+          <div className="w-[315px] cursor-pointer shadow-md transition-all duration-500 ease-in-out  hover:shadow-gray-300 p-8 h-[573px] bg-white  flex justify-between flex-col items-center">
             <div className="bg-[#F1F1F1] w-[239px] font-bold uppercase h-[35px] flex justify-center items-center">
               {tier.name}
             </div>
@@ -83,11 +83,9 @@ const Tiers = () => {
             </button>
           </div>
         ))}
-          </div>
-          
-          <p className="p-8 font-bold text-white text-7xl">
-              Membership Tiers
-          </p>
+      </div>
+
+      <p className="p-8 font-bold text-white text-7xl">Membership Tiers</p>
     </div>
   );
 };
