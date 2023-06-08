@@ -37,7 +37,7 @@ const Testimonials = () => {
     },
   ];
   return (
-    <div className="flex justify-between  bg-[#1F2024] text-white">
+    <div  id="membertestimonials" className="flex justify-between  bg-[#1F2024] text-white">
       <div className="w-[48%] flex flex-col justify-center items-center">
         <img
           src={aboutpic}

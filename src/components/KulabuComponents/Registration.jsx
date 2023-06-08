@@ -12,7 +12,7 @@ const Registration = () => {
   const [membership_tier, setMembershipTier] = useState("");
 
   return (
-    <div className="flex justify-between">
+    <div id="membershipregistration" className="flex justify-between">
       <div className="w-[60%] flex flex-col  pt-24 items-center">
         <div className="w-[90%] mx-auto flex flex-col gap-4">
           <div className="flex justify-between items-center">

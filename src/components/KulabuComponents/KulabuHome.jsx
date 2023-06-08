@@ -19,18 +19,18 @@ const KulabuHome = () => {
             className="w-[80%] h-[80vh] bg-cover bg-center bg-no-repeat"
           ></div>
           <div className="flex flex-col justify-evenly text-2xl font-bold h-[80vh] text-white">
-            <p className="w-[295px] flex items-center rounded-r-2xl justify-center h-[80px] bg-white text-[#1F2024]">
+            <a href="#membershipbenefits" className="w-[295px] flex items-center rounded-r-2xl justify-center h-[80px] bg-white text-[#1F2024]">
               Membership Benefits
-            </p>
-            <p className="w-[295px] flex items-center rounded-r-2xl  justify-center h-[80px] bg-white text-[#1F2024]">
+            </a>
+            <a href="#membershiptiers" className="w-[295px] flex items-center rounded-r-2xl  justify-center h-[80px] bg-white text-[#1F2024]">
               Membership Tiers
-            </p>
-            <p className="w-[295px] flex items-center rounded-r-2xl justify-center h-[80px] bg-white text-[#1F2024]">
+            </a>
+            <a href="#membershipregistration" className="w-[295px] flex items-center rounded-r-2xl justify-center h-[80px] bg-white text-[#1F2024]">
               Registration
-            </p>
-            <p className="w-[295px] flex items-center rounded-r-2xl justify-center h-[80px] bg-white text-[#1F2024]">
+            </a>
+            <a href="#membertestimonials" className="w-[295px] flex items-center rounded-r-2xl justify-center h-[80px] bg-white text-[#1F2024]">
               Testimonials
-            </p>
+            </a >
           </div>
         </div>
         <div className="flex h-[20vh] text-[100px] w-[100%] justify-start p-12 items-center text-white  font-bold">

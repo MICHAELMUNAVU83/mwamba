@@ -55,7 +55,7 @@ const Tiers = () => {
   ];
 
   return (
-    <div className="bg-[#1E1E1E] py-24">
+    <div id="membershiptiers" className="bg-[#1E1E1E] py-24">
       <div className="flex justify-center items-center gap-[40px]">
         {tiers.map((tier) => (
           <div className="w-[315px] cursor-pointer shadow-md transition-all duration-500 ease-in-out  hover:shadow-gray-300 p-8 h-[573px] bg-white  flex justify-between flex-col items-center">

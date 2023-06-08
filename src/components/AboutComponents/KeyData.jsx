@@ -11,7 +11,7 @@ const KeyData = () => {
     {
       id: 2,
       name: "Union",
-      value: "Keny Rugby Union",
+      value: "Kenya Rugby Union",
     },
     {
       id: 2,

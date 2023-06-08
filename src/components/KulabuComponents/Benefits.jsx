@@ -3,7 +3,7 @@ import aboutpic from "../images/about/aboutpic.png";
 
 const Benefits = () => {
   return (
-    <div class="bg-white flex justify-between">
+    <div id="membershipbenefits" class="bg-white flex justify-between">
       <div className="w-[50%] text-xl mx-auto uppercase flex flex-col justify-center items-center ">
         <ul className="gap-8 space-y-2 w-[630px] list-disc">
           <li>
