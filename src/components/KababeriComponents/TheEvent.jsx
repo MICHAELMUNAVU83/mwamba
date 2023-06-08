@@ -10,7 +10,7 @@ const TheEvent = () => {
           alt=""
           className="w-[100%] object-cover h-[664px] "
         />
-        <p className="text-7xl py-4 font-bold">History</p>
+        <p className="text-7xl py-4 font-bold">The Event</p>
       </div>
       <div className="w-[50%] flex justify-center items-center">
         <p className="w-[610px] mx-auto">
