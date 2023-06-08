@@ -27,7 +27,7 @@ const LatestNews = () => {
     },
   ];
   return (
-    <div className="flex justify-between ">
+    <div id="latestnews" className="flex justify-between ">
       <div
         className="w-[4%] cursor-pointer bg-[#1F2024] text-white flex flex-col justify-center items-center"
         onClick={swipe}

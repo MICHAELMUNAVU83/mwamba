@@ -19,12 +19,12 @@ const NewsHome = () => {
             className="w-[80%] h-[80vh] bg-cover bg-center bg-no-repeat"
           ></div>
           <div className="flex flex-col justify-center gap-8 text-2xl font-bold h-[80vh] text-white">
-            <p className="w-[295px] flex items-center rounded-r-2xl justify-center h-[80px] bg-white text-[#1F2024]">
+            <a href="#latestnews" className="w-[295px] flex items-center rounded-r-2xl justify-center h-[80px] bg-white text-[#1F2024]">
               Latest News
-            </p>
-            <p className="w-[295px] flex items-center rounded-r-2xl  justify-center h-[80px] bg-white text-[#1F2024]">
+            </a>
+            <a href="#standings" className="w-[295px] flex items-center rounded-r-2xl  justify-center h-[80px] bg-white text-[#1F2024]">
               Standings
-            </p>
+            </a>
             
           </div>
         </div>
