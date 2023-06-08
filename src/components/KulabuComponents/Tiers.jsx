@@ -58,7 +58,7 @@ const Tiers = () => {
     <div className="bg-[#1E1E1E] py-24">
       <div className="flex justify-center items-center gap-[40px]">
         {tiers.map((tier) => (
-          <div className="w-[315px] p-8 h-[573px] bg-white flex flex-col items-center">
+          <div className="w-[315px] p-8 h-[573px] bg-white  flex justify-between flex-col items-center">
             <div className="bg-[#F1F1F1] w-[239px] font-bold uppercase h-[35px] flex justify-center items-center">
               {tier.name}
             </div>
@@ -72,8 +72,8 @@ const Tiers = () => {
             <div className="flex flex-col gap-2">
               {tier.benefits.map((benefit) => (
                 <div className="flex gap-2 items-center">
-                  <BsFillCheckCircleFill className="text-[#1E1E1E] text-md" />
-                  <p className="text-md">{benefit}</p>
+                  <BsFillCheckCircleFill className="text-[#1E1E1E] w-[5%] text-md" />
+                  <p className="text-sm w-[90%]">{benefit}</p>
                 </div>
               ))}
             </div>
