@@ -42,7 +42,7 @@ const LatestNews = () => {
                 <p className="text-2xl font-bold w-[80%]">{slide.title}</p>
                 <p className="text-xl font-semibold">Column by { " "}{slide.author}</p>
                 <p className="w-[525px]">{slide.excerpt}</p>
-                <button className="uppercase bg-white w-[525px] h-[57px] font-bold shadow-md shadow-gray-500 rounded-lg ">
+                <button className="uppercase bg-white w-[525px] h-[57px] font-bold mt-4 hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer shadow-md shadow-gray-500 rounded-lg ">
                   Read More
                 </button>
               </div>
