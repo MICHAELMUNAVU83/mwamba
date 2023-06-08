@@ -57,7 +57,7 @@ const LatestNews = () => {
           alt=""
           className="w-[100%] h-[80vh] bg-cover bg-center bg-no-repeat"
         />
-        <p className="text-7xl py-8 font-bold">LatestNews</p>
+        <p className="text-7xl py-8 font-bold">Latest News</p>
       </div>
     </div>
   );
