@@ -14,65 +14,54 @@ const Registration = () => {
             />
             <input
               type="text"
-              placeholder="First Name"
+              placeholder="Last Name"
               className="w-[48%] h-[50px] bg-[#1F2024] rounded-lg px-4"
             />
           </div>
           <div>
             <input
               type="text"
-              placeholder="First Name"
+              placeholder="Email"
               className="w-[100%] h-[50px] bg-[#1F2024] rounded-lg px-4"
             />
           </div>
           <div className="flex justify-between items-center">
             <input
               type="text"
-              placeholder="First Name"
+              placeholder="Phone Number"
               className="w-[48%] h-[50px] bg-[#1F2024] rounded-lg px-4"
             />
             <input
               type="text"
-              placeholder="First Name"
+              placeholder="Secondary Phone Number"
               className="w-[48%] h-[50px] bg-[#1F2024] rounded-lg px-4"
             />
           </div>
-          <div className="flex justify-between placeholder-white items-center">
-            <input
-              type="text"
-              placeholder="First Name"
-              className="w-[48%] h-[50px] bg-[#1F2024] rounded-lg px-4"
-            />
-            <input
-              type="text"
-              placeholder="First Name"
-              className="w-[48%] h-[50px] bg-[#1F2024] rounded-lg px-4"
-            />
-          </div>
+
           <div className="flex justify-between items-center">
             <input
               type="text"
-              placeholder="First Name"
+              placeholder="County"
               className="w-[48%] h-[50px] bg-[#1F2024] rounded-lg px-4"
             />
             <input
               type="text"
-              placeholder="First Name"
+              placeholder="Sub County"
               className="w-[48%] h-[50px] bg-[#1F2024] rounded-lg px-4"
             />
           </div>
           <div className="flex flex-col">
             <label>Membershi Tier</label>
-            <select className="w-[100%] h-[50px] bg-[#1F2024] rounded-lg px-4">
-              <option value="bronze">Bronze</option>
+            <select className="w-[100%] h-[50px] bg-[#1F2024] text-white  rounded-lg px-4">
+              <option className="text-white" value="bronze">Bronze</option>
 
-              <option value="silver">Silver</option>
-              <option value="gold">Gold</option>
+              <option className="text-white"  value="silver">Silver</option>
+              <option className="text-white"  value="gold">Gold</option>
             </select>
           </div>
 
-          <button className="w-[100%] h-[57px] shadow-xl shadow-gray-400 rounded-lg px-4">
-            Submit
+          <button className="w-[100%] h-[57px] shadow-xl mt-8 uppercase font-bold shadow-gray-400 rounded-lg px-4 hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer" >
+            Register
           </button>
         </div>
       </div>
@@ -82,7 +71,7 @@ const Registration = () => {
           alt=""
           className="w-[100%] h-[80vh] bg-cover bg-center bg-no-repeat"
         />
-        <p className="text-7xl py-8 font-bold">Registration</p>
+        <p className="text-7xl w-[100%] py-8 font-bold">Registration</p>
       </div>
     </div>
   );
