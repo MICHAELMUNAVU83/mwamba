@@ -56,7 +56,7 @@ const Testimonials = () => {
                   <img
                     src={slide.profile}
                     alt=""
-                    className="w-[100px] h-[100px] object-cover rounded-full"
+                    className="w-[50px] h-[50px] object-cover rounded-full"
                   />
                   <div className="flex flex-col justify-center items-start">
                     <p className="text-2xl font-bold">{slide.name}</p>
