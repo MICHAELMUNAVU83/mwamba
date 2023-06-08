@@ -5,44 +5,59 @@ const KeyData = () => {
   const data = [
     {
       id: 1,
-      name: "Name",
+      name: "Full Name",
       value: "Mwamba Rugby Football Club",
     },
     {
-      id: 1,
-      name: "Name",
-      value: "Mwamba Rugby Football Club",
+      id: 2,
+      name: "Union",
+      value: "Keny Rugby Union",
+    },
+    {
+      id: 2,
+      name: "Year Founded",
+      value: "1977",
+    },
+    {
+      id: 4,
+      name: "Location",
+      value: "Nairobi, Kenya",
     },
     {
       id: 1,
-      name: "Name",
-      value: "Mwamba Rugby Football Club",
+      name: "Region",
+      value: "Nairobi County",
     },
     {
       id: 1,
-      name: "Name",
-      value: "Mwamba Rugby Football Club",
+      name: "Grounds",
+      value: "Nairobi Railway Club",
     },
     {
       id: 1,
-      name: "Name",
-      value: "Mwamba Rugby Football Club",
+      name: "Chairman",
+      value: "George Mbaye",
     },
     {
       id: 1,
-      name: "Name",
-      value: "Mwamba Rugby Football Club",
+      name: "Coaches",
+      value: "Kevin Wambua",
     },
     {
       id: 1,
-      name: "Name",
-      value: "Mwamba Rugby Football Club",
+      name: "Captains",
+      value: "Patrick Ruhiu",
+    },
+    {
+      id: 1,
+      name: "Leagues",
+      value: "Kenya Cup, Eric Shirley Shield,  KRU Womens League",
     },
   ];
 
   return (
     <div className="bg-[#1F2024] text-white text-2xl font-bold ">
-      <div className="flex   items-center">
+      <div className="flex    items-center">
         <div className="flex w-[50%]  flex-col  items-center ">
           <img
             src={aboutpic}
@@ -53,11 +68,13 @@ const KeyData = () => {
             Key Data
           </p>
         </div>
-        <div className="flex px-24 flex-col gap-[5px]">
+        <div className="flex w-[50%] px-8 flex-col gap-2">
           {data.map((item) => (
-            <div className="flex justify-around gap-[100px] items-center">
-              <p className="uppercase">{item.name}:</p>
-              <p className="font-normal">{item.value}</p>
+            <div className="flex justify-around   items-center">
+              <p className="uppercase text-md w-[100%]">{item.name}:</p>
+              <p className="font-normal w-[100%] uppercase text-sm">
+                {item.value}
+              </p>
             </div>
           ))}
         </div>

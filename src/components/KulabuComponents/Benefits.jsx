@@ -4,45 +4,40 @@ import aboutpic from "../images/about/aboutpic.png";
 const Benefits = () => {
   return (
     <div class="bg-white flex justify-between">
-      <div className="w-[50%] text-3xl mx-auto uppercase flex flex-col justify-center items-center ">
-        <ul className="gap-4 w-[630px] list-disc">
+      <div className="w-[50%] text-xl mx-auto uppercase flex flex-col justify-center items-center ">
+        <ul className="gap-8 space-y-2 w-[630px] list-disc">
           <li>
-            Be Part of the <span className="font-bold">Inner Circle</span>{" "}
+            We are waiving the membership fee for{" "}
+            <span className="font-bold"> ALL members</span> for the season
+            2023-24 only;
           </li>
           <li>
-            Priority to the{" "}
-            <span className="font-bold">Best Seats in the House</span>{" "}
-          </li>
-
-          <li>
-            Wear Your Pride <span className="font-bold">at a Discount </span>{" "}
+            Only the Annual Subscription fee is payable for membership to be
+            considered <span className="font-bold">renewed and updated; </span>
           </li>
 
           <li>
-            Stay in the Know,{" "}
-            <span className="font-bold"> Ahead of Everyone Else </span>
-          </li>
-          <li>
-            {" "}
-            <span className="font-bold"> Connect </span> with the Rugby
-            Community
-          </li>
-          <li>
-            <span className="font-bold"> Make a Difference </span>
-            in Your Community
-          </li>
-          <li>
-            Get <span className="font-bold"> Up Close and Personal </span> with
-            the Stars
+            We are introducing a{" "}
+            <span className="font-bold"> Lipa Pole Pole </span> Option to
+            accommodate the prevailing economic conditions
           </li>
 
           <li>
-            Unlock Exciting{" "}
-            <span className="font-bold"> Partner Discounts </span>{" "}
+            As a paid up member, you will be entitled to a{" "}
+            <span className="font-bold">Mwamba RFC Replica Jersey </span> to be
+            delivered at the 2023 Kabeberi 7s.
           </li>
           <li>
-            <span className="font-bold"> Have a Voice </span> in Our Club's
-            Future Connect Online with Fellow Fans
+            As a paid up member, you will receive a{" "}
+            <span className="font-bold">massive discount </span> on our Digital
+            Membership
+          </li>
+          <li>
+            All paid up members will receive discounted ticket prizes to our{" "}
+            <span className="font-bold">
+              {" "}
+              home matches, to Kabeberi 7s, and to all other club events.
+            </span>
           </li>
         </ul>
       </div>

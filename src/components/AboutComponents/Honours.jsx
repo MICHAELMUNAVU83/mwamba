@@ -21,13 +21,13 @@ const Honours = () => {
             </div>
 
             <p className="w-[85px] bg-black flex justify-center items-center text-white h-[47px]">
-              2018
+             1987
             </p>
           </div>
           <div className="flex flex-col  gap-2 text-center justify-center items-center">
             <div>
               <img
-                src={kenyacuppic}
+                src={enterprisecuppic}
                 alt=""
                 className="w-[85px] object-cover h-[74px]"
               />
@@ -36,22 +36,22 @@ const Honours = () => {
             </div>
 
             <p className="w-[85px] bg-black flex justify-center items-center text-white h-[47px]">
-              2018
+              1985
             </p>
             <p className="w-[85px] bg-black flex justify-center items-center text-white h-[47px]">
-              2018
+              1986
             </p>
             <p className="w-[85px] bg-black flex justify-center items-center text-white h-[47px]">
-              2018
+              2006
             </p>
             <p className="w-[85px] bg-black flex justify-center items-center text-white h-[47px]">
-              2018
+              2013
             </p>
           </div>
           <div className="flex flex-col  gap-2 text-center justify-center items-center">
             <div>
               <img
-                src={kenyacuppic}
+                src={national7spic}
                 alt=""
                 className="w-[85px] object-cover h-[74px]"
               />
@@ -60,16 +60,19 @@ const Honours = () => {
             </div>
 
             <p className="w-[85px] bg-black flex justify-center items-center text-white h-[47px]">
-              2018
+              2003
             </p>
             <p className="w-[85px] bg-black flex justify-center items-center text-white h-[47px]">
-              2018
+              2007
             </p>
             <p className="w-[85px] bg-black flex justify-center items-center text-white h-[47px]">
-              2018
+              2008
             </p>
             <p className="w-[85px] bg-black flex justify-center items-center text-white h-[47px]">
-              2018
+              2010
+            </p>
+            <p className="w-[85px] bg-black flex justify-center items-center text-white h-[47px]">
+              2011
             </p>
           </div>
         </div>

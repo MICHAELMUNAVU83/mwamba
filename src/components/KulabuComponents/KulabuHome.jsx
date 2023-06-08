@@ -33,7 +33,7 @@ const KulabuHome = () => {
             </p>
           </div>
         </div>
-        <div className="flex h-[20vh] text-[100px] w-[50%] justify-center p-12 items-center text-white  font-bold">
+        <div className="flex h-[20vh] text-[100px] w-[100%] justify-start p-12 items-center text-white  font-bold">
           Join the Kulabu
         </div>
       </div>
