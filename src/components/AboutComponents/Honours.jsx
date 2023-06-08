@@ -6,7 +6,7 @@ import national7spic from "../images/about/national7spic.png";
 
 const Honours = () => {
   return (
-    <div className="flex  pb-8 justify-between ">
+    <div id="honoursabout" className="flex  pb-8 justify-between ">
       <div className="flex w-[50%] justify-center  items-center  ">
         <div className="flex  gap-[50px] items-start">
           <div className="flex flex-col  gap-2 text-center justify-center items-center">

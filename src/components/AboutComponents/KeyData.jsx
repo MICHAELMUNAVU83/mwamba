@@ -56,7 +56,10 @@ const KeyData = () => {
   ];
 
   return (
-    <div className="bg-[#1F2024] text-white text-2xl font-bold ">
+    <div
+      id="keydataabout"
+      className="bg-[#1F2024] text-white text-2xl font-bold "
+    >
       <div className="flex    items-center">
         <div className="flex w-[50%]  flex-col  items-center ">
           <img

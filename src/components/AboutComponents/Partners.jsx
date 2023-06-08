@@ -4,7 +4,7 @@ import partner2 from "../images/about/partner2.png";
 
 const Partners = () => {
   return (
-    <div className="bg-[#1F2024] ">
+    <div id="partnersabout" className="bg-[#1F2024] ">
       <div className="flex justify-between items-center w-[90%] mx-auto">
         <img
           src={partner1}

@@ -3,7 +3,7 @@ import aboutpic from "../images/about/aboutpic.png";
 
 const History = () => {
   return (
-    <div className="bg-white justify-between flex">
+    <div id="historyabout" className="bg-white justify-between flex">
       <div className="w-[630px] p-4 ">
         <p>
           Mwamba Rugby Football Club, famously known as Kulabu, is a Kenyan
