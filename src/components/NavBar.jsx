@@ -8,7 +8,7 @@ const NavBar = () => {
   return (
     <div class="fixed top-0 w-full z-10 ease-in duration-300 p-2">
       <div class="flex items-center justify-between">
-        <img src={logo} alt="logo" />
+        <img src={logo} alt="logo" className="h-[120px] w-[90px]" />
 
         <img
           src={bars}
