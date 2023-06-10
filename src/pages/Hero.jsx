@@ -21,22 +21,33 @@ const Hero = () => {
     {
       id: 2,
       image: slide2,
+      text1: "Mwamba Rugby",
+      text2: "Football Club",
     },
     {
       id: 3,
       image: slide3,
+      text1: "Mwamba Rugby",
+      text2: "Football Club",
     },
     {
       id: 4,
       image: slide4,
+      text1: "Mwamba Rugby",
+      text2: "Football Club",
     },
     {
       id: 5,
       image: slide5,
+      text1: "Mwamba Rugby",
+      text2: "Football Club",
     },
+
     {
       id: 6,
       image: slide6,
+      text1: "Mwamba Rugby",
+      text2: "Football Club",
     },
   ];
   return (
@@ -59,9 +70,11 @@ const Hero = () => {
           style={{ backgroundImage: `url(${slide.image})` }}
           className="bg-cover cursor-pointer bg-no-repeat h-[100vh]  bg-center w-full "
         >
-          <div className="flex flex-col items-start p-12 text-white justify-center h-[100vh]">
-            <h1 className="text-[120px] font-bold">{slide.text1} </h1>
-            <h1 className="text-7xl font-bold">{slide.text2}</h1>
+          <div className="  h-full bg-black/40">
+            <div className="flex flex-col items-start p-12 text-white justify-center h-[100vh]">
+              <h1 className="text-[80px] font-bold">{slide.text1} </h1>
+              <h1 className="text-[60px] font-bold">{slide.text2}</h1>
+            </div>
           </div>
         </SwiperSlide>
       ))}
