@@ -13,10 +13,10 @@ const TheEvent = () => {
           alt=""
           className="w-[100%] object-cover h-[664px] "
         />
-        <p className="text-7xl py-4 font-bold">The Event</p>
+        <p className="text-7xl py-4 poppins-bold font-bold">The Event</p>
       </div>
       <div className="w-[50%] flex justify-center items-center">
-        <p className="w-[610px] mx-auto">
+        <p className="w-[610px] poppins-light mx-auto">
           The Kabeberi Sevens is played as part of the Kenya National Sevens
           Series, and is one of only two events of that series to be played in
           Nairobi. For this reason, the Kabeberi Sevens has traditionally been

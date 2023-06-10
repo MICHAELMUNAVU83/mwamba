@@ -5,7 +5,7 @@ const History = () => {
   return (
     <div id="kababerihistory" className="flex justify-between items-center">
       <div className="w-[50%] flex justify-center items-center">
-        <p className="w-[610px] mx-auto">
+        <p className="w-[610px] poppins-light mx-auto">
           The George Mwangi Kabeberi Memorial Sevens, popularly known as the
           Kabeberi Sevens, was first played in 1986 to commemorate the passing
           away of the charismatic George Mwangi Kabeberi, one of the founding
@@ -23,7 +23,7 @@ const History = () => {
           alt=""
           className="w-[100%] object-cover h-[664px] "
         />
-        <p className="text-7xl py-4 font-bold">History</p>
+        <p className="text-7xl py-4  poppins-bold font-bold">History</p>
       </div>
     </div>
   );

@@ -128,7 +128,7 @@ const Standings = () => {
           </table>
         </div>
       </div>
-      <div className="p-8 text-7xl font-bold text-white">
+      <div className="p-8 poppins-bold text-7xl font-bold text-white">
         Standings
       </div>
     </div>

@@ -11,7 +11,7 @@ const Vending = () => {
     <div  id="kababerivending" className="flex bg-white  justify-between items-center">
       <div className="w-[48%] p-4 flex flex-col gap-4 justify-center items-start ">
         <div className="flex flex-col justify-center items-start">
-          <p className="text-3xl font-bold">
+          <p className="text-3xl poppins-regular font-bold">
             Interested in Vending and Branding Opportunities at The Event?
           </p>
           <p className="text-xl font-semibold">Fill the Form Below</p>
@@ -52,7 +52,7 @@ const Vending = () => {
           />
         </div>
 
-        <button className="w-[100%] h-[50px] hover:scale-105 cursor-pointer font-extrabold transition-all duration-500 ease-in-out uppercase bg-white  shadow-2xl shadow-gray-400 rounded-lg px-4 ">
+        <button className="w-[100%] poppins-bold h-[50px] hover:scale-105 cursor-pointer font-extrabold transition-all duration-500 ease-in-out uppercase bg-white  shadow-2xl shadow-gray-400 rounded-lg px-4 ">
           Make Inquiry
         </button>
       </div>
@@ -62,7 +62,7 @@ const Vending = () => {
           alt=""
           className="w-[100%] object-cover h-[664px] "
         />
-        <p className="text-7xl py-4 font-bold">Opportunities </p>
+        <p className="text-7xl py-4  poppins-bold font-bold">Opportunities </p>
       </div>
     </div>
   );

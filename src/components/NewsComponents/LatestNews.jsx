@@ -39,12 +39,12 @@ const LatestNews = () => {
           {slides.map((slide) => (
             <SwiperSlide className="flex cursor-pointer py-8 justify-center items-center ">
               <div className="flex flex-col justify-start  px-8">
-                <p className="text-2xl font-bold w-[80%]">{slide.title}</p>
-                <p className="text-xl font-semibold">
+                <p className="text-2xl font-bold poppins-bold w-[80%]">{slide.title}</p>
+                <p className="text-xl poppins-regular font-semibold">
                   Column by {slide.author}
                 </p>
-                <p className="w-[525px]">{slide.excerpt}</p>
-                <button className="uppercase bg-white w-[525px] h-[57px] font-bold mt-4 hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer shadow-md shadow-gray-500 rounded-lg ">
+                <p className="w-[525px] poppins-light">{slide.excerpt}</p>
+                <button className="uppercase poppins-bold bg-white w-[525px] h-[57px] font-bold mt-4 hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer shadow-md shadow-gray-500 rounded-lg ">
                   Read More
                 </button>
               </div>

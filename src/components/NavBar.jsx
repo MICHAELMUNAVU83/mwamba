@@ -61,6 +61,12 @@ const NavBar = () => {
             About
           </Link>
           <Link
+            to="/kababeri"
+            className="  hover:underline transition-all duration-500 ease-in-out cursor-pointer"
+          >
+            Team
+          </Link>
+          <Link
             to="/kulabu"
             className="  hover:underline transition-all duration-500 ease-in-out cursor-pointer"
           >
@@ -72,12 +78,7 @@ const NavBar = () => {
           >
             Kabeberi Sevens
           </Link>
-          <Link
-            to="/kababeri"
-            className="  hover:underline transition-all duration-500 ease-in-out cursor-pointer"
-          >
-            Mwamba at 45
-          </Link>
+
           <Link
             to="/news "
             className="  hover:underline transition-all duration-500 ease-in-out cursor-pointer"
