@@ -31,7 +31,7 @@ const KababeriHome = () => {
           </div>
         </div>
         <div className="flex h-[20vh] text-[100px] w-[100%] justify-start p-12 items-center text-white  font-bold">
-          Kababeri Sevens
+          Kabeberi Sevens
         </div>
       </div>
     </div>

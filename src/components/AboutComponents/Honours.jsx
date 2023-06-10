@@ -133,7 +133,7 @@ const Honours = () => {
           alt=""
           className="w-[100%] object-cover h-[530px]"
         />
-        <p className="text-7xl poppins-bold py-4 uppercase font-bold text-center text-[#1F2024]">
+        <p className="text-7xl poppins-bold py-4  font-bold text-center text-[#1F2024]">
           Honours
         </p>
       </div>

@@ -2,7 +2,7 @@ import React from "react";
 import HomeAbout from "../components/AboutComponents/HomeAbout";
 import Honours from "../components/AboutComponents/Honours";
 import KeyData from "../components/AboutComponents/KeyData";
-import Partners from "../components/AboutComponents/Partners";
+import MwambaAt45 from "../components/AboutComponents/MwambaAt45";
 import History from "../components/AboutComponents/History";
 
 const About = () => {
@@ -12,7 +12,7 @@ const About = () => {
       <Honours />
       <KeyData />
       <History />
-      
+      <MwambaAt45 />
     </div>
   );
 };

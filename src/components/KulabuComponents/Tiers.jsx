@@ -9,11 +9,11 @@ const Tiers = () => {
       description: [
         <p>
           Former Players and Management{" "}
-          <span className="font-bold">KES 5,000</span>{" "}
+          <span className="font-bold poppins-bold">KES 5,000</span>{" "}
         </p>,
         <p>
           {" "}
-          Life members <span className="font-bold">KES 10,000</span>{" "}
+          Life members <span className="font-bold poppins-bold">KES 10,000</span>{" "}
         </p>,
       ],
 
@@ -35,11 +35,11 @@ const Tiers = () => {
         <p>
           {" "}
           Players under 25 years old{" "}
-          <span className="font-bold"> KES 10,000 </span>{" "}
+          <span className="font-bold poppins-bold"> KES 10,000 </span>{" "}
         </p>,
         <p className="text-sm">
           Players over 25 years old + 2 years active playing{" "}
-          <span className="font-bold"> KES 1,500 </span>
+          <span className="font-bold poppins-bold"> KES 1,500 </span>
         </p>,
       ],
 
@@ -72,10 +72,10 @@ const Tiers = () => {
       <div className="flex justify-center items-center gap-[40px]">
         {tiers.map((tier) => (
           <div className="w-[315px] cursor-pointer shadow-md transition-all duration-500 ease-in-out  hover:shadow-gray-300 p-8 h-[573px] bg-white  flex justify-between flex-col items-center">
-            <div className="bg-[#F1F1F1] w-[239px] font-bold uppercase h-[35px] flex justify-center items-center">
+            <div className="bg-[#F1F1F1] poppins-bold w-[239px] font-bold uppercase h-[35px] flex justify-center items-center">
               {tier.name}
             </div>
-            <ul className="w-[215.58px] list-disc  text-center text-md">
+            <ul className="w-[215.58px] list-disc  poppins-light text-center text-md">
               {tier.description.map((desc) => (
                 <li className="my-1">{desc}</li>
               ))}
@@ -83,7 +83,7 @@ const Tiers = () => {
 
             <h1 className="text-2xl font-bold">Benefits</h1>
 
-            <div className="flex flex-col gap-2">
+            <div className="flex poppins-light flex-col gap-2">
               {tier.benefits.map((benefit) => (
                 <div className="flex gap-2 items-center">
                   <BsFillCheckCircleFill className="text-[#1E1E1E] w-[5%] text-md" />
@@ -92,14 +92,14 @@ const Tiers = () => {
               ))}
             </div>
 
-            <a href="#membershipregistration" className="uppercase w-[238px] bg-black text-white h-[31px] flex justify-center items-center">
+            <a href="#membershipregistration" className="uppercase poppins-bold w-[238px] bg-black text-white h-[31px] flex justify-center items-center">
               Join Now
             </a>
           </div>
         ))}
       </div>
 
-      <p className="p-8 font-bold text-white text-7xl">Membership Tiers</p>
+      <p className="p-8 font-bold poppins-bold text-white text-7xl">Membership Tiers</p>
     </div>
   );
 };

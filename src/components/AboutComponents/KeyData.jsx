@@ -48,7 +48,7 @@ const KeyData = () => {
             alt=""
             className="w-[100%] h-[80vh] object-cover"
           />
-          <p className="h-[17vh] poppins-bold uppercase text-7xl flex justify-center items-center  ">
+          <p className="h-[17vh] poppins-bold  text-7xl flex justify-center items-center  ">
             Key Data
           </p>
         </div>

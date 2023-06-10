@@ -29,12 +29,12 @@ const HomeAbout = () => {
             <a href="#historyabout" className="w-[230px] flex items-center rounded-r-2xl justify-center h-[80px] bg-white text-[#1F2024]">
               History
             </a>
-            <a href="#partnersabout" className="w-[230px] flex items-center rounded-r-2xl justify-center h-[80px] bg-white text-[#1F2024]">
-              Partners
+            <a href="#mwambaat45" className="w-[230px] flex items-center rounded-r-2xl justify-center h-[80px] bg-white text-[#1F2024]">
+              Mwamba At 45
             </a>
           </div>
         </div>
-        <div className="flex h-[20vh]  poppins-bold uppercase text-[100px] justify-start p-12 items-center text-white  font-bold">
+        <div className="flex h-[20vh]  poppins-bold  text-[100px] justify-start p-12 items-center text-white  font-bold">
           About Us
         </div>
       </div>

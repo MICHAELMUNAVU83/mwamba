@@ -70,7 +70,7 @@ const NavBar = () => {
             to="/kababeri"
             className="  hover:underline transition-all duration-500 ease-in-out cursor-pointer"
           >
-            Kababeri Sevens
+            Kabeberi Sevens
           </Link>
           <Link
             to="/kababeri"

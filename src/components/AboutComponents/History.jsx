@@ -68,7 +68,7 @@ const History = () => {
           alt=""
           className="w-full h-[799px] object-cover"
         />
-        <p className="text-[#1F2024] font-bold poppins-bold uppercase text-7xl py-4">
+        <p className="text-[#1F2024] font-bold poppins-bold text-7xl py-4">
           History
         </p>
       </div>

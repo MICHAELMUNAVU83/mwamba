@@ -44,7 +44,7 @@ const Benefits = () => {
 
       <div class="w-[40%] flex flex-col justify-center items-center ">
         <img src={aboutpic} alt="" class="w-[100%] h-[80vh] object-cover" />
-        <p className="text-7xl py-4 poppins-bold uppercase font-bold">Benefits</p>
+        <p className="text-7xl py-4 poppins-bold font-bold">Benefits</p>
       </div>
     </div>
   );
