@@ -5,51 +5,45 @@ const Tiers = () => {
   const tiers = [
     {
       id: 1,
-      name: "Bronze",
-      description:
-        "For all individuals and starters who  are starting out with Mwamba.",
-      rate: "Kes 12,000",
-      more_info: "Per member, per Month",
-      benefits: [
-        "Access to all home matches during the regular season.",
-        "Exclusive discounts on official club merchandise.",
+      name: "Category 1",
+      description: [
+        "Former Players and Management KES 5,000; ",
+        " Life members KES 10,000 ",
+      ],
 
-        "Quarterly newsletters with club updates",
-        " behind-the-scenes insights.",
-        "Job board access",
-        "Upgrade to earn certificates",
+      benefits: [
+        "We are waiving the membership fee for ALL members for the season 2023-24 only",
+        " Only the Annual Subscription fee is payable for membership to be considered renewed and updated;",
+
+        "We are introducing a “Lipa Pole Pole” Option to accommodate the prevailing economic conditions.",
+        " All paid up members will be entitled to a Mwamba RFC Replica Jersey to be delivered at Kabeberi 7s",
       ],
     },
     {
       id: 2,
-      name: "Bronze",
-      description:
-        "For all individuals and starters who  are starting out with Mwamba.",
-      rate: "Kes 12,000",
-      more_info: "Per member, per Month",
+      name: "Category 2",
+      description: [
+        "Fans KES 4,000 ",
+        " Players under 25 years old KES 1,000 ",
+        "Players over 25 years old + 2 years active playing KES 1,500*",
+      ],
+
       benefits: [
-        "Access to all home matches during the regular season.",
-        "Exclusive discounts on official club merchandise.",
-        "Quarterly newsletters with club updates",
-        " behind-the-scenes insights.",
-        "Job board access",
-        "Upgrade to earn certificates",
+        "We are waiving the membership fee for ALL members for the season 2023-24 only",
+        " Only the Annual Subscription fee is payable for membership to be considered renewed and updated;",
+
+        "We are introducing a “Lipa Pole Pole” Option to accommodate the prevailing economic conditions.",
+        " All paid up members will be entitled to a Mwamba RFC Replica Jersey to be delivered at Kabeberi 7s",
       ],
     },
     {
       id: 3,
-      name: "Bronze",
-      description:
-        "For all individuals and starters who  are starting out with Mwamba.",
-      rate: "Kes 12,000",
-      more_info: "Per member, per Month",
+      name: "Category 3",
+      description: ["Digital membership KES 500", ,],
+
       benefits: [
-        "Access to all home matches during the regular season.",
-        "Exclusive discounts on official club merchandise.",
-        "Quarterly newsletters with club updates",
-        " behind-the-scenes insights.",
-        "Job board access",
-        "Upgrade to earn certificates",
+        " Access to content on Mwamba TV Youtube channel",
+        "Access to livestreams of Mwamba matches on Mwamba TV Youtube channel for a subsidized fee",
       ],
     },
   ];
@@ -62,13 +56,14 @@ const Tiers = () => {
             <div className="bg-[#F1F1F1] w-[239px] font-bold uppercase h-[35px] flex justify-center items-center">
               {tier.name}
             </div>
-            <p className="w-[215.58px] text-center text-xs">
-              {tier.description}
-            </p>
-            <p>
-              <span className="text-4xl font-bold">{tier.rate}</span>
-            </p>
-            <p className="text-xs">{tier.more_info}</p>
+            <ul className="w-[215.58px] list-disc  text-center text-xs">
+              {tier.description.map((desc) => (
+                <li className="my-1">{desc}</li>
+              ))}
+            </ul>
+
+            <h1 className="text-2xl font-bold">Benefits</h1>
+
             <div className="flex flex-col gap-2">
               {tier.benefits.map((benefit) => (
                 <div className="flex gap-2 items-center">
@@ -79,7 +74,7 @@ const Tiers = () => {
             </div>
 
             <button className="uppercase w-[238px] bg-black text-white h-[31px] flex justify-center items-center">
-              Register
+              Join Now
             </button>
           </div>
         ))}

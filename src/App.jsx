@@ -8,12 +8,14 @@ import About from "./pages/About";
 import Kulabu from "./pages/Kulabu";
 import Kababeri from "./pages/Kababeri";
 import News from "./pages/News";
+import ScrollToTop from "./components/ScrollToTop";
 
 import "./App.css";
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <NavBar />
       <Routes>
         <Route path="/" element={<Hero />} />
@@ -21,7 +23,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/kulabu" element={<Kulabu />} />
         <Route path="/kababeri" element={<Kababeri />} />
-        <Route path="/news" element={<News/>} />
+        <Route path="/news" element={<News />} />
       </Routes>
       <Footer />
     </Router>
