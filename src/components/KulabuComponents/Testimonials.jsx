@@ -14,27 +14,27 @@ const Testimonials = () => {
   const slides = [
     {
       id: 1,
-      name: "Peter Kamau",
+      name: "Kigara Kamweru",
       profile: aboutpic,
-      position: "Chairman",
+      position: "Professor, University of Nairobi.",
       testimonial:
-        "I've been a member of the rugby club for three years, and it's been an incredible journey. The sense of community and belonging is remarkable. From the best seats at thrilling matches to unforgettable encounters with favorite players, the membership offers incredible experiences. Priority ticket purchasing, discounted merchandise, and regular newsletters keep me connected. Joining the club means being part of a passionate community, forging friendships, and creating lasting memories. Experience the true spirit of rugby as a member of our incredible club!",
+        " Even though I did not play rugby, I have identified with the Mwamba club ever since I was a student at the University of Nairobi in the late seventies and early eighties. Mwamba gave us a  reason to be proud as conscientious and politically aware young Kenyans.",
     },
     {
       id: 2,
-      name: "Peter Kamau",
+      name: "Kigara Kamweru",
       profile: aboutpic,
-      position: "Chairman",
+      position: "Professor, University of Nairobi.",
       testimonial:
-        "I've been a member of the rugby club for three years, and it's been an incredible journey. The sense of community and belonging is remarkable. From the best seats at thrilling matches to unforgettable encounters with favorite players, the membership offers incredible experiences. Priority ticket purchasing, discounted merchandise, and regular newsletters keep me connected. Joining the club means being part of a passionate community, forging friendships, and creating lasting memories. Experience the true spirit of rugby as a member of our incredible club!",
+        " Even though I did not play rugby, I have identified with the Mwamba club ever since I was a student at the University of Nairobi in the late seventies and early eighties. Mwamba gave us a  reason to be proud as conscientious and politically aware young Kenyans.",
     },
     {
       id: 3,
-      name: "Peter Kamau",
+      name: "Kigara Kamweru",
       profile: aboutpic,
-      position: "Chairman",
+      position: "Professor, University of Nairobi.",
       testimonial:
-        "I've been a member of the rugby club for three years, and it's been an incredible journey. The sense of community and belonging is remarkable. From the best seats at thrilling matches to unforgettable encounters with favorite players, the membership offers incredible experiences. Priority ticket purchasing, discounted merchandise, and regular newsletters keep me connected. Joining the club means being part of a passionate community, forging friendships, and creating lasting memories. Experience the true spirit of rugby as a member of our incredible club!",
+        " Even though I did not play rugby, I have identified with the Mwamba club ever since I was a student at the University of Nairobi in the late seventies and early eighties. Mwamba gave us a  reason to be proud as conscientious and politically aware young Kenyans.",
     },
   ];
   return (
