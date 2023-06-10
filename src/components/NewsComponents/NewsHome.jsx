@@ -5,7 +5,7 @@ import newspic from "../images/news/newspic.png";
 const NewsHome = () => {
   return (
     <div
-      className="h-[100vh] bg-cover bg-left bg-no-repeat"
+      className="h-[100vh] bg-cover bg-[50%] bg-no-repeat"
       style={{
         backgroundImage: `url(${newsbg})`,
       }}

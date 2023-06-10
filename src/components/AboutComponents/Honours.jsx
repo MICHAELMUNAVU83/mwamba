@@ -10,7 +10,7 @@ const Honours = () => {
       <div className="flex w-[50%] justify-center  items-center  ">
         <div className="flex  gap-[50px] items-start">
           <div className="flex flex-col justify-center items-center">
-            <div className="text-3xl font-bold  mb-8 poppins-bold uppercase">
+            <div className="text-3xl font-bold  mb-8 poppins-bold ">
               Men
             </div>
             <div className="flex  poppins-light gap-[50px] items-start">
@@ -85,7 +85,7 @@ const Honours = () => {
           </div>
           <p className="w-[2px] h-[500px] bg-[#1F2024] " />
           <div className="flex flex-col justify-center items-center">
-            <div className="text-3xl mb-8 poppins-bold font-bold uppercase">
+            <div className="text-3xl mb-8 poppins-bold font-bold ">
               Women
             </div>
             <div className="flex poppins-light  gap-[50px] items-start">

@@ -55,10 +55,10 @@ const KeyData = () => {
         <div className="flex w-[50%] px-8 flex-col gap-2">
           {data.map((item) => (
             <div className="flex justify-around   items-center">
-              <p className="uppercase poppins-bold text-3xl w-[100%]">
+              <p className="poppins-bold text-3xl w-[100%]">
                 {item.name}:
               </p>
-              <p className="font-normal w-[100%] poppins-regular uppercase text-sm">
+              <p className="font-normal w-[100%] poppins-regular text-sm">
                 {item.value}
               </p>
             </div>

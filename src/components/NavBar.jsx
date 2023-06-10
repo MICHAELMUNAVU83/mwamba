@@ -43,7 +43,7 @@ const NavBar = () => {
         <div
           className={
             show
-              ? `flex flex-col justify-between uppercase h-[100%] font-bold text-end p-12 `
+              ? `flex flex-col justify-between  h-[100%] font-bold text-end p-12 `
               : `hidden`
           }
           onClick={() => setShow(!show)}
