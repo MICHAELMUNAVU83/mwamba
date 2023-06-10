@@ -8,9 +8,13 @@ const Tiers = () => {
       name: "Category 1",
       description: [
         <p>
-          Former Players and Management <span className="font-bold">KES 5,000</span>{" "}
+          Former Players and Management{" "}
+          <span className="font-bold">KES 5,000</span>{" "}
         </p>,
-        " Life members KES 10,000 ",
+        <p>
+          {" "}
+          Life members <span className="font-bold">KES 10,000</span>{" "}
+        </p>,
       ],
 
       benefits: [
@@ -25,9 +29,18 @@ const Tiers = () => {
       id: 2,
       name: "Category 2",
       description: [
-        "Fans KES 4,000 ",
-        " Players under 25 years old KES 1,000 ",
-        "Players over 25 years old + 2 years active playing KES 1,500*",
+        <p>
+          Fans <span> KES 4,000 </span>{" "}
+        </p>,
+        <p>
+          {" "}
+          Players under 25 years old{" "}
+          <span className="font-bold"> KES 10,000 </span>{" "}
+        </p>,
+        <p className="text-sm">
+          Players over 25 years old + 2 years active playing{" "}
+          <span className="font-bold"> KES 1,500 </span>
+        </p>,
       ],
 
       benefits: [
@@ -41,7 +54,11 @@ const Tiers = () => {
     {
       id: 3,
       name: "Category 3",
-      description: ["Digital membership KES 500", ,],
+      description: [
+        <p>
+          Digital membership <span className="font-bold"> KES 500</span>
+        </p>,
+      ],
 
       benefits: [
         " Access to content on Mwamba TV Youtube channel",
@@ -75,9 +92,9 @@ const Tiers = () => {
               ))}
             </div>
 
-            <button className="uppercase w-[238px] bg-black text-white h-[31px] flex justify-center items-center">
+            <a href="#membershipregistration" className="uppercase w-[238px] bg-black text-white h-[31px] flex justify-center items-center">
               Join Now
-            </button>
+            </a>
           </div>
         ))}
       </div>

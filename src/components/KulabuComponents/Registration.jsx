@@ -76,21 +76,21 @@ const Registration = () => {
             />
           </div>
           <div className="flex flex-col">
-            <label>Membership Tier</label>
+            <label>Category</label>
             <select
               className="w-[100%] h-[50px] bg-[#1F2024] text-white  rounded-lg px-4"
               value={membership_tier}
               onChange={(e) => setMembershipTier(e.target.value)}
             >
-              <option className="text-white" value="bronze">
-                Bronze
+              <option className="text-white" value="category1">
+               Category 1
               </option>
 
-              <option className="text-white" value="silver">
-                Silver
+              <option className="text-white" value="category2">
+                Category 2
               </option>
-              <option className="text-white" value="gold">
-                Gold
+              <option className="text-white" value="category3">
+                Category 3
               </option>
             </select>
           </div>
