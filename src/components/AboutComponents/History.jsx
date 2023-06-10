@@ -4,7 +4,7 @@ import historypic from "../images/about/historypic.png";
 const History = () => {
   return (
     <div id="historyabout" className="bg-white justify-between flex">
-      <div className="w-[630px] p-4 ">
+      <div className="w-[45%] p-8 ">
         <p>
           Mwamba Rugby Football Club, famously known as Kulabu, is a Kenyan
           rugby union club based in Nairobi. The club was founded in 1977 with
@@ -61,7 +61,7 @@ const History = () => {
           </li>
         </ul>
       </div>
-      <div className="w-[40%] flex flex-col items-center  justify-center">
+      <div className="w-[50%] flex flex-col items-center  justify-center">
         <img
           src={historypic}
           alt=""

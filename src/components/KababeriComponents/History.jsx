@@ -13,12 +13,11 @@ const History = () => {
           tournament has been expanded to honour departed club members,
           including recently departed Leeroy Okara, Absalom “Bimbo” Mutere,
           Abedeen Shikoyi, and Jimmy Owino and lately Victor Wayodi among
-          others. The 2019 edition of the Kabeberi Sevens is scheduled to be
-          played on July 26-29 at Kinoru Stadium, Meru.
+          others. 
         </p>
       </div>
 
-      <div className="w-[545px] flex flex-col justify-center items-center">
+      <div className="w-[50%] flex flex-col justify-center items-center">
         <img
           src={kababerihistory}
           alt=""

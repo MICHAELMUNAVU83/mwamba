@@ -3,8 +3,11 @@ import kababerievent from "../images/kababeri/kababerievent.png";
 
 const TheEvent = () => {
   return (
-    <div  id="kababeritheevent" className="flex bg-[#1E1E1E] text-white justify-between items-center">
-      <div className="w-[545px] flex flex-col justify-center items-center">
+    <div
+      id="kababeritheevent"
+      className="flex bg-[#1E1E1E] text-white justify-between items-center"
+    >
+      <div className="w-[50%] flex flex-col justify-center items-center">
         <img
           src={kababerievent}
           alt=""
@@ -14,15 +17,17 @@ const TheEvent = () => {
       </div>
       <div className="w-[50%] flex justify-center items-center">
         <p className="w-[610px] mx-auto">
-          The George Mwangi Kabeberi Memorial Sevens, popularly known as the
-          Kabeberi Sevens, was first played in 1986 to commemorate the passing
-          away of the charismatic George Mwangi Kabeberi, one of the founding
-          members of the Mwamba club. Over the years, the significance of the
-          tournament has been expanded to honour departed club members,
-          including recently departed Leeroy Okara, Absalom “Bimbo” Mutere,
-          Abedeen Shikoyi, and Jimmy Owino and lately Victor Wayodi among
-          others. The 2019 edition of the Kabeberi Sevens is scheduled to be
-          played on July 26-29 at Kinoru Stadium, Meru.
+          The Kabeberi Sevens is played as part of the Kenya National Sevens
+          Series, and is one of only two events of that series to be played in
+          Nairobi. For this reason, the Kabeberi Sevens has traditionally been
+          the best-attended tournament in the series, with many Nairobi
+          residents coming to the Kabeberi to watch Kenya’s world-famous Rugby
+          Sevens stars whom they only see on television the rest of the year.
+          Due to this, the numbers attending the Kabeberi Sevens have increased
+          steadily over the years with the 2022 event attracting over 10,000
+          spectators throughout the weekend. The 2023 edition of the Kabeberi
+          Sevens is scheduled to be played on August 19th and 20th at the RFUEA
+          Grounds, Nairobi.
         </p>
       </div>
     </div>

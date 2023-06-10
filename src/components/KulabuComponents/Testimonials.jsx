@@ -1,5 +1,5 @@
 import React from "react";
-import aboutpic from "../images/about/aboutpic.png";
+import testimonialpic from "../images/kababeri/testimonialpic.png";
 import { MdOutlineArrowForwardIos } from "react-icons/md";
 import { Swiper, SwiperSlide } from "swiper/react";
 import kulabutestimonial from "../images/kulabu/kulabutestimonial.png";
@@ -15,7 +15,7 @@ const Testimonials = () => {
     {
       id: 1,
       name: "Kigara Kamweru",
-      profile: aboutpic,
+      profile: testimonialpic,
       position: "Professor, University of Nairobi.",
       testimonial:
         " Even though I did not play rugby, I have identified with the Mwamba club ever since I was a student at the University of Nairobi in the late seventies and early eighties. Mwamba gave us a  reason to be proud as conscientious and politically aware young Kenyans.",
@@ -23,7 +23,7 @@ const Testimonials = () => {
     {
       id: 2,
       name: "Kigara Kamweru",
-      profile: aboutpic,
+      profile: testimonialpic,
       position: "Professor, University of Nairobi.",
       testimonial:
         " Even though I did not play rugby, I have identified with the Mwamba club ever since I was a student at the University of Nairobi in the late seventies and early eighties. Mwamba gave us a  reason to be proud as conscientious and politically aware young Kenyans.",
@@ -31,7 +31,7 @@ const Testimonials = () => {
     {
       id: 3,
       name: "Kigara Kamweru",
-      profile: aboutpic,
+      profile: testimonialpic,
       position: "Professor, University of Nairobi.",
       testimonial:
         " Even though I did not play rugby, I have identified with the Mwamba club ever since I was a student at the University of Nairobi in the late seventies and early eighties. Mwamba gave us a  reason to be proud as conscientious and politically aware young Kenyans.",
