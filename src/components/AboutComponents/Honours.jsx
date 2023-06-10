@@ -21,7 +21,7 @@ const Honours = () => {
             </div>
 
             <p className="w-[85px] bg-black flex justify-center items-center text-white h-[47px]">
-             1987
+              1987
             </p>
           </div>
           <div className="flex flex-col  gap-2 text-center justify-center items-center">
@@ -55,8 +55,9 @@ const Honours = () => {
                 alt=""
                 className="w-[85px] object-cover h-[74px]"
               />
-              <p>Kenya</p>
-              <p>Cup</p>
+              <p>National</p>
+              <p>Sevens</p>
+              <p>Circuit</p>
             </div>
 
             <p className="w-[85px] bg-black flex justify-center items-center text-white h-[47px]">
@@ -73,6 +74,39 @@ const Honours = () => {
             </p>
             <p className="w-[85px] bg-black flex justify-center items-center text-white h-[47px]">
               2011
+            </p>
+          </div>
+          <div className="flex flex-col  gap-2 text-center justify-center items-center">
+            <div>
+              <img
+                src={kenyacuppic}
+                alt=""
+                className="w-[85px] object-cover h-[74px]"
+              />
+              <p>Kenya</p>
+              <p>Cup</p>
+            </div>
+
+            <p className="w-[85px] bg-black flex justify-center items-center text-white h-[47px]">
+              2022
+            </p>
+            <p className="w-[85px] bg-black flex justify-center items-center text-white h-[47px]">
+              2023
+            </p>
+          </div>
+          <div className="flex flex-col  gap-2 text-center justify-center items-center">
+            <div>
+              <img
+                src={kenyacuppic}
+                alt=""
+                className="w-[85px] object-cover h-[74px]"
+              />
+              <p>Kenya</p>
+              <p>Cup</p>
+            </div>
+
+            <p className="w-[85px] bg-black flex justify-center items-center text-white h-[47px]">
+              2023
             </p>
           </div>
         </div>
