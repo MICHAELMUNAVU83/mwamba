@@ -78,7 +78,7 @@ const Hero = () => {
           style={{ backgroundImage: `url(${slide.image})` }}
           className="bg-cover cursor-pointer bg-no-repeat h-[100vh]  bg-center w-full "
         >
-          <div className="  h-full bg-black/40">
+          <div className="poppins-bold h-full bg-black/40">
             <div className="flex flex-col items-start p-12 text-white justify-center h-[100vh]">
               <h1 className="text-[80px] font-bold">{slide.text1} </h1>
               <h1 className="text-[60px] font-bold">{slide.text2}</h1>
