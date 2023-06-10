@@ -56,7 +56,7 @@ const Tiers = () => {
             <div className="bg-[#F1F1F1] w-[239px] font-bold uppercase h-[35px] flex justify-center items-center">
               {tier.name}
             </div>
-            <ul className="w-[215.58px] list-disc  text-center text-xs">
+            <ul className="w-[215.58px] list-disc  text-center text-md">
               {tier.description.map((desc) => (
                 <li className="my-1">{desc}</li>
               ))}
@@ -68,7 +68,7 @@ const Tiers = () => {
               {tier.benefits.map((benefit) => (
                 <div className="flex gap-2 items-center">
                   <BsFillCheckCircleFill className="text-[#1E1E1E] w-[5%] text-md" />
-                  <p className="text-sm w-[90%]">{benefit}</p>
+                  <p className="text-xs w-[90%]">{benefit}</p>
                 </div>
               ))}
             </div>
