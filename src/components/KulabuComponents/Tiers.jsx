@@ -7,7 +7,9 @@ const Tiers = () => {
       id: 1,
       name: "Category 1",
       description: [
-        "Former Players and Management KES 5,000; ",
+        <p>
+          Former Players and Management <span className="font-bold">KES 5,000</span>{" "}
+        </p>,
         " Life members KES 10,000 ",
       ],
 
