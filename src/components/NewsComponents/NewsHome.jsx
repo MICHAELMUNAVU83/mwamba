@@ -10,7 +10,7 @@ const NewsHome = () => {
         backgroundImage: `url(${newsbg})`,
       }}
     >
-      <div className="h-[100vh] bg-black/50 ">
+      <div className="h-[100vh] bg-[#1F2024]/50 ">
         <div className="w-[60%] flex items-center h-[80vh]">
           <div
             style={{

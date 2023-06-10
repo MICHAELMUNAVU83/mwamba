@@ -13,7 +13,8 @@ const Tiers = () => {
         </p>,
         <p>
           {" "}
-          Life members <span className="font-bold poppins-bold">KES 10,000</span>{" "}
+          Life members{" "}
+          <span className="font-bold poppins-bold">KES 10,000</span>{" "}
         </p>,
       ],
 
@@ -92,14 +93,19 @@ const Tiers = () => {
               ))}
             </div>
 
-            <a href="#membershipregistration" className="uppercase poppins-bold w-[238px] bg-black text-white h-[31px] flex justify-center items-center">
+            <a
+              href="#membershipregistration"
+              className="uppercase poppins-bold w-[238px] bg-[#1F2024] text-white h-[31px] flex justify-center items-center"
+            >
               Join Now
             </a>
           </div>
         ))}
       </div>
 
-      <p className="p-8 font-bold poppins-bold text-white text-7xl">Membership Tiers</p>
+      <p className="p-8 font-bold poppins-bold text-white text-7xl">
+        Membership Tiers
+      </p>
     </div>
   );
 };

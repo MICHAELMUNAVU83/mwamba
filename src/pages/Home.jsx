@@ -53,7 +53,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="bg-black flex w-[100%] h-[50vh]">
+        <div className="bg-[#1F2024] flex w-[100%] h-[50vh]">
           <div
             className="w-[40%] bg-center bg-cover bg-no-repeat"
             style={{

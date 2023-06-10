@@ -10,8 +10,7 @@ const HomeAbout = () => {
         backgroundImage: `url(${aboutbg})`,
       }}
     >
-      
-      <div className="h-[100vh] bg-black/50 ">
+      <div className="h-[100vh] bg-[#1F2024]/50 ">
         <div className="w-[60%] flex items-center h-[80vh]">
           <div
             style={{
@@ -20,16 +19,28 @@ const HomeAbout = () => {
             className="w-[60%] h-[80vh] bg-cover bg-center bg-no-repeat"
           ></div>
           <div className="flex flex-col justify-evenly poppins-regular text-2xl font-bold h-[80vh] text-white">
-            <a href="#honoursabout" className="w-[230px] flex items-center rounded-r-2xl justify-center h-[80px] bg-[#1F2024]">
+            <a
+              href="#honoursabout"
+              className="w-[230px] flex items-center rounded-r-2xl justify-center h-[80px] bg-[#1F2024]"
+            >
               Honours
             </a>
-            <a href="#keydataabout" className="w-[230px] flex items-center rounded-r-2xl  justify-center h-[80px] bg-white text-[#1F2024]">
+            <a
+              href="#keydataabout"
+              className="w-[230px] flex items-center rounded-r-2xl  justify-center h-[80px] bg-white text-[#1F2024]"
+            >
               Key data
             </a>
-            <a href="#historyabout" className="w-[230px] flex items-center rounded-r-2xl justify-center h-[80px] bg-white text-[#1F2024]">
+            <a
+              href="#historyabout"
+              className="w-[230px] flex items-center rounded-r-2xl justify-center h-[80px] bg-white text-[#1F2024]"
+            >
               History
             </a>
-            <a href="#mwambaat45" className="w-[230px] flex items-center rounded-r-2xl justify-center h-[80px] bg-white text-[#1F2024]">
+            <a
+              href="#mwambaat45"
+              className="w-[230px] flex items-center rounded-r-2xl justify-center h-[80px] bg-white text-[#1F2024]"
+            >
               Mwamba At 45
             </a>
           </div>

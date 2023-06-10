@@ -74,7 +74,7 @@ const Testimonials = () => {
         </Swiper>
       </div>
       <div
-        className="w-[4%] cursor-pointer bg-white text-black flex flex-col justify-center items-center"
+        className="w-[4%] cursor-pointer bg-white text-[#1F2024] flex flex-col justify-center items-center"
         onClick={swipe}
       >
         <MdOutlineArrowForwardIos className="text-2xl" />

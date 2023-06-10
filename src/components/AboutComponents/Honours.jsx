@@ -25,7 +25,7 @@ const Honours = () => {
                   <p>Cup</p>
                 </div>
 
-                <p className="w-[85px] bg-black flex justify-center items-center text-white h-[47px]">
+                <p className="w-[85px] bg-[#1F2024] flex justify-center items-center text-white h-[47px]">
                   1983
                 </p>
               </div>
@@ -40,16 +40,16 @@ const Honours = () => {
                   <p>Cup</p>
                 </div>
 
-                <p className="w-[85px] bg-black flex justify-center items-center text-white h-[47px]">
+                <p className="w-[85px] bg-[#1F2024] flex justify-center items-center text-white h-[47px]">
                   1985
                 </p>
-                <p className="w-[85px] bg-black flex justify-center items-center text-white h-[47px]">
+                <p className="w-[85px] bg-[#1F2024] flex justify-center items-center text-white h-[47px]">
                   1986
                 </p>
-                <p className="w-[85px] bg-black flex justify-center items-center text-white h-[47px]">
+                <p className="w-[85px] bg-[#1F2024] flex justify-center items-center text-white h-[47px]">
                   2006
                 </p>
-                <p className="w-[85px] bg-black flex justify-center items-center text-white h-[47px]">
+                <p className="w-[85px] bg-[#1F2024] flex justify-center items-center text-white h-[47px]">
                   2013
                 </p>
               </div>
@@ -65,25 +65,25 @@ const Honours = () => {
                   <p>Circuit</p>
                 </div>
 
-                <p className="w-[85px] bg-black flex justify-center items-center text-white h-[47px]">
+                <p className="w-[85px] bg-[#1F2024] flex justify-center items-center text-white h-[47px]">
                   2003
                 </p>
-                <p className="w-[85px] bg-black flex justify-center items-center text-white h-[47px]">
+                <p className="w-[85px] bg-[#1F2024] flex justify-center items-center text-white h-[47px]">
                   2007
                 </p>
-                <p className="w-[85px] bg-black flex justify-center items-center text-white h-[47px]">
+                <p className="w-[85px] bg-[#1F2024] flex justify-center items-center text-white h-[47px]">
                   2008
                 </p>
-                <p className="w-[85px] bg-black flex justify-center items-center text-white h-[47px]">
+                <p className="w-[85px] bg-[#1F2024] flex justify-center items-center text-white h-[47px]">
                   2010
                 </p>
-                <p className="w-[85px] bg-black flex justify-center items-center text-white h-[47px]">
+                <p className="w-[85px] bg-[#1F2024] flex justify-center items-center text-white h-[47px]">
                   2011
                 </p>
               </div>
             </div>
           </div>
-          <p className="w-[2px] h-[500px] bg-black " />
+          <p className="w-[2px] h-[500px] bg-[#1F2024] " />
           <div className="flex flex-col justify-center items-center">
             <div className="text-3xl mb-8 poppins-bold font-bold uppercase">
               Women
@@ -100,10 +100,10 @@ const Honours = () => {
                   <p>Cup</p>
                 </div>
 
-                <p className="w-[85px] bg-black flex justify-center items-center text-white h-[47px]">
+                <p className="w-[85px] bg-[#1F2024] flex justify-center items-center text-white h-[47px]">
                   2022
                 </p>
-                <p className="w-[85px] bg-black flex justify-center items-center text-white h-[47px]">
+                <p className="w-[85px] bg-[#1F2024] flex justify-center items-center text-white h-[47px]">
                   2023
                 </p>
               </div>
@@ -119,7 +119,7 @@ const Honours = () => {
                   <p>Circuit</p>
                 </div>
 
-                <p className="w-[85px] bg-black flex justify-center items-center text-white h-[47px]">
+                <p className="w-[85px] bg-[#1F2024] flex justify-center items-center text-white h-[47px]">
                   2022
                 </p>
               </div>

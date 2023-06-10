@@ -10,7 +10,7 @@ const KababeriHome = () => {
         backgroundImage: `url(${kababeribg})`,
       }}
     >
-      <div className="h-[100vh] bg-black/50 ">
+      <div className="h-[100vh] bg-[#1F2024]/50 ">
         <div className="w-[60%] flex items-center h-[80vh]">
           <div
             style={{
@@ -19,13 +19,22 @@ const KababeriHome = () => {
             className="w-[80%] h-[80vh] bg-cover bg-right bg-no-repeat"
           ></div>
           <div className="flex flex-col justify-center gap-8 text-2xl font-bold h-[80vh] text-white">
-            <a href="#kababerihistory" className="w-[295px] flex items-center rounded-r-2xl justify-center h-[80px] bg-white text-[#1F2024]">
+            <a
+              href="#kababerihistory"
+              className="w-[295px] flex items-center rounded-r-2xl justify-center h-[80px] bg-white text-[#1F2024]"
+            >
               History
             </a>
-            <a  href="#kababeritheevent" className="w-[295px] flex items-center rounded-r-2xl  justify-center h-[80px] bg-white text-[#1F2024]">
+            <a
+              href="#kababeritheevent"
+              className="w-[295px] flex items-center rounded-r-2xl  justify-center h-[80px] bg-white text-[#1F2024]"
+            >
               The event
             </a>
-            <a  href="#kababerivending" className="w-[295px] flex items-center rounded-r-2xl justify-center h-[80px] bg-white text-[#1F2024]">
+            <a
+              href="#kababerivending"
+              className="w-[295px] flex items-center rounded-r-2xl justify-center h-[80px] bg-white text-[#1F2024]"
+            >
               Opportunities
             </a>
           </div>
