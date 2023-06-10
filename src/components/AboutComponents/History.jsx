@@ -1,5 +1,5 @@
 import React from "react";
-import aboutpic from "../images/about/aboutpic.png";
+import historypic from "../images/about/historypic.png";
 
 const History = () => {
   return (
@@ -63,7 +63,7 @@ const History = () => {
         </ul>
       </div>
       <div className="w-[40%] flex flex-col items-center  justify-center">
-        <img src={aboutpic} alt="" className="w-full h-[799px] object-cover" />
+        <img src={historypic} alt="" className="w-full h-[799px] object-cover" />
         <p className="text-[#1F2024] font-bold text-7xl py-4">History</p>
       </div>
     </div>

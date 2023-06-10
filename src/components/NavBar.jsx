@@ -8,13 +8,13 @@ const NavBar = () => {
   return (
     <div class="fixed top-0 w-full z-10 ease-in duration-300 p-2">
       <div class="flex items-center justify-between">
-        <img src={logo} alt="logo" className="h-[120px] w-[90px]" />
+        <img src={logo} alt="logo" className="h-[120px] object-cover w-[90px]" />
 
         <img
           src={bars}
           alt="bars"
           onClick={() => setShow(!show)}
-          className={show ? `hidden` : `flex`}
+          className={show ? `hidden object-cover` : `flex object-cover`}
         />
       </div>
       <div
@@ -27,7 +27,7 @@ const NavBar = () => {
         <div
           className={show ? `flex  justify-end items-center gap-4` : `hidden`}
         >
-          <img src={bars} alt="bars" onClick={() => setShow(!show)} />
+          <img src={bars} alt="bars" onClick={() => setShow(!show)} className="object-cover" />
         </div>
         <div
           className={

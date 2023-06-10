@@ -12,7 +12,7 @@ const About = () => {
       <Honours />
       <KeyData />
       <History />
-      <Partners />
+      
     </div>
   );
 };

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import aboutpic from "../images/about/aboutpic.png";
+import kulaburegistration from "../images/kulabu/kulaburegistration.png";
 
 const Registration = () => {
   const [first_name, setFirstName] = useState("");
@@ -102,9 +102,9 @@ const Registration = () => {
       </div>
       <div className="w-[40%] flex flex-col justify-center items-center">
         <img
-          src={aboutpic}
+          src={kulaburegistration}
           alt=""
-          className="w-[100%] h-[80vh] bg-cover bg-center bg-no-repeat"
+          className="w-[100%] h-[80vh] object-cover bg-cover bg-center bg-no-repeat"
         />
         <p className="text-7xl py-8 font-bold">Registration</p>
       </div>

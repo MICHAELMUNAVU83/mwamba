@@ -2,6 +2,7 @@ import React from "react";
 import aboutpic from "../images/about/aboutpic.png";
 import { MdOutlineArrowForwardIos } from "react-icons/md";
 import { Swiper, SwiperSlide } from "swiper/react";
+import kulabutestimonial from "../images/kulabu/kulabutestimonial.png";
 
 // Import Swiper styles
 import "swiper/css";
@@ -37,12 +38,15 @@ const Testimonials = () => {
     },
   ];
   return (
-    <div  id="membertestimonials" className="flex justify-between  bg-[#1F2024] text-white">
+    <div
+      id="membertestimonials"
+      className="flex justify-between  bg-[#1F2024] text-white"
+    >
       <div className="w-[48%] flex flex-col justify-center items-center">
         <img
-          src={aboutpic}
+          src={kulabutestimonial}
           alt=""
-          className="w-[100%] h-[80vh] bg-cover bg-center bg-no-repeat"
+          className="w-[100%] h-[80vh] object-cover bg-cover bg-center bg-no-repeat"
         />
         <p className="text-7xl py-8 font-bold">Testimonials</p>
       </div>

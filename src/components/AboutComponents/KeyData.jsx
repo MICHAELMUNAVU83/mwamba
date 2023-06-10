@@ -1,5 +1,5 @@
 import React from "react";
-import aboutpic from "../images/about/aboutpic.png";
+import keydata from "../images/about/keydata.png";
 
 const KeyData = () => {
   const data = [
@@ -61,9 +61,9 @@ const KeyData = () => {
       className="bg-[#1F2024] text-white text-2xl font-bold "
     >
       <div className="flex    items-center">
-        <div className="flex w-[50%]  flex-col  items-center ">
+        <div className="flex w-[545px]  flex-col  items-center ">
           <img
-            src={aboutpic}
+            src={keydata}
             alt=""
             className="w-[100%] h-[80vh] object-cover"
           />
@@ -74,7 +74,7 @@ const KeyData = () => {
         <div className="flex w-[50%] px-8 flex-col gap-2">
           {data.map((item) => (
             <div className="flex justify-around   items-center">
-              <p className="uppercase text-md w-[100%]">{item.name}:</p>
+              <p className="uppercase text-3xl w-[100%]">{item.name}:</p>
               <p className="font-normal w-[100%] uppercase text-sm">
                 {item.value}
               </p>
