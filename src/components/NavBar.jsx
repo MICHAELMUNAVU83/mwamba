@@ -61,7 +61,7 @@ const NavBar = () => {
             About
           </Link>
           <Link
-            to="/kababeri"
+            to="/team"
             className="  hover:underline transition-all duration-500 ease-in-out cursor-pointer"
           >
             Team
