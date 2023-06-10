@@ -10,8 +10,8 @@ const Honours = () => {
       <div className="flex w-[50%] justify-center  items-center  ">
         <div className="flex  gap-[50px] items-start">
           <div className="flex flex-col justify-center items-center">
-            <div className="text-3xl font-bold uppercase">Men</div>
-            <div className="flex  gap-[50px] items-start">
+            <div className="text-3xl font-bold  my-4 poppins-bold uppercase">Men</div>
+            <div className="flex  poppins-light gap-[50px] items-start">
               <div className="flex flex-col  gap-2 text-center justify-center items-center">
                 <div>
                   <img
@@ -82,8 +82,8 @@ const Honours = () => {
             </div>
           </div>
           <div className="flex flex-col justify-center items-center">
-            <div className="text-3xl font-bold uppercase">Women</div>
-            <div className="flex  gap-[50px] items-start">
+            <div className="text-3xl my-4 poppins-bold font-bold uppercase">Women</div>
+            <div className="flex poppins-light  gap-[50px] items-start">
               <div className="flex flex-col  gap-2 text-center justify-center items-center">
                 <div>
                   <img
@@ -128,7 +128,7 @@ const Honours = () => {
           alt=""
           className="w-[100%] object-cover h-[530px]"
         />
-        <p className="text-7xl py-4 font-bold text-center text-[#1F2024]">
+        <p className="text-7xl poppins-bold py-4 uppercase font-bold text-center text-[#1F2024]">
           Honours
         </p>
       </div>
