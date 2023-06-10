@@ -49,7 +49,7 @@ const Home = () => {
           >
             <Link to="/kababeri" className="h-[50vh] flex items-end justify-end pb-12 ">
               <h1 className="bg-[#1F2024] bg-opacity-75 rounded-l-2xl  w-[210px] h-[80px] flex items-center justify-center text-white text-xl">
-                Kababeri Sevens
+                Kabeberi Sevens
               </h1>
             </Link>
           </div>
