@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import aboutpic from "../images/about/aboutpic.png";
+import kababerivending from "../images/kababeri/kababerivending.png";
 
 const Vending = () => {
   const [first_name, setFirstName] = useState("");
@@ -58,7 +58,7 @@ const Vending = () => {
       </div>
       <div className="w-[48%] flex flex-col justify-center items-center">
         <img
-          src={aboutpic}
+          src={kababerivending}
           alt=""
           className="w-[100%] object-cover h-[664px] "
         />

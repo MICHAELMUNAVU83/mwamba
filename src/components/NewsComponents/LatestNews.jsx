@@ -1,5 +1,5 @@
 import React from "react";
-import aboutpic from "../images/about/aboutpic.png";
+import latestnews from "../images/news/latestnews.png";
 import { MdOutlineArrowBackIosNew } from "react-icons/md";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -40,7 +40,9 @@ const LatestNews = () => {
             <SwiperSlide className="flex cursor-pointer py-8 justify-center items-center ">
               <div className="flex flex-col justify-start  px-8">
                 <p className="text-2xl font-bold w-[80%]">{slide.title}</p>
-                <p className="text-xl font-semibold">Column by { " "}{slide.author}</p>
+                <p className="text-xl font-semibold">
+                  Column by {slide.author}
+                </p>
                 <p className="w-[525px]">{slide.excerpt}</p>
                 <button className="uppercase bg-white w-[525px] h-[57px] font-bold mt-4 hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer shadow-md shadow-gray-500 rounded-lg ">
                   Read More
@@ -53,7 +55,7 @@ const LatestNews = () => {
 
       <div className="w-[48%] flex flex-col justify-center items-center">
         <img
-          src={aboutpic}
+          src={latestnews}
           alt=""
           className="w-[100%] h-[80vh] object-cover bg-cover bg-center bg-no-repeat"
         />

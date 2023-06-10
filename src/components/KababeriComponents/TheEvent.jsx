@@ -1,12 +1,12 @@
 import React from "react";
-import aboutpic from "../images/about/aboutpic.png";
+import kababerievent from "../images/kababeri/kababerievent.png";
 
 const TheEvent = () => {
   return (
     <div  id="kababeritheevent" className="flex bg-[#1E1E1E] text-white justify-between items-center">
       <div className="w-[545px] flex flex-col justify-center items-center">
         <img
-          src={aboutpic}
+          src={kababerievent}
           alt=""
           className="w-[100%] object-cover h-[664px] "
         />
