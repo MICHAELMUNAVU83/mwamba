@@ -6,6 +6,7 @@ import { SiGmail } from "react-icons/si";
 import logo from "./images/logo.png";
 
 const Footer = () => {
+  var currentYear = new Date().getFullYear();
   return (
     <div className=" py-8 bg-[#1F2024] text-white">
       <div class="mx-auto  w-[75%]">
@@ -24,8 +25,12 @@ const Footer = () => {
 
           <p>Cookie Policy</p>
         </div>
-        <p className="text-center">
-          © COPYRIGHT 2023 | MWAMBA RUGBY FOOTBALL CLUB | ALL RIGHTS RESERVED
+        <p className="text-center flex justify-center items-center">
+          © COPYRIGHT{""}
+          <p className="mx-2">
+            {currentYear} | MWAMBA RUGBY FOOTBALL CLUB | ALL RIGHTS RESERVED
+          </p>
+          
         </p>
       </div>
     </div>
