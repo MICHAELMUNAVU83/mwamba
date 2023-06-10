@@ -14,7 +14,7 @@ const KeyData = () => {
       value: "Kenya Rugby Union",
     },
     {
-      id: 2,
+      id: 3,
       name: "Year Founded",
       value: "1977",
     },
@@ -24,34 +24,15 @@ const KeyData = () => {
       value: "Nairobi, Kenya",
     },
     {
-      id: 1,
+      id: 5,
       name: "Region",
       value: "Nairobi County",
     },
+
     {
-      id: 1,
-      name: "Grounds",
-      value: "Nairobi Railway Club",
-    },
-    {
-      id: 1,
-      name: "Chairman",
-      value: "George Mbaye",
-    },
-    {
-      id: 1,
-      name: "Coaches",
-      value: "Kevin Wambua",
-    },
-    {
-      id: 1,
-      name: "Captains",
-      value: "Patrick Ruhiu",
-    },
-    {
-      id: 1,
+      id: 6,
       name: "Leagues",
-      value: "Kenya Cup, Eric Shirley Shield,  KRU Womens League",
+      value: "Kenya Cup, Eric Shirley Shield,   Womens Kenya Cup ",
     },
   ];
 

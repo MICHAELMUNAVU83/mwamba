@@ -9,10 +9,9 @@ const History = () => {
           Mwamba Rugby Football Club, famously known as Kulabu, is a Kenyan
           rugby union club based in Nairobi. The club was founded in 1977 with
           the aim of promoting rugby among indigenous Kenyans when the game was
-          still dominated by the whites in the country. The club played and
-          still plays at the Nairobi Railways Club next to Uhuru Park since its
-          formation. It plays in the Kenya Cup, the premier rugby competition in
-          Kenya.
+          still dominated by the whites in the country. The club played at the
+          Nairobi Railways Club next to Uhuru Park since its formation. It plays
+          in the Kenya Cup, the premier rugby competition in Kenya.
         </p>
         <p>
           In the shorter version of the game, Mwamba RFC has also been renowned
@@ -63,7 +62,11 @@ const History = () => {
         </ul>
       </div>
       <div className="w-[40%] flex flex-col items-center  justify-center">
-        <img src={historypic} alt="" className="w-full h-[799px] object-cover" />
+        <img
+          src={historypic}
+          alt=""
+          className="w-full h-[799px] object-cover"
+        />
         <p className="text-[#1F2024] font-bold text-7xl py-4">History</p>
       </div>
     </div>
