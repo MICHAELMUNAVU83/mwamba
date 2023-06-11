@@ -23,7 +23,7 @@ const Footer = () => {
         <p className="bg-white h-[2px] w-[100%] my-4" />
         <div className="flex uppercase my-4 justify-between items-center">
           <p>Privacy Policy</p>
-          <img src={logo} alt="logo" className="object-cover" />
+          <img src={logo} alt="logo" className="object-cover w-[100px] " />
 
           <p>Cookie Policy</p>
         </div>
