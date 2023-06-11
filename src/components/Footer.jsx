@@ -3,6 +3,7 @@ import { BsInstagram, BsFacebook, BsTwitter } from "react-icons/bs";
 import { ImWhatsapp } from "react-icons/im";
 import { SiGmail } from "react-icons/si";
 
+
 import logo from "./images/logo.png";
 
 const Footer = () => {
@@ -15,6 +16,7 @@ const Footer = () => {
           <BsFacebook className="text-6xl" />
           <BsTwitter className="text-6xl" />
           <ImWhatsapp className="text-6xl" />
+         
 
           <SiGmail className="text-6xl" />
         </div>
@@ -30,7 +32,6 @@ const Footer = () => {
           <p className="mx-2">
             {currentYear} | MWAMBA RUGBY FOOTBALL CLUB | ALL RIGHTS RESERVED
           </p>
-          
         </p>
       </div>
     </div>
