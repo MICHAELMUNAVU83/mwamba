@@ -26,7 +26,7 @@ const TheEvent = () => {
           Due to this, the numbers attending the Kabeberi Sevens have increased
           steadily over the years with the 2022 event attracting over 10,000
           spectators throughout the weekend. The 2023 edition of the Kabeberi
-          Sevens is scheduled to be played on August 19th and 20th at the RFUEA
+          Sevens is scheduled to be played on September  9th and 10th at the RFUEA
           Grounds, Nairobi.
         </p>
       </div>
