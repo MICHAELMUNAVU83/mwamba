@@ -10,6 +10,7 @@ import Kababeri from "./pages/Kababeri";
 import News from "./pages/News";
 import ScrollToTop from "./components/ScrollToTop";
 import Team from "./pages/Team";
+import AdminPage from "./pages/AdminPage";
 
 import "./App.css";
 
@@ -26,6 +27,7 @@ function App() {
         <Route path="/kulabu" element={<Kulabu />} />
         <Route path="/kababeri" element={<Kababeri />} />
         <Route path="/news" element={<News />} />
+        <Route path="/admin" element={<AdminPage />} />
       </Routes>
       <Footer />
     </Router>

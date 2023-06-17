@@ -11,6 +11,34 @@ const Registration = () => {
   const [sub_county, setSubCounty] = useState("");
   const [membership_tier, setMembershipTier] = useState("");
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    fetch("http://localhost:3000/api/v1/members", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        first_name: first_name,
+        last_name: last_name,
+        phone_number: phone_number,
+        email: email,
+        date_of_birth: date_of_birth,
+        county: county,
+        membership_category: membership_tier,
+      }),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        alert("Registration Successful");
+      })
+      .catch((err) => {
+        console.log(err);
+        alert("Registration Failed");
+      });
+  };
+
   return (
     <div id="membershipregistration" className="flex justify-between">
       <div className="w-[60%] flex flex-col  pt-24 items-center">
@@ -83,7 +111,7 @@ const Registration = () => {
               onChange={(e) => setMembershipTier(e.target.value)}
             >
               <option className="text-white" value="category1">
-               Category 1
+                Category 1
               </option>
 
               <option className="text-white" value="category2">
@@ -95,7 +123,10 @@ const Registration = () => {
             </select>
           </div>
 
-          <button className="w-[100%] h-[57px] shadow-xl mt-8 uppercase font-bold shadow-gray-400 rounded-lg px-4 hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer">
+          <button
+            className="w-[100%] h-[57px] shadow-xl mt-8 uppercase font-bold shadow-gray-400 rounded-lg px-4 hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer"
+            onClick={handleSubmit}
+          >
             Register
           </button>
         </div>

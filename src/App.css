@@ -22,3 +22,7 @@ html {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
 }
+
+.adminloginbg {
+  background-image: url("/src/components/images/hero/slide1.png");
+}
