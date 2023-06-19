@@ -10,12 +10,33 @@ import Kababeri from "./pages/Kababeri";
 import News from "./pages/News";
 import ScrollToTop from "./components/ScrollToTop";
 import Team from "./pages/Team";
-import AdminPage from "./pages/AdminPage";
+import AdminLogin from "./pages/AdminLogin";
 import AdminSignup from "./pages/AdminSignup";
+import AdminHome from "./pages/AdminHome";
 
 import "./App.css";
 
 function App() {
+  const [storedToken, setStoredToken] = useState(localStorage.getItem("token"));
+  const [loggedInUserEmail, setLoggedInUserEmail] = useState("");
+  useEffect(() => {
+    console.log(storedToken);
+
+    fetch("http://127.0.0.1:3000/api/v1/profile ", {
+      method: "GET",
+      headers: {
+        Accepts: "application/json",
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${localStorage.token}`,
+      },
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        setLoggedInUserEmail(data.user.email);
+       
+      });
+  }, [storedToken]);
   return (
     <Router>
       <ScrollToTop />
@@ -28,8 +49,23 @@ function App() {
         <Route path="/kulabu" element={<Kulabu />} />
         <Route path="/kababeri" element={<Kababeri />} />
         <Route path="/news" element={<News />} />
-        <Route path="/admin" element={<AdminPage />} />
-        <Route path="/adminsignup" element={<AdminSignup />} />
+
+        {storedToken ? (
+          <Route
+            path="/adminpage"
+            element={<AdminHome setStoredToken={setStoredToken} loggedInUserEmail={loggedInUserEmail} />}
+          />
+        ) : (
+          <Route
+            path="/adminpage"
+            element={<AdminLogin setStoredToken={setStoredToken} />}
+          />
+        )}
+
+        <Route
+          path="/adminsignup"
+          element={<AdminSignup setStoredToken={setStoredToken} />}
+        />
       </Routes>
       <Footer />
     </Router>
