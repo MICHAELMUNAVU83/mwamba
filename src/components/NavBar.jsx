@@ -101,7 +101,7 @@ const NavBar = () => {
             to="/"
             className="  hover:underline transition-all duration-500 ease-in-out cursor-pointer"
           >
-            Contact US
+            Contact Us
           </Link>
         </div>
       </div>
