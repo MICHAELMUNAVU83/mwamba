@@ -1,6 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const AdminLogin = () => {
+  const navigate = useNavigate();
+
   return (
     <div class="h-[100vh] adminloginbg bg-cover bg-no-repeat flex justify-center items-center">
       <div class="h-[500px] w-[500px] bg-[#1F2024]/80 text-white rounded-lg flex flex-col justify-center items-center">
@@ -18,11 +21,13 @@ const AdminLogin = () => {
             type="password"
             placeholder="Password"
             class="w-[100%] h-[50px] text-white focus:outline-none placeholder-white bg-[#1F2024] rounded-lg px-4"
-                  />
-                  <p>
-                      
-                      Already have an account? <a href="/admin/signup" class="text-blue-500">Signup</a>
-                  </p>
+          />
+          <p>
+            Already have an account?{" "}
+            <a class="text-blue-500" onClick={() => navigate("/adminsignup")}>
+              Signup
+            </a>
+          </p>
 
           <button class="w-[100%] h-[50px] bg-white hover:scale-105 transition-all duration-500 ease-in-out text-black rounded-lg mt-4">
             Login

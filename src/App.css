@@ -26,3 +26,7 @@ html {
 .adminloginbg {
   background-image: url("/src/components/images/hero/slide1.png");
 }
+
+.adminsignupbg {
+  background-image: url("/src/components/images/hero/slide3.png");
+}

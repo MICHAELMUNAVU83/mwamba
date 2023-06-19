@@ -4,7 +4,7 @@ import AdminLogin from "./AdminLogin";
 const AdminPage = () => {
   return (
     <div class="h-[100vh]">
-      <Login />
+      <AdminLogin />
     </div>
   );
 };
