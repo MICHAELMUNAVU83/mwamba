@@ -13,6 +13,7 @@ import Team from "./pages/Team";
 import AdminLogin from "./pages/AdminLogin";
 import AdminSignup from "./pages/AdminSignup";
 import AdminHome from "./pages/AdminHome";
+import AdminPage from "./pages/AdminPage";
 import Shop from "./pages/Shop";
 
 import "./App.css";
@@ -35,7 +36,6 @@ function App() {
       .then((data) => {
         console.log(data);
         setLoggedInUserEmail(data.user.email);
-       
       });
   }, [storedToken]);
   return (
@@ -50,12 +50,16 @@ function App() {
         <Route path="/kulabu" element={<Kulabu />} />
         <Route path="/kababeri" element={<Kababeri />} />
         <Route path="/news" element={<News />} />
-        <Route path="/shop" element={<Shop />} />
 
         {storedToken ? (
           <Route
             path="/adminpage"
-            element={<AdminHome setStoredToken={setStoredToken} loggedInUserEmail={loggedInUserEmail} />}
+            element={
+              <AdminHome
+                setStoredToken={setStoredToken}
+                loggedInUserEmail={loggedInUserEmail}
+              />
+            }
           />
         ) : (
           <Route
@@ -68,6 +72,9 @@ function App() {
           path="/adminsignup"
           element={<AdminSignup setStoredToken={setStoredToken} />}
         />
+
+        <Route path="/admin" element={<AdminPage />} />
+        <Route path="/shop" element={<Shop />} />
       </Routes>
       <Footer />
     </Router>

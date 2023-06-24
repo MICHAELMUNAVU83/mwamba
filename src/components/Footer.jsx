@@ -2,9 +2,7 @@ import React from "react";
 import { BsInstagram, BsFacebook, BsTwitter } from "react-icons/bs";
 import { ImWhatsapp } from "react-icons/im";
 import { SiGmail } from "react-icons/si";
-import {BiCheck} from "react-icons/bi";
 import logo from "./images/logo.png";
-
 const Footer = () => {
   var currentYear = new Date().getFullYear();
   return (
@@ -15,7 +13,6 @@ const Footer = () => {
           <BsFacebook className="text-6xl" />
           <BsTwitter className="text-6xl" />
           <ImWhatsapp className="text-6xl" />
-          <BiCheck className="text-6xl" />
 
           <SiGmail className="text-6xl" />
         </div>

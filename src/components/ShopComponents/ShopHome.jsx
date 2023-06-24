@@ -21,7 +21,7 @@ const ShopHome = () => {
           <div className="flex poppins-regular flex-col justify-evenly text-2xl font-bold h-[80vh] text-white"></div>
         </div>
         <div className="flex poppins-bold h-[20vh] text-[100px] w-[100%] justify-start p-12 items-center text-white  font-bold">
-         The Shop
+          The Shop
         </div>
       </div>
     </div>
