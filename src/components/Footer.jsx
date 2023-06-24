@@ -2,8 +2,8 @@ import React from "react";
 import { BsInstagram, BsFacebook, BsTwitter } from "react-icons/bs";
 import { ImWhatsapp } from "react-icons/im";
 import { SiGmail } from "react-icons/si";
-import { BsArrowDownCircleFill, BsArrowUpCircleFill } from "react-icons/bs";
 import logo from "./images/logo.png";
+import { MdArrowForwardIos } from "react-icons/md";
 
 const Footer = () => {
   var currentYear = new Date().getFullYear();
@@ -15,8 +15,8 @@ const Footer = () => {
           <BsFacebook className="text-6xl" />
           <BsTwitter className="text-6xl" />
           <ImWhatsapp className="text-6xl" />
-          <BsArrowDownCircleFill className="text-6xl" />
-          <BsArrowUpCircleFill className="text-6xl" />
+          <MdArrowForwardIos className="text-6xl" />
+
           <SiGmail className="text-6xl" />
         </div>
         <p className="bg-white h-[2px] w-[100%] my-4" />

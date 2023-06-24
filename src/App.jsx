@@ -11,6 +11,7 @@ import News from "./pages/News";
 import ScrollToTop from "./components/ScrollToTop";
 import Team from "./pages/Team";
 import AdminPage from "./pages/AdminPage";
+import Shop from "./pages/Shop";
 
 import "./App.css";
 
@@ -28,6 +29,7 @@ function App() {
         <Route path="/kababeri" element={<Kababeri />} />
         <Route path="/news" element={<News />} />
         <Route path="/admin" element={<AdminPage />} />
+        <Route path="/shop" element={<Shop />} />
       </Routes>
       <Footer />
     </Router>
