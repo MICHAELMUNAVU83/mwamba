@@ -4,14 +4,11 @@ import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { ImBin2 } from "react-icons/im";
 
-const Cart = () => {
+const Cart = ({ loggedInUserId }) => {
   const [cartItems, setCartItems] = useState([]);
   const [total, setTotal] = useState(0);
   const [quantity, setQuantity] = useState(0);
-    const [selectedCart, setSelectedCart] = useState({});
-    
-    
- 
+  const [selectedCart, setSelectedCart] = useState({});
 
   const addQuantity = (id, quantity) => {
     fetch(`http://localhost:3000/api/v1/cart_items/${id}`, {
@@ -127,6 +124,7 @@ const Cart = () => {
               <thead>
                 <tr className="poppins-bold">
                   <th className="p-4">Product</th>
+                  <th className="p-4">Image </th>
                   <th className="p-4">Category</th>
                   <th className="p-4">Size</th>
                   <th className="p-4">Price</th>
@@ -136,49 +134,59 @@ const Cart = () => {
                 </tr>
               </thead>
               <tbody>
-                {cartItems.map((item) => (
-                  <tr className="poppins-regular">
-                    <td className="p-4">{item.name}</td>
-                    <td className="p-4">{item.category}</td>
-                    <td className="p-4">{item.size}</td>
-                    <td className="p-4">{item.price}</td>
-                    <td className="p-4 flex gap-2 justify-center items-center">
-                      <button
-                        className="bg-[#1F2024] text-white  h-8 w-8 rounded-lg"
-                        onClick={() => {
-                          if (item.quantity > 1) {
-                            reduceQuantity(item.id, item.quantity);
-                          } else {
-                            alert("Quantity cannot be less than 1");
-                          }
-                        }}
-                      >
-                        -
-                      </button>
+                {cartItems.map(
+                  (item) =>
+                    item.user.id === loggedInUserId && (
+                      <tr className="poppins-regular">
+                        <td className="p-4">{item.name}</td>
+                        <td className="p-4">
+                          <img
+                            src={item.picture}
+                            alt="product"
+                            className="h-[50px] rounded-lg w-[50px] object-cover"
+                          />
+                        </td>
+                        <td className="p-4">{item.category}</td>
+                        <td className="p-4">{item.size}</td>
+                        <td className="p-4">{item.price}</td>
+                        <td className="p-4 flex gap-2 justify-center items-center">
+                          <button
+                            className="bg-[#1F2024] text-white  h-8 w-8 rounded-lg"
+                            onClick={() => {
+                              if (item.quantity > 1) {
+                                reduceQuantity(item.id, item.quantity);
+                              } else {
+                                alert("Quantity cannot be less than 1");
+                              }
+                            }}
+                          >
+                            -
+                          </button>
 
-                      {item.quantity}
-                      <button
-                        className="bg-[#1F2024] text-white  h-8 w-8 rounded-lg"
-                        onClick={() => {
-                          addQuantity(item.id, item.quantity);
-                        }}
-                      >
-                        +
-                      </button>
-                    </td>
-                    <td className="p-4">
-                      {(item.price * item.quantity).toLocaleString()} Ksh
-                    </td>
-                    <td className="p-4 flex justify-center items-center">
-                      <ImBin2
-                        className="text-[#1F2024] text-2xl cursor-pointer"
-                        onClick={() => {
-                          removeFromCart(item.id);
-                        }}
-                      />
-                    </td>
-                  </tr>
-                ))}
+                          {item.quantity}
+                          <button
+                            className="bg-[#1F2024] text-white  h-8 w-8 rounded-lg"
+                            onClick={() => {
+                              addQuantity(item.id, item.quantity);
+                            }}
+                          >
+                            +
+                          </button>
+                        </td>
+                        <td className="p-4">
+                          {(item.price * item.quantity).toLocaleString()} Ksh
+                        </td>
+                        <td className="p-4 flex justify-center items-center">
+                          <ImBin2
+                            className="text-[#1F2024] text-2xl cursor-pointer"
+                            onClick={() => {
+                              removeFromCart(item.id);
+                            }}
+                          />
+                        </td>
+                      </tr>
+                    )
+                )}
               </tbody>
             </table>
           </div>

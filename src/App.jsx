@@ -53,7 +53,10 @@ function App() {
         <Route path="/kulabu" element={<Kulabu />} />
         <Route path="/kababeri" element={<Kababeri />} />
         <Route path="/news" element={<News />} />
-        <Route path="/cart" element={<Cart />} />
+        <Route
+          path="/cart"
+          element={<Cart loggedInUserId={loggedInUserId} />}
+        />
 
         {storedToken ? (
           <Route

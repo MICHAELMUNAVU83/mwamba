@@ -1,24 +1,37 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import shoppic from "../images/shop/shoppic.png";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useNavigate } from "react-router-dom";
 
 const ShopItems = ({
-  setStoredToken,
   storedToken,
+  setStoredToken,
   setLoggedInUserId,
   loggedInUserId,
 }) => {
   const [showProductModal, setShowProductModal] = useState(false);
   const [showLoginModal, setShowLoginModal] = useState(false);
-  const [showSignupModal, setShowSignupModal] = useState(true);
+  const [showSignupModal, setShowSignupModal] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState({});
   const [selectedCategory, setSelectedCategory] = useState("");
   const [selectedSize, setSelectedSize] = useState("");
   const [selectedPrice, setSelectedPrice] = useState(0);
+  const [selectedImage, setSelectedImage] = useState("");
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
+  const [cart_items, setCartItems] = useState([]);
+
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    fetch("http://localhost:3000/api/v1/cart_items")
+      .then((res) => res.json())
+      .then((data) => {
+        setCartItems(data);
+      });
+  }, []);
 
   const LoginFunction = (e) => {
     e.preventDefault();
@@ -150,7 +163,7 @@ const ShopItems = ({
       ],
     },
     {
-      id: 1,
+      id: 2,
       name: "Away Jersey",
       picture: shoppic,
       categories: [
@@ -169,7 +182,7 @@ const ShopItems = ({
       ],
     },
     {
-      id: 1,
+      id: 3,
       name: "hat",
       picture: shoppic,
       categories: [
@@ -192,7 +205,42 @@ const ShopItems = ({
   const addToCart = (e) => {
     e.preventDefault();
     if (selectedCategory === "" || selectedSize === "") {
-      alert("Please select a category and size");
+      toast.error("Please select category and size", {
+        position: "top-center",
+        autoClose: 2000,
+
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
+    } else if (
+      cart_items.find(
+        (item) =>
+          item.name === selectedProduct.name &&
+          item.user.id === Number(loggedInUserId) &&
+          item.category === selectedCategory &&
+          item.size === selectedSize
+      )
+    ) {
+      toast.error("Item already in cart", {
+        position: "top-center",
+        autoClose: 2000,
+
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
+      setTimeout(() => {
+        setShowProductModal(false);
+      }, 2000);
+      setSelectedCategory("");
+      setSelectedSize("");
     } else {
       fetch("http://localhost:3000/api/v1/cart_items", {
         method: "POST",
@@ -204,16 +252,47 @@ const ShopItems = ({
           category: selectedCategory,
           size: selectedSize,
           price: selectedPrice,
+          user_id: loggedInUserId,
+          picture: selectedImage,
         }),
       })
         .then((res) => res.json())
         .then((data) => {
-          alert("Added to cart");
-          setShowProductModal(false);
+          toast.success("Added to cart", {
+            position: "top-center",
+            autoClose: 2000,
+
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+          });
+          setSelectedCategory("");
+          setSelectedSize("");
+          setTimeout(() => {
+            setShowProductModal(false);
+          }, 2000);
+          setTimeout(() => {
+            toast.info("Redirecting to cart", {
+              position: "top-center",
+              autoClose: 2000,
+
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: true,
+              draggable: true,
+              progress: undefined,
+              theme: "light",
+            });
+          }, 3000);
+          setTimeout(() => {
+            navigate("/cart");
+          }, 6000);
         })
 
         .catch((err) => {
-          console.log(err);
           alert("Error adding to cart");
         });
     }
@@ -292,7 +371,7 @@ const ShopItems = ({
                       );
                     }}
                   >
-                    <option disabled selected>
+                    <option value="" disabled>
                       Select Category
                     </option>
                     <option value="kiddie">Kiddie</option>
@@ -310,7 +389,7 @@ const ShopItems = ({
                       setSelectedSize(e.target.value);
                     }}
                   >
-                    <option disabled selected>
+                    <option value="" disabled>
                       Select Size
                     </option>
                     <option value="small">Small</option>
@@ -469,7 +548,7 @@ const ShopItems = ({
         {shop_items.map((item) => (
           <div
             className="bg-[#1F2024] w-[30%] hover:scale-105 transition-all duration-500 ease-out cursor-pointer pb-4 rounded-xl"
-            key={item.id}
+            key={item.name}
           >
             <img
               src={item.picture}
@@ -486,6 +565,7 @@ const ShopItems = ({
                   if (storedToken) {
                     setShowProductModal(true);
                     setSelectedProduct(item);
+                    setSelectedImage(item.picture);
                   } else {
                     toast.error("Please login to view product", {
                       position: "top-center",
