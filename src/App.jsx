@@ -13,7 +13,7 @@ import Team from "./pages/Team";
 import AdminLogin from "./pages/AdminLogin";
 import AdminSignup from "./pages/AdminSignup";
 import AdminHome from "./pages/AdminHome";
-import AdminPage from "./pages/AdminPage";
+
 import Shop from "./pages/Shop";
 
 import "./App.css";
@@ -73,7 +73,6 @@ function App() {
           element={<AdminSignup setStoredToken={setStoredToken} />}
         />
 
-        <Route path="/admin" element={<AdminPage />} />
         <Route path="/shop" element={<Shop />} />
       </Routes>
       <Footer />
