@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from "react";
 import shoppic from "../images/shop/shoppic.png";
+import away from "../images/shop/away.jpeg";
+import home from "../images/shop/home.jpeg";
+import hat from "../images/shop/hat.jpeg";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useNavigate } from "react-router-dom";
@@ -146,7 +149,7 @@ const ShopItems = ({
     {
       id: 1,
       name: "Home Jersey",
-      picture: shoppic,
+      picture: home,
       categories: [
         {
           name: "kiddie",
@@ -165,26 +168,26 @@ const ShopItems = ({
     {
       id: 2,
       name: "Away Jersey",
-      picture: shoppic,
+      picture: away,
       categories: [
         {
           name: "kiddie",
 
           sizes: ["small", "medium", "large"],
-          price: 2000,
+          price: 500,
         },
         {
           name: "adult",
 
           sizes: ["small", "medium", "large", "extra large"],
-          price: 4000,
+          price: 1000,
         },
       ],
     },
     {
       id: 3,
       name: "hat",
-      picture: shoppic,
+      picture: hat,
       categories: [
         {
           name: "kiddie",
@@ -204,7 +207,11 @@ const ShopItems = ({
 
   const addToCart = (e) => {
     e.preventDefault();
-    if (selectedCategory === "" || selectedSize === "") {
+    if (
+      selectedCategory === "" ||
+      selectedSize === "" ||
+      selectedImage === ""
+    ) {
       toast.error("Please select category and size", {
         position: "top-center",
         autoClose: 2000,

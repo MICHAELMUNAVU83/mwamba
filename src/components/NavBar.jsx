@@ -104,15 +104,24 @@ const NavBar = ({ setStoredToken, storedToken }) => {
             Contact Us
           </Link>
           {storedToken && (
-            <p
-              onClick={() => {
-                localStorage.setItem("token", "");
-                setStoredToken("");
-              }}
-              className="  hover:underline transition-all duration-500 ease-in-out cursor-pointer"
-            >
-              Logout
-            </p>
+            <>
+              <Link
+                to="/cart"
+                className="  hover:underline transition-all duration-500 ease-in-out cursor-pointer"
+              >
+                Cart
+              </Link>
+
+              <p
+                onClick={() => {
+                  localStorage.setItem("token", "");
+                  setStoredToken("");
+                }}
+                className="  hover:underline transition-all duration-500 ease-in-out cursor-pointer"
+              >
+                Logout
+              </p>
+            </>
           )}
         </div>
       </div>

@@ -110,7 +110,7 @@ const Cart = ({ loggedInUserId }) => {
   return (
     <div className="bg-[#1F2024] min-h-screen flex justify-center items-center">
       <ToastContainer />
-      <div className="flex f h-[700px] justify-between bg-white w-[80%] mx-auto ">
+      <div className="flex f h-[700px] overflow-y-scroll justify-between bg-white w-[80%] mx-auto ">
         <div className="w-[70%]  flex flex-col h-[100%] p-4">
           <div className="flex justify-between items-center">
             <p className="text-[#1F2024] text-2xl poppins-bold">Cart</p>
@@ -192,7 +192,7 @@ const Cart = ({ loggedInUserId }) => {
           </div>
         </div>
 
-        <div className="w-[30%] p-4 h-[100%] flex flex-col justify-between  bg-gray-300">
+        <div className="w-[30%]  p-4 h-[100%] flex flex-col justify-between  bg-gray-300">
           <div className="flex flex-col gap-2">
             <div className="flex justify-between items-center">
               <p className="text-[#1F2024] text-2xl poppins-bold">Cart</p>
