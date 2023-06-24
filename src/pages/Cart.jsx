@@ -8,7 +8,10 @@ const Cart = () => {
   const [cartItems, setCartItems] = useState([]);
   const [total, setTotal] = useState(0);
   const [quantity, setQuantity] = useState(0);
-  const [selectedCart, setSelectedCart] = useState({});
+    const [selectedCart, setSelectedCart] = useState({});
+    
+    
+ 
 
   const addQuantity = (id, quantity) => {
     fetch(`http://localhost:3000/api/v1/cart_items/${id}`, {

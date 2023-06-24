@@ -3,10 +3,15 @@ import shoppic from "../images/shop/shoppic.png";
 
 const ShopItems = () => {
   const [showProductModal, setShowProductModal] = useState(false);
+  const [showLoginModal, setShowLoginModal] = useState(false);
+  const [showSignupModal, setShowSignupModal] = useState(true);
   const [selectedProduct, setSelectedProduct] = useState({});
   const [selectedCategory, setSelectedCategory] = useState("");
   const [selectedSize, setSelectedSize] = useState("");
   const [selectedPrice, setSelectedPrice] = useState(0);
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("");
   const shop_items = [
     {
       id: 1,
@@ -213,12 +218,130 @@ const ShopItems = () => {
       )}
     </div>
   );
+
+  const LoginModal = showLoginModal && (
+    <div className="fixed poppins-regular bg-white shadow-xl h-[500px] my-auto w-[50%] inset-0 bg-opacity z-10 flex flex-col justify-center items-center   mx-auto">
+      <div className="flex justify-end w-full p-4">
+        <button
+          className=" bg-[#1F2024] text-white px-4 py-2 rounded-lg"
+          onClick={() => {
+            setShowLoginModal(false);
+          }}
+        >
+          X
+        </button>
+      </div>
+      <div className="w-[90%] flex flex-col  justify-center items-center px-8 mx-auto">
+        <h1 class="text-4xl font-bold mb-4">Login</h1>
+        <div class="flex flex-col w-[80%]">
+          <label>Email</label>
+          <input
+            type="text"
+            placeholder="Email"
+            class="w-[100%] h-[50px] text-white focus:outline-none placeholder-white bg-[#1F2024] rounded-lg px-4"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+
+          <label>Password</label>
+          <input
+            type="password"
+            placeholder="********"
+            class="w-[100%] h-[50px] text-white focus:outline-none placeholder-white bg-[#1F2024] rounded-lg px-4"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+          <div className="text-center flex items-center my-2 justify-center">
+            <p>Don't have an account?</p>
+            <p
+              className="text-blue-500 cursor-pointer"
+              onClick={() => {
+                setShowLoginModal(false);
+                setShowSignupModal(true);
+              }}
+            >
+              Sign Up
+            </p>
+          </div>
+
+          <button class=" mx-auto  shadow-xl shadow-gray-200 h-[50px] bg-[#1F2024] hover:scale-105 transition-all duration-500 w-[50%] ease-in-out text-white rounded-lg mt-4">
+            Login
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+
+  const SignUpModal = showSignupModal && (
+    <div className="fixed poppins-regular bg-white shadow-xl h-[500px] my-auto w-[50%] inset-0 bg-opacity z-10 flex flex-col justify-center items-center   mx-auto">
+      <div className="flex justify-end w-full p-4">
+        <button
+          className=" bg-[#1F2024] text-white px-4 py-2 rounded-lg"
+          onClick={() => {
+            setShowSignupModal(false);
+          }}
+        >
+          X
+        </button>
+      </div>
+      <div className="w-[90%] flex flex-col  justify-center items-center px-8 mx-auto">
+        <h1 class="text-4xl font-bold mb-4">Sign Up</h1>
+        <div class="flex flex-col w-[80%]">
+          <label>Username</label>
+          <input
+            type="text"
+            class="w-[100%] h-[50px] text-white focus:outline-none placeholder-white bg-[#1F2024] rounded-lg px-4"
+            value={username}
+            placeholder="Username"
+            onChange={(e) => setUsername(e.target.value)}
+          />
+          <label>Email</label>
+          <input
+            type="text"
+            class="w-[100%] h-[50px] text-white focus:outline-none placeholder-white bg-[#1F2024] rounded-lg px-4"
+            value={email}
+            placeholder="Email"
+            onChange={(e) => setEmail(e.target.value)}
+          />
+
+          <label>Password</label>
+          <input
+            type="password"
+            class="w-[100%] h-[50px] text-white focus:outline-none placeholder-white bg-[#1F2024] rounded-lg px-4"
+            value={password}
+            placeholder="********"
+            onChange={(e) => setPassword(e.target.value)}
+          />
+          <div className="text-center flex items-center my-2 justify-center">
+            <p>Already have an account? </p>
+            <p
+              className="text-blue-500 cursor-pointer"
+              onClick={() => {
+                setShowSignupModal(false);
+                setShowLoginModal(true);
+              }}
+            >
+              Login here
+            </p>
+          </div>
+
+          <button class=" mx-auto  shadow-xl shadow-gray-200 h-[50px] bg-[#1F2024] hover:scale-105 transition-all duration-500 w-[50%] ease-in-out text-white rounded-lg mt-4">
+            Sign Up
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+
   return (
     <div>
       <p className="poppins-bold text-[80px] text-[#1F2024] text-start py-8">
         Get Mwamba Merch
       </p>
       {ProductModal}
+
+      {LoginModal}
+      {SignUpModal}
       <div className="flex justify-around w-[90%] mx-auto  p-8">
         {shop_items.map((item) => (
           <div
