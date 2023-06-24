@@ -1,7 +1,14 @@
 import React, { useState } from "react";
 import shoppic from "../images/shop/shoppic.png";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
-const ShopItems = () => {
+const ShopItems = ({
+  setStoredToken,
+  storedToken,
+  setLoggedInUserId,
+  loggedInUserId,
+}) => {
   const [showProductModal, setShowProductModal] = useState(false);
   const [showLoginModal, setShowLoginModal] = useState(false);
   const [showSignupModal, setShowSignupModal] = useState(true);
@@ -12,6 +19,116 @@ const ShopItems = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
+
+  const LoginFunction = (e) => {
+    e.preventDefault();
+
+    fetch("http://127.0.0.1:3000/api/v1/login", {
+      method: "POST",
+      headers: {
+        Accepts: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        user: {
+          email,
+          password,
+        },
+      }),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.jwt) {
+          localStorage.setItem("token", data.jwt);
+          setStoredToken(data.jwt);
+          setLoggedInUserId(data.user.id);
+          setShowLoginModal(false);
+          toast.success("Login successful", {
+            position: "top-center",
+            autoClose: 2000,
+
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+          });
+        } else {
+          toast.error("Invalid credentials", {
+            position: "top-center",
+            autoClose: 2000,
+
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+          });
+        }
+      });
+
+    setEmail("");
+
+    setPassword("");
+  };
+
+  const SignUpFunction = (e) => {
+    e.preventDefault();
+
+    fetch("http://127.0.0.1:3000/api/v1/users", {
+      method: "POST",
+      headers: {
+        Accepts: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        user: {
+          username,
+          email,
+          password,
+        },
+      }),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.jwt) {
+          localStorage.setItem("token", data.jwt);
+          setStoredToken(data.jwt);
+          setLoggedInUserId(data.user.id);
+          setShowSignupModal(false);
+          toast.success("Signup successful", {
+            position: "top-center",
+            autoClose: 2000,
+
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+          });
+        } else {
+          toast.error("Email already exists", {
+            position: "top-center",
+            autoClose: 2000,
+
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+          });
+        }
+      });
+
+    setEmail("");
+    setUsername("");
+    setPassword("");
+  };
+
   const shop_items = [
     {
       id: 1,
@@ -264,7 +381,10 @@ const ShopItems = () => {
             </p>
           </div>
 
-          <button class=" mx-auto  shadow-xl shadow-gray-200 h-[50px] bg-[#1F2024] hover:scale-105 transition-all duration-500 w-[50%] ease-in-out text-white rounded-lg mt-4">
+          <button
+            class=" mx-auto  shadow-xl shadow-gray-200 h-[50px] bg-[#1F2024] hover:scale-105 transition-all duration-500 w-[50%] ease-in-out text-white rounded-lg mt-4"
+            onClick={LoginFunction}
+          >
             Login
           </button>
         </div>
@@ -325,7 +445,10 @@ const ShopItems = () => {
             </p>
           </div>
 
-          <button class=" mx-auto  shadow-xl shadow-gray-200 h-[50px] bg-[#1F2024] hover:scale-105 transition-all duration-500 w-[50%] ease-in-out text-white rounded-lg mt-4">
+          <button
+            class=" mx-auto  shadow-xl shadow-gray-200 h-[50px] bg-[#1F2024] hover:scale-105 transition-all duration-500 w-[50%] ease-in-out text-white rounded-lg mt-4"
+            onClick={SignUpFunction}
+          >
             Sign Up
           </button>
         </div>
@@ -360,8 +483,25 @@ const ShopItems = () => {
               <button
                 className="bg-white poppins-regular my-4 hover:scale-105 transition-all duration-500 ease-in-out  text-[#1F2024] p-2"
                 onClick={() => {
-                  setShowProductModal(true);
-                  setSelectedProduct(item);
+                  if (storedToken) {
+                    setShowProductModal(true);
+                    setSelectedProduct(item);
+                  } else {
+                    toast.error("Please login to view product", {
+                      position: "top-center",
+                      autoClose: 2000,
+                      hideProgressBar: false,
+                      closeOnClick: true,
+                      pauseOnHover: true,
+                      draggable: true,
+                      progress: undefined,
+                      theme: "light",
+                    });
+
+                    setTimeout(() => {
+                      setShowLoginModal(true);
+                    }, 3000);
+                  }
                 }}
               >
                 View Product
@@ -370,6 +510,7 @@ const ShopItems = () => {
           </div>
         ))}
       </div>
+      <ToastContainer />
     </div>
   );
 };

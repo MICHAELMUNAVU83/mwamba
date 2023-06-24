@@ -22,6 +22,7 @@ import "./App.css";
 function App() {
   const [storedToken, setStoredToken] = useState(localStorage.getItem("token"));
   const [loggedInUserEmail, setLoggedInUserEmail] = useState("");
+  const [loggedInUserId, setLoggedInUserId] = useState("");
   useEffect(() => {
     console.log(storedToken);
 
@@ -37,12 +38,13 @@ function App() {
       .then((data) => {
         console.log(data);
         setLoggedInUserEmail(data.user.email);
+        setLoggedInUserId(data.user.id);
       });
   }, [storedToken]);
   return (
     <Router>
       <ScrollToTop />
-      <NavBar />
+      <NavBar setStoredToken={setStoredToken} storedToken={storedToken} />
       <Routes>
         <Route path="/" element={<Hero />} />
         <Route path="/home" element={<Home />} />
@@ -75,7 +77,17 @@ function App() {
           element={<AdminSignup setStoredToken={setStoredToken} />}
         />
 
-        <Route path="/shop" element={<Shop />} />
+        <Route
+          path="/shop"
+          element={
+            <Shop
+              setStoredToken={setStoredToken}
+              storedToken={storedToken}
+              setLoggedInUserId={setLoggedInUserId}
+              loggedInUserId={loggedInUserId}
+            />
+          }
+        />
       </Routes>
       <Footer />
     </Router>

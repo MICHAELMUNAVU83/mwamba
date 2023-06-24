@@ -3,7 +3,7 @@ import logo from "./images/logo.png";
 import bars from "./images/bars.png";
 import { Link } from "react-router-dom";
 
-const NavBar = () => {
+const NavBar = ({ setStoredToken, storedToken }) => {
   const [show, setShow] = useState(false);
   return (
     <div class="fixed top-0 w-full z-10 ease-in duration-300 px-12 py-2">
@@ -103,6 +103,17 @@ const NavBar = () => {
           >
             Contact Us
           </Link>
+          {storedToken && (
+            <p
+              onClick={() => {
+                localStorage.setItem("token", "");
+                setStoredToken("");
+              }}
+              className="  hover:underline transition-all duration-500 ease-in-out cursor-pointer"
+            >
+              Logout
+            </p>
+          )}
         </div>
       </div>
     </div>
