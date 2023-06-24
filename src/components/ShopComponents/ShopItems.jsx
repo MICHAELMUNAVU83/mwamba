@@ -86,8 +86,8 @@ const ShopItems = () => {
       })
         .then((res) => res.json())
         .then((data) => {
-          console.log(data);
           alert("Added to cart");
+          setShowProductModal(false);
         })
 
         .catch((err) => {
