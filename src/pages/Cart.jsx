@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { toast, ToastContainer } from "react-toastify";
 
 import "react-toastify/dist/ReactToastify.css";
+import { ImBin2 } from "react-icons/im";
 
 const Cart = () => {
   const [cartItems, setCartItems] = useState([]);
@@ -101,6 +102,7 @@ const Cart = () => {
                   <th className="p-4">Price</th>
                   <th className="p-4">Quantity</th>
                   <th className="p-4">Total</th>
+                  <th className="p-4">Action</th>
                 </tr>
               </thead>
               <tbody>
@@ -136,6 +138,9 @@ const Cart = () => {
                     </td>
                     <td className="p-4">
                       {(item.price * item.quantity).toLocaleString()} Ksh
+                    </td>
+                    <td className="p-4 flex justify-center items-center">
+                      <ImBin2 className="text-[#1F2024] text-2xl cursor-pointer" />
                     </td>
                   </tr>
                 ))}
