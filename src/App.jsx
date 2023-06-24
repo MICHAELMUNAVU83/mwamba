@@ -13,6 +13,7 @@ import Team from "./pages/Team";
 import AdminLogin from "./pages/AdminLogin";
 import AdminSignup from "./pages/AdminSignup";
 import AdminHome from "./pages/AdminHome";
+import Shop from "./pages/Shop";
 
 import "./App.css";
 
@@ -49,6 +50,7 @@ function App() {
         <Route path="/kulabu" element={<Kulabu />} />
         <Route path="/kababeri" element={<Kababeri />} />
         <Route path="/news" element={<News />} />
+        <Route path="/shop" element={<Shop />} />
 
         {storedToken ? (
           <Route
