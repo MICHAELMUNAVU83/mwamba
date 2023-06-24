@@ -66,6 +66,33 @@ const Cart = () => {
       });
   };
 
+  const removeFromCart = (id) => {
+    fetch(`http://localhost:3000/api/v1/cart_items/${id}`, {
+      method: "DELETE",
+      headers: {
+        Accepts: "application/json",
+        "Content-Type": "application/json",
+      },
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        toast.success("Item removed from cart", {
+          position: "top-center",
+          autoClose: 2000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "dark",
+        });
+
+        setTimeout(() => {
+          setCartItems(data);
+        }, 1000);
+      });
+  };
+
   useEffect(() => {
     fetch("http://localhost:3000/api/v1/cart_items", {
       method: "GET",
@@ -83,7 +110,7 @@ const Cart = () => {
   return (
     <div className="bg-[#1F2024] min-h-screen flex justify-center items-center">
       <ToastContainer />
-      <div className="flex f  h-[700px] justify-between bg-white w-[80%] mx-auto ">
+      <div className="flex f h-[700px] justify-between bg-white w-[80%] mx-auto ">
         <div className="w-[70%]  flex flex-col h-[100%] p-4">
           <div className="flex justify-between items-center">
             <p className="text-[#1F2024] text-2xl poppins-bold">Cart</p>
@@ -140,7 +167,12 @@ const Cart = () => {
                       {(item.price * item.quantity).toLocaleString()} Ksh
                     </td>
                     <td className="p-4 flex justify-center items-center">
-                      <ImBin2 className="text-[#1F2024] text-2xl cursor-pointer" />
+                      <ImBin2
+                        className="text-[#1F2024] text-2xl cursor-pointer"
+                        onClick={() => {
+                          removeFromCart(item.id);
+                        }}
+                      />
                     </td>
                   </tr>
                 ))}
@@ -149,7 +181,34 @@ const Cart = () => {
           </div>
         </div>
 
-        <div className="w-[30%] h-[100%] bg-gray-300">gh jnmk</div>
+        <div className="w-[30%] p-4 h-[100%] flex flex-col justify-between  bg-gray-300">
+          <div className="flex flex-col gap-2">
+            <div className="flex justify-between items-center">
+              <p className="text-[#1F2024] text-2xl poppins-bold">Cart</p>
+              <p className="text-[#1F2024] text-2xl poppins-bold">
+                {cartItems.length} items
+              </p>
+            </div>
+            <p className="bg-[#1F2024]   h-[2px] w-[100%]" />
+          </div>
+          <div>
+            <p className="h-[2px] w-[100%] bg-[#1F2024]" />
+            <div className="flex justify-between items-center">
+              <p className="text-[#1F2024] text-2xl poppins-bold">Total</p>
+              <p className="text-[#1F2024] text-2xl poppins-bold">
+                {cartItems
+                  .reduce((acc, item) => {
+                    return acc + item.price * item.quantity;
+                  }, 0)
+                  .toLocaleString()}{" "}
+                Ksh
+              </p>
+            </div>
+            <button className="bg-[#1F2024] w-[100%] shadow-xl shadow-white my-4 hover:scale-105 transition-all duration-500 ease-in-out text-white py-2 px-4 rounded-lg">
+              Checkout
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );
