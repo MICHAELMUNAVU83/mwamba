@@ -5,6 +5,12 @@ import hat from "../images/shop/hat.jpeg";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useNavigate } from "react-router-dom";
+import "swiper/css";
+import "swiper/css/autoplay";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay } from "swiper";
+import { MdArrowForwardIos } from "react-icons/md";
+import { MdArrowBackIosNew } from "react-icons/md";
 
 const ShopItems = ({
   storedToken,
@@ -26,6 +32,16 @@ const ShopItems = ({
   const [cart_items, setCartItems] = useState([]);
   const [products, setProducts] = useState([]);
   const navigate = useNavigate();
+
+  const swipe = () => {
+    const swiper = document.querySelector(".swiper-container").swiper;
+    swiper.slideNext();
+  };
+
+  const swipeBack = () => {
+    const swiper = document.querySelector(".swiper-container").swiper;
+    swiper.slidePrev();
+  };
 
   useEffect(() => {
     fetch("http://localhost:3000/api/v1/cart_items")
@@ -329,13 +345,48 @@ const ShopItems = ({
           </div>
 
           <div className="w-[90%] flex justify-between px-8 mx-auto">
-            <div className="w-[45%] flex flex-col justify-start">
-              <img
-                src={selectedProduct.photo}
-                alt=""
-                className="h-[550px] w-[100%] object-cover"
-              />
-              <p className="poppins-bold text-[#1F2024] text-5xl text-start ">
+            <div className="w-[48%] flex flex-col">
+              <div className="flex justify-center items-center">
+                <div
+                  className="bg-[#1F2024] p-2 cursor-pointer"
+                  onClick={swipeBack}
+                >
+                  <MdArrowBackIosNew className="text-white" />
+                </div>
+
+                <Swiper
+                  loop={true}
+                  pagination={{
+                    clickable: true,
+                  }}
+                  autoplay={{
+                    delay: 4000,
+                    disableOnInteraction: false,
+                  }}
+                  modules={[Pagination, Autoplay]}
+                  className="flex justify-center  h-[550px] w-[90%] items-center swiper-container"
+                >
+                  {selectedProduct.rotating_images.map((photo) => (
+                    <SwiperSlide
+                      key={photo}
+                      className="bg-cover cursor-pointer bg-no-repeat h-[550px] text-black  bg-center  "
+                    >
+                      <img
+                        src={photo}
+                        alt={selectedProduct.name}
+                        className="w-[100%] h-[100%]  object-fill"
+                      />
+                    </SwiperSlide>
+                  ))}
+                </Swiper>
+                <div
+                  className="bg-[#1F2024] p-2 cursor-pointer"
+                  onClick={swipe}
+                >
+                  <MdArrowForwardIos className="text-white" />
+                </div>
+              </div>
+              <p className="poppins-bold text-[#1F2024] text-5xl ml-8 text-start ">
                 {selectedProduct.name}
               </p>
             </div>
