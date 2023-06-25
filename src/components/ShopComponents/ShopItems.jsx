@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import shoppic from "../images/shop/shoppic.png";
 import away from "../images/shop/away.jpeg";
 import home from "../images/shop/home.jpeg";
 import hat from "../images/shop/hat.jpeg";
@@ -25,7 +24,7 @@ const ShopItems = ({
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
   const [cart_items, setCartItems] = useState([]);
-
+  const [products, setProducts] = useState([]);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -33,6 +32,14 @@ const ShopItems = ({
       .then((res) => res.json())
       .then((data) => {
         setCartItems(data);
+      });
+  }, []);
+
+  useEffect(() => {
+    fetch("http://localhost:3000/api/v1/products")
+      .then((res) => res.json())
+      .then((data) => {
+        setProducts(data);
       });
   }, []);
 
@@ -265,6 +272,7 @@ const ShopItems = ({
       })
         .then((res) => res.json())
         .then((data) => {
+          console.log(data);
           toast.success("Added to cart", {
             position: "top-center",
             autoClose: 2000,
@@ -323,7 +331,7 @@ const ShopItems = ({
           <div className="w-[90%] flex justify-between px-8 mx-auto">
             <div className="w-[45%] flex flex-col justify-start">
               <img
-                src={selectedProduct.picture}
+                src={selectedProduct.photo}
                 alt=""
                 className="h-[550px] w-[100%] object-cover"
               />
@@ -552,15 +560,15 @@ const ShopItems = ({
       {LoginModal}
       {SignUpModal}
       <div className="flex justify-around w-[90%] mx-auto  p-8">
-        {shop_items.map((item) => (
+        {products.map((item) => (
           <div
             className="bg-[#1F2024] w-[30%] hover:scale-105 transition-all duration-500 ease-out cursor-pointer pb-4 rounded-xl"
             key={item.name}
           >
             <img
-              src={item.picture}
+              src={item.photo}
               alt={item.name}
-              className="w-[100%] h-[300px] object-cover rounded-t-xl "
+              className="w-[100%] h-[300px] rounded-t-xl object-fill"
             />
             <div className="flex flex-col justify-center items-center pt-2">
               <h3 className="text-xl text-white poppins-regular">
@@ -572,7 +580,7 @@ const ShopItems = ({
                   if (storedToken) {
                     setShowProductModal(true);
                     setSelectedProduct(item);
-                    setSelectedImage(item.picture);
+                    setSelectedImage(item.photo);
                   } else {
                     toast.error("Please login to view product", {
                       position: "top-center",
