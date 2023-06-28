@@ -16,12 +16,12 @@ const HomeAbout = () => {
             style={{
               backgroundImage: `url(${aboutpic})`,
             }}
-            className="w-[60%] h-[80vh] bg-cover bg-center bg-no-repeat"
+            className="w-[60%] md:h-[80vh] h-[50vh] bg-cover bg-center bg-no-repeat"
           ></div>
           <div className="flex flex-col justify-evenly poppins-regular text-2xl font-bold h-[80vh] text-white">
             <a
               href="#honoursabout"
-              className="w-[230px] flex items-center rounded-r-2xl justify-center h-[80px] bg-[#1F2024]"
+              className="md:w-[230px] w-[100%] flex items-center rounded-r-2xl justify-center h-[80px] bg-[#1F2024]"
             >
               Honours
             </a>

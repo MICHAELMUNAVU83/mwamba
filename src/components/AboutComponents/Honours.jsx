@@ -6,13 +6,14 @@ import national7spic from "../images/about/national7spic.png";
 
 const Honours = () => {
   return (
-    <div id="honoursabout" className="flex  pb-8 justify-between ">
-      <div className="flex w-[50%] justify-center  items-center  ">
-        <div className="flex  gap-[50px] items-start">
+    <div
+      id="honoursabout"
+      className="flex flex-col-reverse md:flex-row  pb-8 justify-between "
+    >
+      <div className="flex md:w-[50%] w-[100%]  justify-center  items-center  ">
+        <div className="flex  gap-[50px] flex-col md:flex-row md:items-start items-center">
           <div className="flex flex-col justify-center items-center">
-            <div className="text-3xl font-bold  mb-8 poppins-bold ">
-              Men
-            </div>
+            <div className="text-3xl font-bold  mb-8 poppins-bold ">Men</div>
             <div className="flex  poppins-light gap-[50px] items-start">
               <div className="flex flex-col  gap-2 text-center justify-center items-center">
                 <div>
@@ -83,11 +84,9 @@ const Honours = () => {
               </div>
             </div>
           </div>
-          <p className="w-[2px] h-[500px] bg-[#1F2024] " />
+          <p className="md:w-[2px] md:h-[500px]  w-[100%] h-[2px] bg-[#1F2024] " />
           <div className="flex flex-col justify-center items-center">
-            <div className="text-3xl mb-8 poppins-bold font-bold ">
-              Women
-            </div>
+            <div className="text-3xl mb-8 poppins-bold font-bold ">Women</div>
             <div className="flex poppins-light  gap-[50px] items-start">
               <div className="flex flex-col  gap-2 text-center justify-center items-center">
                 <div>
@@ -127,7 +126,7 @@ const Honours = () => {
           </div>
         </div>
       </div>
-      <div className="w-[48%]">
+      <div className="md:w-[48%] w-[100%]">
         <img
           src={honourspic}
           alt=""

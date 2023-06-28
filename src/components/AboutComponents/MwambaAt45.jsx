@@ -7,18 +7,18 @@ const MwambaAt45 = () => {
       id="mwambaat45"
       className="bg-[#1F2024] text-white text-2xl font-bold "
     >
-      <div className="flex  gap-12  items-center">
-        <div className="flex w-[50%]  flex-col  items-center ">
+      <div className="flex  gap-12 flex-col md:flex-row  items-center">
+        <div className="flex md:w-[50%] w-[100%]  flex-col  items-center ">
           <img
             src={mwambaat45}
             alt=""
             className="w-[100%] h-[80vh] object-cover"
           />
-          <p className="h-[17vh] poppins-bold  text-7xl flex justify-center items-center  ">
+          <p className="py-4 poppins-bold text-center  md:text-7xl text-5xl flex justify-center items-center  ">
             Mwamba at 45
           </p>
         </div>
-        <div className="w-[45%] poppins-regular">
+        <div className="md:w-[45%] w-[100%] px-6 md:px-0 poppins-regular">
           <p>
             Click here to Pre-order the up coming limited edition Mwamba 45th
             anniversary coffee table book. The book is only{" "}

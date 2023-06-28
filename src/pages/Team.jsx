@@ -249,9 +249,9 @@ const Team = () => {
     },
   ];
   return (
-    <div className="bg-[#1F2024]  pt-40 px-8">
-      <h1 className="my-4 text-white text-7xl poppins-bold">Men's Team</h1>
-      <div className="grid grid-cols-4 gap-[18px]">
+    <div className="bg-[#1F2024]  md:pt-40 pt-24 px-8">
+      <h1 className="my-4 text-white md:text-7xl text-5xl poppins-bold">Men's Team</h1>
+      <div className="grid md:grid-cols-4 gap-[18px]">
         {team_members.map((item) => (
           <div className="flex flex-col justify-center items-center bg-white  text-[#1F2024]">
             <img

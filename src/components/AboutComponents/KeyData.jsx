@@ -41,8 +41,8 @@ const KeyData = () => {
       id="keydataabout"
       className="bg-[#1F2024] text-white text-2xl font-bold "
     >
-      <div className="flex    items-center">
-        <div className="flex w-[50%]  flex-col  items-center ">
+      <div className="flex flex-col md:flex-row   items-center">
+        <div className="flex md:w-[50%] w-[100%]  flex-col  items-center ">
           <img
             src={keydata}
             alt=""
@@ -52,7 +52,7 @@ const KeyData = () => {
             Key Data
           </p>
         </div>
-        <div className="flex w-[50%] px-8 flex-col gap-2">
+        <div className="flex md:w-[50%] w-[100%] py-4 md:py-0 px-8 flex-col gap-2">
           {data.map((item) => (
             <div className="flex justify-around   items-center">
               <p className="poppins-bold text-3xl w-[100%]">
