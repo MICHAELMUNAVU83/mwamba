@@ -66,7 +66,7 @@ const Standings = () => {
   return (
     <div id="standings" className="bg-[#1E1E1E] flex flex-col justify-between  min-h-[100vh]">
       <div className="flex pt-8 flex-col gap-2 items-start justify-end">
-        <select className="bg-white text-[#1E1E1E] rounded-r-3xl w-[500px] h-[80px] text-2xl font-bold">
+        <select className="bg-white text-[#1E1E1E] rounded-r-3xl md:w-[500px] w-[300px] md:h-[80px] h-[50px] text-2xl font-bold">
           <option value="2018/2019 Kenya Cup">2018/2019 Kenya Cup</option>
           <option value="2018/2019 Kenya Cup">2020/2021 Kenya Cup</option>
         </select>
@@ -115,7 +115,7 @@ const Standings = () => {
                   >
                     {standing.pos}
                   </th>
-                  <td className="px-6 py-4">{standing.team}</td>
+                  <td className="px-6  text-xs md:text-md  py-4">{standing.team}</td>
                   <td className="px-6 py-4">{standing.p}</td>
                   <td className="px-6 py-4">{standing.w}</td>
                   <td className="px-6 py-4">{standing.l}</td>

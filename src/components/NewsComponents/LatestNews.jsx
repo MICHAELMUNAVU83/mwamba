@@ -27,39 +27,46 @@ const LatestNews = () => {
     },
   ];
   return (
-    <div id="latestnews" className="flex justify-between ">
-      <div
-        className="w-[4%] cursor-pointer bg-[#1F2024] text-white flex flex-col justify-center items-center"
-        onClick={swipe}
-      >
-        <MdOutlineArrowBackIosNew className="text-2xl" />
-      </div>
-      <div className="w-[48%] flex flex-col justify-center items-center">
-        <Swiper className="swiper-container w-[100%] " loop={true}>
-          {slides.map((slide) => (
-            <SwiperSlide className="flex cursor-pointer py-8 justify-center items-center ">
-              <div className="flex flex-col justify-start  px-8">
-                <p className="text-2xl font-bold poppins-bold w-[80%]">{slide.title}</p>
-                <p className="text-xl poppins-regular font-semibold">
-                  Column by {slide.author}
-                </p>
-                <p className="w-[525px] poppins-light">{slide.excerpt}</p>
-                <button className="uppercase poppins-bold bg-white w-[525px] h-[57px] font-bold mt-4 hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer shadow-md shadow-gray-500 rounded-lg ">
-                  Read More
-                </button>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+    <div
+      id="latestnews"
+      className="flex justify-between flex-col-reverse md:flex-row  "
+    >
+      <div className="md:w-[48%]  w-[100%] flex flex-row  justify-center items-center">
+        <div
+          className="w-[6%] px-4 cursor-pointer bg-[#1F2024] text-white flex flex-col md:h-[100%] h-[500px] justify-center items-center"
+          onClick={swipe}
+        >
+          <MdOutlineArrowBackIosNew className="text-2xl" />
+        </div>
+        <div className="w-[94%] ">
+          <Swiper className="swiper-container w-[100%] " loop={true}>
+            {slides.map((slide) => (
+              <SwiperSlide className="flex cursor-pointer py-8  justify-center items-center ">
+                <div className="flex flex-col justify-start  px-8">
+                  <p className="md:text-2xl font-bold poppins-bold w-[80%]">
+                    {slide.title}
+                  </p>
+                  <p className="md:text-xl poppins-regular font-semibold">
+                    Column by {slide.author}
+                  </p>
+                  <p className="md:w-[525px] poppins-light">{slide.excerpt}</p>
+                  <button className="uppercase poppins-bold bg-white md:w-[525px] h-[57px] font-bold mt-4 hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer shadow-md shadow-gray-500 rounded-lg ">
+                    Read More
+                  </button>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
       </div>
 
-      <div className="w-[48%] flex flex-col justify-center items-center">
+      <div className="md:w-[48%] flex flex-col justify-center items-center">
         <img
           src={latestnews}
           alt=""
           className="w-[100%] h-[80vh] object-cover bg-cover bg-center bg-no-repeat"
         />
-        <p className="text-7xl py-8 font-bold">Latest News</p>
+        <p className="md:text-7xl text-5xl py-8 font-bold">Latest News</p>
       </div>
     </div>
   );

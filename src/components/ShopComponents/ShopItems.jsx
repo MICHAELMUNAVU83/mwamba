@@ -482,7 +482,7 @@ const ShopItems = ({
   );
 
   const LoginModal = showLoginModal && (
-    <div className="fixed poppins-regular bg-white shadow-xl h-[500px] my-auto w-[50%] inset-0 bg-opacity z-10 flex flex-col justify-center items-center   mx-auto">
+    <div className="fixed poppins-regular bg-white shadow-xl h-[500px] my-auto md:w-[50%] w-[80%] inset-0 bg-opacity z-10 flex flex-col justify-center items-center   mx-auto">
       <div className="flex justify-end w-full p-4">
         <button
           className=" bg-[#1F2024] text-white px-4 py-2 rounded-lg"
@@ -493,9 +493,9 @@ const ShopItems = ({
           X
         </button>
       </div>
-      <div className="w-[90%] flex flex-col  justify-center items-center px-8 mx-auto">
+      <div className="md:w-[90%] flex flex-col  justify-center items-center md:px-8 mx-auto">
         <h1 class="text-4xl font-bold mb-4">Login</h1>
-        <div class="flex flex-col w-[80%]">
+        <div class="flex flex-col md:w-[80%]">
           <label>Email</label>
           <input
             type="text"
@@ -538,7 +538,7 @@ const ShopItems = ({
   );
 
   const SignUpModal = showSignupModal && (
-    <div className="fixed poppins-regular bg-white shadow-xl h-[500px] my-auto w-[50%] inset-0 bg-opacity z-10 flex flex-col justify-center items-center   mx-auto">
+    <div className="fixed poppins-regular bg-white shadow-xl h-[500px] my-auto md:w-[50%] w-[80%] inset-0 bg-opacity z-10 flex flex-col justify-center items-center   mx-auto">
       <div className="flex justify-end w-full p-4">
         <button
           className=" bg-[#1F2024] text-white px-4 py-2 rounded-lg"
@@ -549,9 +549,9 @@ const ShopItems = ({
           X
         </button>
       </div>
-      <div className="w-[90%] flex flex-col  justify-center items-center px-8 mx-auto">
+      <div className="md:w-[90%] flex flex-col  justify-center items-center md:px-8 mx-auto">
         <h1 class="text-4xl font-bold mb-4">Sign Up</h1>
-        <div class="flex flex-col w-[80%]">
+        <div class="flex flex-col md:w-[80%]">
           <label>Username</label>
           <input
             type="text"
@@ -603,17 +603,17 @@ const ShopItems = ({
 
   return (
     <div>
-      <p className="poppins-bold text-[80px] text-[#1F2024] text-start py-8">
+      <p className="poppins-bold md:text-[80px] text-5xl text-[#1F2024] text-start py-8">
         Get Mwamba Merch
       </p>
       {ProductModal}
 
       {LoginModal}
       {SignUpModal}
-      <div className="flex justify-around w-[90%] mx-auto  p-8">
+      <div className="flex flex-col md:flex-row gap-8 justify-around md:w-[90%] w-[95%] mx-auto  p-8">
         {products.map((item) => (
           <div
-            className="bg-[#1F2024] w-[30%] hover:scale-105 transition-all duration-500 ease-out cursor-pointer pb-4 rounded-xl"
+            className="bg-[#1F2024] md:w-[30%] hover:scale-105 transition-all duration-500 ease-out cursor-pointer pb-4 rounded-xl"
             key={item.name}
           >
             <img
