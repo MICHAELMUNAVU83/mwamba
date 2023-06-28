@@ -374,7 +374,7 @@ const ShopItems = ({
                       <img
                         src={photo}
                         alt={selectedProduct.name}
-                        className="w-[100%] h-[100%]  object-fill"
+                        className="w-[100%] h-[100%]  object-contain"
                       />
                     </SwiperSlide>
                   ))}

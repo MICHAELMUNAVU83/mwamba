@@ -12,16 +12,13 @@ const KababeriHome = () => {
     >
       <div className="h-[100vh] bg-[#1F2024]/50 ">
         <div className="w-[60%] flex items-center h-[80vh]">
-          <div
-            style={{
-              backgroundImage: `url(${kababeripic})`,
-            }}
-            className="w-[80%] h-[80vh] bg-cover bg-right bg-no-repeat"
-          ></div>
+          <div className="w-[80%] h-[80vh]">
+            <img src={kababeripic} alt="" className="w-[100%] object-fill h-[100%]" />
+          </div>
           <div className="flex flex-col poppins-regular justify-center gap-8 text-2xl font-bold h-[80vh] text-white">
             <a
               href="#kababerihistory"
-              className="w-[295px] flex items-center rounded-r-2xl justify-center h-[80px] bg-white text-[#1F2024]"
+              className="w-[295px] flex items-center rounded-r-2xl justify-center h-[80px] bg-white text-[#1F2024] "
             >
               History
             </a>
@@ -36,6 +33,13 @@ const KababeriHome = () => {
               className="w-[295px] flex items-center rounded-r-2xl justify-center h-[80px] bg-white text-[#1F2024]"
             >
               Opportunities
+            </a>
+
+            <a
+              href="#kababerivending"
+              className="w-[295px] flex items-center rounded-r-2xl justify-center h-[80px] bg-white text-[#1F2024]"
+            >
+              Buy Tickets
             </a>
           </div>
         </div>
