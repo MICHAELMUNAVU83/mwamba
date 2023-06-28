@@ -70,7 +70,7 @@ const Tiers = () => {
 
   return (
     <div id="membershiptiers" className="bg-[#1E1E1E] py-24">
-      <div className="flex justify-center items-center gap-[40px]">
+      <div className="flex flex-col md:flex-row justify-center items-center gap-[40px]">
         {tiers.map((tier) => (
           <div className="w-[315px] cursor-pointer shadow-md transition-all duration-500 ease-in-out  hover:shadow-gray-300 p-8 h-[573px] bg-white  flex justify-between flex-col items-center">
             <div className="bg-[#F1F1F1] poppins-bold w-[239px] font-bold uppercase h-[35px] flex justify-center items-center">
@@ -103,7 +103,7 @@ const Tiers = () => {
         ))}
       </div>
 
-      <p className="p-8 font-bold poppins-bold text-white text-7xl">
+      <p className="p-8 font-bold poppins-bold text-white md:text-7xl text-5xl">
         Membership Tiers
       </p>
     </div>

@@ -40,44 +40,46 @@ const Testimonials = () => {
   return (
     <div
       id="membertestimonials"
-      className="flex justify-between  bg-[#1F2024] text-white"
+      className="flex flex-col md:flex-row justify-between  bg-[#1F2024] text-white"
     >
-      <div className="w-[48%] flex flex-col justify-center items-center">
+      <div className="md:w-[48%] flex flex-col justify-center items-center">
         <img
           src={kulabutestimonial}
           alt=""
           className="w-[100%] h-[80vh] object-cover bg-cover bg-center bg-no-repeat"
         />
-        <p className="text-7xl py-8 font-bold">Testimonials</p>
+        <p className="md:text-7xl text-5xl py-8 font-bold">Testimonials</p>
       </div>
 
-      <div className="w-[48%] flex flex-col justify-center items-center">
-        <Swiper className="swiper-container w-[100%] " loop={true}>
-          {slides.map((slide) => (
-            <SwiperSlide className="flex cursor-pointer justify-center items-center ">
-              <div className="flex flex-col justify-start">
-                <div className="flex items-center justify-start gap-4">
-                  <img
-                    src={slide.profile}
-                    alt=""
-                    className="w-[50px] h-[50px] object-cover rounded-full"
-                  />
-                  <div className="flex flex-col justify-center items-start">
-                    <p className="text-2xl font-bold">{slide.name}</p>
-                    <p className="text-xl font-bold">{slide.position}</p>
+      <div className="md:w-[48%] w-[100%] py-4 md:py-0  flex  justify-center items-center">
+        <div className="w-[96%] ">
+          <Swiper className="swiper-container w-[100%]  mx-auto " loop={true}>
+            {slides.map((slide) => (
+              <SwiperSlide className="flex cursor-pointer mx-2 justify-center items-center ">
+                <div className="flex flex-col justify-start">
+                  <div className="flex items-center justify-start gap-4">
+                    <img
+                      src={slide.profile}
+                      alt=""
+                      className="md:w-[50px] md:h-[50px] w-[30px] h-[30px] object-cover rounded-full"
+                    />
+                    <div className="flex flex-col justify-center items-start">
+                      <p className="md:text-2xl text-xl font-bold">{slide.name}</p>
+                      <p className="md:text-xl font-bold">{slide.position}</p>
+                    </div>
                   </div>
+                  <p className="w-[80%] text-sm">{slide.testimonial}</p>
                 </div>
-                <p className="w-[440px]">{slide.testimonial}</p>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
-      <div
-        className="w-[4%] cursor-pointer bg-white text-[#1F2024] flex flex-col justify-center items-center"
-        onClick={swipe}
-      >
-        <MdOutlineArrowForwardIos className="text-2xl" />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+        <div
+          className="w-[4%] cursor-pointer bg-white text-[#1F2024] h-[200px] md:h-[100%] flex items-center"
+          onClick={swipe}
+        >
+          <MdOutlineArrowForwardIos className="text-2xl" />
+        </div>
       </div>
     </div>
   );

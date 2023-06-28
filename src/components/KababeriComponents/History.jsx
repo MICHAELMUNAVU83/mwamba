@@ -3,9 +3,9 @@ import kababerihistory from "../images/kababeri/kababerihistory.png";
 
 const History = () => {
   return (
-    <div id="kababerihistory" className="flex justify-between items-center">
-      <div className="w-[50%] flex justify-center items-center">
-        <p className="w-[610px] poppins-light mx-auto">
+    <div id="kababerihistory" className="flex justify-between md:flex-row flex-col-reverse items-center">
+      <div className="md:w-[50%] flex justify-center items-center">
+        <p className="md:w-[610px] p-4 md:p-0 poppins-light mx-auto">
           The George Mwangi Kabeberi Memorial Sevens, popularly known as the
           Kabeberi Sevens, was first played in 1986 to commemorate the passing
           away of the charismatic George Mwangi Kabeberi, one of the founding
@@ -17,7 +17,7 @@ const History = () => {
         </p>
       </div>
 
-      <div className="w-[50%] flex flex-col justify-center items-center">
+      <div className="md:w-[50%] w-[100%] flex flex-col justify-center items-center">
         <img
           src={kababerihistory}
           alt=""
