@@ -8,10 +8,10 @@ import { IoIosArrowForward } from "react-icons/io";
 import { Link } from "react-router-dom";
 const Home = () => {
   return (
-    <div class="h-[100vh] flex justify-center">
-      <div className="w-2/5 ">
+    <div class="md:h-[100vh] flex flex-col md:flex-row justify-center">
+      <div className="md:w-2/5 ">
         <div to="/about"
-          className="h-[80vh] bg-center bg-cover bg-no-repeat"
+          className="md:h-[80vh] md:bg-center bg-top bg-cover bg-no-repeat"
           style={{ backgroundImage: `url(${homeabout})` }}
         >
           <Link to ="/about" className="h-[80vh] flex items-end justify-end pb-12 ">
@@ -29,10 +29,10 @@ const Home = () => {
           </h1>
         </Link>
       </div>
-      <div className="w-3/5   flex flex-col ">
-        <div className=" flex w-[100%] h-[50vh]">
+      <div className="md:w-3/5   flex flex-col m ">
+        <div className=" flex md:flex-row flex-col w-[100%] md:h-[50vh]">
           <div
-            className="w-[60%] bg-center bg-cover bg-no-repeat"
+            className="md:w-[60%] bg-center bg-cover bg-no-repeat"
             style={{ backgroundImage: `url(${homeat45})` }}
           >
             <Link to="/team" className="h-[50vh] flex items-end justify-end pb-12 ">
@@ -42,7 +42,7 @@ const Home = () => {
             </Link>
           </div>
           <div
-            className="w-[40%] bg-center bg-cover bg-no-repeat"
+            className="md:w-[40%] bg-center bg-cover bg-no-repeat"
             style={{
               backgroundImage: `url(${homekababeri})`,
             }}
@@ -54,9 +54,9 @@ const Home = () => {
             </Link>
           </div>
         </div>
-        <div className="bg-[#1F2024] flex w-[100%] h-[50vh]">
+        <div className="bg-[#1F2024] flex md:flex-row flex-col w-[100%] md:h-[50vh]">
           <div
-            className="w-[40%] bg-center bg-cover bg-no-repeat"
+            className="md:w-[40%] bg-center bg-cover bg-no-repeat"
             style={{
               backgroundImage: `url(${homeclubnews})`,
             }}
@@ -68,7 +68,7 @@ const Home = () => {
             </Link>
           </div>
           <div
-            className="w-[60%] bg-center bg-cover bg-no-repeat"
+            className="md:w-[60%] bg-center bg-cover bg-no-repeat"
             style={{ backgroundImage: `url(${homeshop})` }}
           >
             <div className="h-[50vh] flex items-end justify-end pb-12 ">

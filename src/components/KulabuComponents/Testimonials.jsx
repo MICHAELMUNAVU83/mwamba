@@ -52,7 +52,7 @@ const Testimonials = () => {
       </div>
 
       <div className="md:w-[48%] w-[100%] py-4 md:py-0  flex  justify-center items-center">
-        <div className="w-[96%] ">
+        <div className="w-[94%] ">
           <Swiper className="swiper-container w-[100%]  mx-auto " loop={true}>
             {slides.map((slide) => (
               <SwiperSlide className="flex cursor-pointer mx-2 justify-center items-center ">
@@ -75,7 +75,7 @@ const Testimonials = () => {
           </Swiper>
         </div>
         <div
-          className="w-[4%] cursor-pointer bg-white text-[#1F2024] h-[200px] md:h-[100%] flex items-center"
+          className="w-[6%] cursor-pointer bg-white text-[#1F2024] h-[200px] md:h-[100%] flex items-center"
           onClick={swipe}
         >
           <MdOutlineArrowForwardIos className="text-2xl" />

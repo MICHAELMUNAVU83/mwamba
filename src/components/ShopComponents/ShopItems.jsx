@@ -168,66 +168,6 @@ const ShopItems = ({
     setPassword("");
   };
 
-  const shop_items = [
-    {
-      id: 1,
-      name: "Home Jersey",
-      picture: home,
-      categories: [
-        {
-          name: "kiddie",
-
-          sizes: ["small", "medium", "large", "extra large"],
-          price: 2000,
-        },
-        {
-          name: "adult",
-
-          sizes: ["small", "medium", "large", "extra large"],
-          price: 4000,
-        },
-      ],
-    },
-    {
-      id: 2,
-      name: "Away Jersey",
-      picture: away,
-      categories: [
-        {
-          name: "kiddie",
-
-          sizes: ["small", "medium", "large"],
-          price: 500,
-        },
-        {
-          name: "adult",
-
-          sizes: ["small", "medium", "large", "extra large"],
-          price: 1000,
-        },
-      ],
-    },
-    {
-      id: 3,
-      name: "hat",
-      picture: hat,
-      categories: [
-        {
-          name: "kiddie",
-
-          sizes: ["small", "medium", "large", "extra large"],
-          price: 3000,
-        },
-        {
-          name: "adult",
-
-          sizes: ["small", "medium", "large", "extra large"],
-          price: 5000,
-        },
-      ],
-    },
-  ];
-
   const addToCart = (e) => {
     e.preventDefault();
     if (
@@ -332,7 +272,7 @@ const ShopItems = ({
   const ProductModal = (
     <div>
       {showProductModal && (
-        <div className="fixed poppins-regular bg-white shadow-xl h-[800px] my-auto w-[70%] inset-0 bg-opacity z-10 flex flex-col   mx-auto">
+        <div className="fixed poppins-regular bg-white shadow-xl h-[800px] overflow-scroll my-auto md:w-[70%] w-[85%] inset-0 bg-opacity z-10 flex flex-col   mx-auto">
           <div className="flex justify-end w-full p-4">
             <button
               className=" bg-[#1F2024] text-white px-4 py-2 rounded-lg"
@@ -344,8 +284,8 @@ const ShopItems = ({
             </button>
           </div>
 
-          <div className="w-[90%] flex justify-between px-8 mx-auto">
-            <div className="w-[48%] flex flex-col">
+          <div className="w-[90%] flex flex-col md:flex-row justify-between md:px-8 px-2 mx-auto">
+            <div className="md:w-[48%] flex flex-col">
               <div className="flex justify-center items-center">
                 <div
                   className="bg-[#1F2024] p-2 cursor-pointer"
@@ -364,7 +304,7 @@ const ShopItems = ({
                     disableOnInteraction: false,
                   }}
                   modules={[Pagination, Autoplay]}
-                  className="flex justify-center  h-[550px] w-[90%] items-center swiper-container"
+                  className="flex justify-center  md:h-[550px] h-[200px]  md:w-[90%] w-[100%] items-center swiper-container"
                 >
                   {selectedProduct.rotating_images.map((photo) => (
                     <SwiperSlide
@@ -374,7 +314,7 @@ const ShopItems = ({
                       <img
                         src={photo}
                         alt={selectedProduct.name}
-                        className="w-[100%] h-[100%]  object-contain"
+                        className=" md:w-[100%] h-[200px] md:h-[100%]  object-contain"
                       />
                     </SwiperSlide>
                   ))}
@@ -386,13 +326,13 @@ const ShopItems = ({
                   <MdArrowForwardIos className="text-white" />
                 </div>
               </div>
-              <p className="poppins-bold text-[#1F2024] text-5xl ml-8 text-start ">
+              <p className="poppins-bold text-[#1F2024] md:text-5xl ml-8 text-start ">
                 {selectedProduct.name}
               </p>
             </div>
 
-            <div className="w-[45%] flex flex-col justify-start">
-              <p className="poppins-regular text-gray-700 text-3xl ">
+            <div className="md:w-[45%] w-[100%] flex flex-col justify-start">
+              <p className="poppins-regular text-gray-700 md:text-3xl text-xl ">
                 Categories Avaliable
               </p>
               <div className="flex flex-col justify-start">
@@ -405,7 +345,7 @@ const ShopItems = ({
                     <div className="flex flex-row gap-4 justify-start">
                       {category.sizes.map((size) => (
                         <div className="flex flex-col justify-start">
-                          <p className="poppins-light border-2 border-gray-400  text-sm p-2 hover:bg-gray-400 hover:text-white cursor-pointer text-[#1F2024]  text-start ">
+                          <p className="poppins-light border-2 border-gray-400  md:text-sm text-xs p-2 hover:bg-gray-400 hover:text-white cursor-pointer text-[#1F2024]  text-start ">
                             {size}
                           </p>
                         </div>
@@ -468,7 +408,7 @@ const ShopItems = ({
 
               <div className="flex flex-col justify-center items-center">
                 <button
-                  className="bg-[#1F2024] w-[40%] mxauto  hover:scale-105 transition-all duration-500 ease-in-out text-white px-4 py-2 rounded-md my-4"
+                  className="bg-[#1F2024] md:w-[40%] w-[80%] mx-auto  hover:scale-105 transition-all duration-500 ease-in-out text-white px-4 py-2 rounded-md my-4"
                   onClick={addToCart}
                 >
                   Add to Cart
