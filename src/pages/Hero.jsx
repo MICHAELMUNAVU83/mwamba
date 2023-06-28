@@ -80,8 +80,8 @@ const Hero = () => {
         >
           <div className="poppins-bold h-full bg-[#1F2024]/40">
             <div className="flex flex-col items-start p-12 text-white justify-center h-[100vh]">
-              <h1 className="text-[80px] font-bold">{slide.text1} </h1>
-              <h1 className="text-[60px] font-bold">{slide.text2}</h1>
+              <h1 className="md:text-[80px]  text-5xl font-bold">{slide.text1} </h1>
+              <h1 className="md:text-[60px] text-5xl font-bold">{slide.text2}</h1>
             </div>
           </div>
         </SwiperSlide>
