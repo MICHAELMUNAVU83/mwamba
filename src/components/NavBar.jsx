@@ -6,21 +6,22 @@ import { Link } from "react-router-dom";
 const NavBar = ({ setStoredToken, storedToken }) => {
   const [show, setShow] = useState(false);
   return (
-    <div class="fixed top-0 w-full z-10 ease-in duration-300 px-12 py-2">
+    <div class="fixed top-0 w-full z-10 ease-in duration-300 md:px-12 px-2 py-2">
       <div class="flex items-center justify-between">
         <Link to="/">
           <img
             src={logo}
             alt="logo"
-            className="h-[120px] object-cover w-[90px]"
+            className="md:h-[120px] h-[80px] object-cover md:w-[90px]"
           />
         </Link>
 
         <img
           src={bars}
           alt="bars"
+       
           onClick={() => setShow(!show)}
-          className={show ? `hidden object-cover` : `flex object-cover`}
+          className={show ? `hidden object-cover ` : `flex md:h-[60px]  h-[40px] object-cover`}
         />
       </div>
       <div

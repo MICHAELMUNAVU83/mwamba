@@ -8,13 +8,13 @@ const Footer = () => {
   return (
     <div className=" py-8 bg-[#1F2024] text-white">
       <div class="mx-auto  w-[75%]">
-        <div class="flex flex-col md:flex-row justify-between">
-          <BsInstagram className="text-6xl" />
-          <BsFacebook className="text-6xl" />
-          <BsTwitter className="text-6xl" />
-          <ImWhatsapp className="text-6xl" />
+        <div class="flex  flex-row justify-between">
+          <BsInstagram className="md:text-6xl  text-3xl" />
+          <BsFacebook className="md:text-6xl  text-3xl" />
+          <BsTwitter className="md:text-6xl  text-3xl" />
+          <ImWhatsapp className="md:text-6xl  text-3xl" />
 
-          <SiGmail className="text-6xl" />
+          <SiGmail className="md:text-6xl  text-3xl" />
         </div>
         <p className="bg-white h-[2px] w-[100%] my-4" />
         <div className="flex uppercase my-4 justify-between items-center">
@@ -23,7 +23,7 @@ const Footer = () => {
 
           <p>Cookie Policy</p>
         </div>
-        <p className="text-center flex justify-center items-center">
+        <p className="text-center flex flex-col md:flex-row md:text-md text-xs justify-center items-center">
           © COPYRIGHT{""}
           <p className="mx-2">
             {currentYear} | MWAMBA RUGBY FOOTBALL CLUB | ALL RIGHTS RESERVED
