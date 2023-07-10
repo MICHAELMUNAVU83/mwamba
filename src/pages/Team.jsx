@@ -220,32 +220,32 @@ const Team = () => {
     {
       id: 31,
       image: team31,
-      name: "Paul Opiyo",
-      position: "Team Manager",
+      name: "Kerry Opiyo",
+      position: "Full Back",
     },
     {
       id: 32,
       image: team32,
-      name: "Kerry Otieno",
-      position: "Winger",
+      name: "Yahya Hussein",
+      position: "Flanker",
     },
     {
       id: 33,
       image: team33,
-      name: "Paul Opiyo",
-      position: "Team Manager",
+      name: "Chrispin Omondi",
+      position: "Winger",
     },
     {
       id: 34,
       image: team34,
-      name: "Crispin Omondi",
-      position: "Winger",
+      name: "Michael Ochieng",
+      position: "Fly Half",
     },
     {
       id: 35,
       image: team35,
-      name: "Michael Ochieng",
-      position: "Fly Half",
+      name: "Alex Aturo",
+      position: "Flanker",
     },
   ];
   return (
@@ -253,9 +253,9 @@ const Team = () => {
       <h1 className="my-4 text-white md:text-7xl text-5xl poppins-bold">
         Men's Team
       </h1>
-      <div className="grid md:grid-cols-4 gap-[18px]">
+      <div className="grid md:grid-cols-4 gap-[30px]">
         {team_members.map((item) => (
-          <div className="flex flex-col justify-center items-center bg-white  text-[#1F2024]">
+          <div className="flex flex-col justify-center cursor-pointer hover:scale-105 transition-all duration-500 ease-in-out items-center bg-white  text-[#1F2024]">
             <img
               src={item.image}
               alt=""

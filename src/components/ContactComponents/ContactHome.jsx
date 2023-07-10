@@ -1,20 +1,21 @@
 import React from "react";
-import kulabubg from "../images/kulabu/kulabubg.png";
-import kulabupic from "../images/kulabu/kulabupic.png";
+
+import contactspic from "../images/contacts/contactspic.png";
+import contactsbg from "../images/contacts/contactsbg.png";
 
 const ContactHome = () => {
   return (
     <div
       className="h-[100vh] bg-cover bg-center bg-no-repeat"
       style={{
-        backgroundImage: `url(${kulabubg})`,
+        backgroundImage: `url(${contactsbg})`,
       }}
     >
       <div className="h-[100vh] bg-[#1F2024]/50 ">
-        <div className="w-[60%] flex items-center h-[80vh]">
+        <div className="w-[40%] flex items-center h-[80vh]">
           <div
             style={{
-              backgroundImage: `url(${kulabupic})`,
+              backgroundImage: `url(${contactspic})`,
             }}
             className="w-[80%] h-[80vh] bg-cover bg-center bg-no-repeat"
           ></div>
