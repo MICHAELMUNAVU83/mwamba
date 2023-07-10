@@ -5,7 +5,7 @@ import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 
 import "react-toastify/dist/ReactToastify.css";
-const ContactBenefits = () => {
+const ContactForm = () => {
   const form = useRef();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -138,4 +138,4 @@ const ContactBenefits = () => {
   );
 };
 
-export default ContactBenefits;
+export default ContactForm;

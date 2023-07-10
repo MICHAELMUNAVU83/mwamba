@@ -1,12 +1,12 @@
 import React from "react";
-import ContactBenefits from "../components/ContactBenefits/ContactBenefits";
-import ContactHome from "../components/ContactBenefits/ContactHome";
+import ContactForm from "../components/ContactComponents/ContactForm";
+import ContactHome from "../components/ContactComponents/ContactHome";
 
 const Contacts = () => {
   return (
     <div>
       <ContactHome />
-      <ContactBenefits />
+      <ContactForm />
     </div>
   );
 };
