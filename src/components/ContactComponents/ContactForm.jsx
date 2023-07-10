@@ -24,7 +24,7 @@ const ContactForm = () => {
         pauseOnHover: true,
         draggable: true,
         progress: undefined,
-        theme: "colored",
+        theme: "dark",
       });
     } else {
       emailjs
@@ -50,7 +50,7 @@ const ContactForm = () => {
                 pauseOnHover: true,
                 draggable: true,
                 progress: undefined,
-                theme: "colored",
+                theme: "dark",
               });
             }, 1000);
           },

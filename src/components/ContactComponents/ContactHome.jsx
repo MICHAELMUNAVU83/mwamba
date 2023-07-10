@@ -17,7 +17,7 @@ const ContactHome = () => {
             style={{
               backgroundImage: `url(${contactspic})`,
             }}
-            className="w-[80%] h-[80vh] bg-cover bg-center bg-no-repeat"
+            className="w-[80%] h-[80vh] bg-cover bg-left bg-no-repeat"
           ></div>
         </div>
         <div className="flex poppins-bold h-[20vh] text-[100px] w-[100%] justify-start p-12 items-center text-white  font-bold">
