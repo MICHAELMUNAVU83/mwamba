@@ -71,7 +71,7 @@ const Hero = () => {
   const advertModal = (
     <div>
       {showAdvertModal && (
-        <div className="fixed poppins-regular bg-white shadow-xl h-[80%] overflow-scroll my-auto md:w-[30%] w-[55%] inset-0 bg-opacity z-10 flex flex-col   mx-auto">
+        <div className="fixed poppins-regular bg-white shadow-xl h-[80%] overflow-scroll my-auto md:w-[30%] w-[85%] inset-0 bg-opacity z-10 flex flex-col   mx-auto">
           <div className="flex justify-end w-full p-4">
             <button
               className=" bg-[#1F2024] text-white px-4 py-2 rounded-lg"
@@ -82,7 +82,7 @@ const Hero = () => {
               X
             </button>
           </div>
-          <div className="flex flex-col justify-center items-center">
+          <div className="flex flex-col text-center justify-center items-center">
             <p>GET YOUR TICKETS NOW FOR THE KABABERI 7S !!</p>
             <a
               href="https://apps.little.africa/events/2023-george-mwangi-kabeberi-sevens-"
