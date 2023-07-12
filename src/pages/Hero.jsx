@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "swiper/css";
 import "swiper/css/autoplay";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -58,35 +58,73 @@ const Hero = () => {
       text2: "Football Club",
     },
   ];
-  return (
-    <Swiper
-      loop={true}
-      pagination={{
-        clickable: true,
-      }}
-      autoplay={{
-        delay: 4000,
-        disableOnInteraction: false,
-      }}
-      modules={[Pagination, Autoplay]}
-      id="home"
-      className="flex justify-center  h-[100vh]  items-center swiper-container"
-    >
-      {slides.map((slide) => (
-        <SwiperSlide
-          key={slide.id}
-          style={{ backgroundImage: `url(${slide.image})` }}
-          className="bg-cover cursor-pointer bg-no-repeat h-[100vh]  bg-center w-full "
-        >
-          <div className="poppins-bold h-full bg-[#1F2024]/40">
-            <div className="flex flex-col items-start p-12 text-white justify-center h-[100vh]">
-              <h1 className="md:text-[80px]  text-5xl font-bold">{slide.text1} </h1>
-              <h1 className="md:text-[60px] text-5xl font-bold">{slide.text2}</h1>
-            </div>
+
+  const [showAdvertModal, setShowAdvertModal] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setShowAdvertModal(true);
+    }, 2000);
+  }, []);
+
+  const advertModal = (
+    <div>
+      {showAdvertModal && (
+        <div className="fixed poppins-regular bg-white shadow-xl h-[400px] overflow-scroll my-auto md:w-[30%] w-[55%] inset-0 bg-opacity z-10 flex flex-col   mx-auto">
+          <div className="flex justify-end w-full p-4">
+            <button
+              className=" bg-[#1F2024] text-white px-4 py-2 rounded-lg"
+              onClick={() => {
+                setShowAdvertModal(false);
+              }}
+            >
+              X
+            </button>
           </div>
-        </SwiperSlide>
-      ))}
-    </Swiper>
+          <div className="flex flex-col justify-center items-center">
+            Ads go here
+          </div>
+        </div>
+      )}
+    </div>
+  );
+
+  return (
+    <>
+      {advertModal}
+      <Swiper
+        loop={true}
+        pagination={{
+          clickable: true,
+        }}
+        autoplay={{
+          delay: 4000,
+          disableOnInteraction: false,
+        }}
+        modules={[Pagination, Autoplay]}
+        id="home"
+        className="flex justify-center  h-[100vh]  items-center swiper-container"
+      >
+        {slides.map((slide) => (
+          <SwiperSlide
+            key={slide.id}
+            style={{ backgroundImage: `url(${slide.image})` }}
+            className="bg-cover cursor-pointer bg-no-repeat h-[100vh]  bg-center w-full "
+          >
+            <div className="poppins-bold h-full bg-[#1F2024]/40">
+              <div className="flex flex-col items-start p-12 text-white justify-center h-[100vh]">
+                <h1 className="md:text-[80px]  text-5xl font-bold">
+                  {slide.text1}{" "}
+                </h1>
+                <h1 className="md:text-[60px] text-5xl font-bold">
+                  {slide.text2}
+                </h1>
+              </div>
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </>
   );
 };
 

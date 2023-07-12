@@ -2,6 +2,7 @@ import React from "react";
 import { BsInstagram, BsFacebook, BsTwitter } from "react-icons/bs";
 import { ImWhatsapp } from "react-icons/im";
 import { SiGmail } from "react-icons/si";
+import { BsFillKeyFill } from "react-icons/bs";
 import logo from "./images/logo.png";
 const Footer = () => {
   var currentYear = new Date().getFullYear();
@@ -13,7 +14,7 @@ const Footer = () => {
           <BsFacebook className="md:text-6xl  text-3xl" />
           <BsTwitter className="md:text-6xl  text-3xl" />
           <ImWhatsapp className="md:text-6xl  text-3xl" />
-
+          <BsFillKeyFill className="md:text-6xl  text-3xl" />
           <SiGmail className="md:text-6xl  text-3xl" />
         </div>
         <p className="bg-white h-[2px] w-[100%] my-4" />
