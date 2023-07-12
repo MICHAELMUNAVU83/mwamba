@@ -101,14 +101,14 @@ const NavBar = ({ setStoredToken, storedToken }) => {
           className={
             show
               ? `hidden object-cover `
-              : `flex md:h-[60px]  h-[40px] object-cover`
+              : `md:hidden flex md:h-[60px]  h-[40px] object-cover`
           }
         />
       </div>
       <div
         className={
           show
-            ? `absolute top-0 right-0  transition-all duration-500 ease-in-out flex justify-start p-8 flex-col  items-end gap-4 text-[#1F2024] bg-white/70 z-20 w-[420px] h-[100vh] text-2xl `
+            ? `absolute top-0  right-0  transition-all duration-500 ease-in-out flex justify-start p-8 flex-col  items-end gap-4 text-[#1F2024] bg-white/70 z-20 w-[420px] h-[100vh] text-2xl `
             : `absolute top-0 -right-56  transition-all duration-500 ease-in-out `
         }
       >
