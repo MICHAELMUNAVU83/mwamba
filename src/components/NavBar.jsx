@@ -16,7 +16,7 @@ const NavBar = ({ setStoredToken, storedToken }) => {
           />
         </Link>
 
-        <div className="flex  poppins-regular text-white text-xl items-center gap-6">
+        <div className="md:flex hidden  poppins-regular text-white text-xl items-center gap-6">
           <Link
             to="/home"
             className=" hover:scale-105  transition-all duration-500 ease-in-out cursor-pointer"
