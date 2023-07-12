@@ -11,7 +11,7 @@ const NewsHome = () => {
       }}
     >
       <div className="h-[100vh] flex flex-col justify-end items-end bg-[#1F2024]/50 ">
-        <div className="w-[60%] flex items-center h-[80vh]">
+        <div className="w-[60%] hidden md:flex items-center h-[80vh]">
           <div className="flex flex-col poppins-regular justify-center gap-8 text-2xl font-bold h-[80vh] text-white">
             <a
               href="#latestnews"
@@ -33,7 +33,7 @@ const NewsHome = () => {
             className="w-[80%] h-[80vh] bg-cover bg-center bg-no-repeat"
           ></div>
         </div>
-        <div className="flex h-[20vh]  poppins-bold text-[150px] w-[100%] justify-end p-12 items-center text-white  font-bold">
+        <div className="flex md:h-[20vh] h-[100vh] poppins-bold  text-[100px]  md:justify-start justify-center items-end p-12 md:items-center text-white  font-bold">
           News
         </div>
       </div>

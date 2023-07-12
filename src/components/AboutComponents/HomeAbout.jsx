@@ -5,7 +5,7 @@ import aboutpic from "../images/about/aboutpic.png";
 const HomeAbout = () => {
   return (
     <div
-      className="h-[100%] bg-cover bg-center bg-no-repeat"
+      className="h-[100%] w-[100%] bg-cover bg-center bg-no-repeat"
       style={{
         backgroundImage: `url(${aboutbg})`,
       }}

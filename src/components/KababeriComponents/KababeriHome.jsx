@@ -11,9 +11,13 @@ const KababeriHome = () => {
       }}
     >
       <div className="h-[100vh] bg-[#1F2024]/50 ">
-        <div className="w-[60%] flex items-center h-[80vh]">
+        <div className="w-[60%] hidden md:flex  items-center h-[80vh]">
           <div className="w-[80%] h-[80vh]">
-            <img src={kababeripic} alt="" className="w-[100%] object-fill h-[100%]" />
+            <img
+              src={kababeripic}
+              alt=""
+              className="w-[100%] object-fill h-[100%]"
+            />
           </div>
           <div className="flex flex-col poppins-regular justify-center gap-8 text-2xl font-bold h-[80vh] text-white">
             <a
@@ -43,7 +47,7 @@ const KababeriHome = () => {
             </a>
           </div>
         </div>
-        <div className="flex h-[20vh] poppins-bold text-[100px] w-[100%] justify-start p-12 items-center text-white  font-bold">
+        <div className="flex md:h-[20vh] h-[100vh] poppins-bold  md:text-[100px] text-[80px]  md:justify-start justify-center items-end p-12 md:items-center text-white  font-bold">
           Kabeberi Sevens
         </div>
       </div>

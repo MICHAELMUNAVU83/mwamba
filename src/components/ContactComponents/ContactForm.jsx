@@ -63,13 +63,13 @@ const ContactForm = () => {
 
   return (
     <div class="bg-white poppins-regular flex flex-col-reverse md:flex-row justify-between">
-      <div className="md:w-[50%] w-[100%] md:text-xl mx-auto uppercase flex flex-col justify-center p-24 ">
+      <div className="md:w-[50%] w-[100%] md:text-xl mx-auto uppercase flex flex-col justify-center p-8 md:p-24 ">
         <h2 class="poppins-regular mb-2 text-4xl">
           Fill in the Form Below to Send Us An Email
         </h2>
         <form onSubmit={sendEmail} ref={form}>
-          <div class="flex justify-between items-center w-[100%]">
-            <div class="w-[48%] flex flex-col">
+          <div class="flex justify-between md:flex-row flex-col  items-center w-[100%]">
+            <div class="md:w-[48%] w-[100%] flex flex-col">
               <h2 className="text-[black] poppins-regular mb-2">Name</h2>
               <input
                 type="text"
@@ -81,7 +81,7 @@ const ContactForm = () => {
                 onChange={(e) => setName(e.target.value)}
               />
             </div>
-            <div class="w-[48%] flex flex-col">
+            <div class="md:w-[48%] w-[100%] flex flex-col">
               <h2 className="text-[black] poppins-regular mb-2">
                 Email address
               </h2>

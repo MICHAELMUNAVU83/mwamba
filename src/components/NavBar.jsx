@@ -60,12 +60,14 @@ const NavBar = ({ setStoredToken, storedToken }) => {
           >
             Shop
           </Link>
-          <Link
-            to="/"
+          <a
+            href="https://www.youtube.com/@mwambatv9905"
+            rel="noreferrer"
+            target="_blank"
             className=" hover:scale-105  transition-all duration-500 ease-in-out cursor-pointer"
           >
             Mwamba TV
-          </Link>
+          </a>
           <Link
             to="/contact"
             className=" hover:scale-105  transition-all duration-500 ease-in-out cursor-pointer"

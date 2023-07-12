@@ -12,7 +12,7 @@ const ContactHome = () => {
       }}
     >
       <div className="h-[100vh] bg-[#1F2024]/50 ">
-        <div className="w-[40%] flex items-center h-[80vh]">
+        <div className="w-[40%] hidden md:flex items-center  h-[80vh]">
           <div
             style={{
               backgroundImage: `url(${contactspic})`,
@@ -20,7 +20,7 @@ const ContactHome = () => {
             className="w-[80%] h-[80vh] bg-cover bg-left bg-no-repeat"
           ></div>
         </div>
-        <div className="flex poppins-bold h-[20vh] text-[100px] w-[100%] justify-start p-12 items-center text-white  font-bold">
+        <div className="flex md:h-[20vh] h-[100vh] poppins-bold  md:text-[100px] text-[80px]  md:justify-start justify-center items-end p-12 md:items-center text-white  font-bold">
           Contact Us
         </div>
       </div>

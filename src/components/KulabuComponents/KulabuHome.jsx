@@ -11,7 +11,7 @@ const KulabuHome = () => {
       }}
     >
       <div className="h-[100vh] bg-[#1F2024]/50 ">
-        <div className="w-[60%] flex items-center h-[80vh]">
+        <div className="w-[60%]  hidden md:flex items-center h-[80vh]">
           <div
             style={{
               backgroundImage: `url(${kulabupic})`,
@@ -45,7 +45,7 @@ const KulabuHome = () => {
             </a>
           </div>
         </div>
-        <div className="flex poppins-bold h-[20vh] text-[100px] w-[100%] justify-start p-12 items-center text-white  font-bold">
+        <div className="flex md:h-[20vh] h-[100vh] poppins-bold  text-[100px]  md:justify-start justify-center items-end p-12 md:items-center text-white  font-bold">
           Join the Kulabu
         </div>
       </div>
