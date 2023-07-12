@@ -19,9 +19,12 @@ const NavBar = ({ setStoredToken, storedToken }) => {
         <img
           src={bars}
           alt="bars"
-       
           onClick={() => setShow(!show)}
-          className={show ? `hidden object-cover ` : `flex md:h-[60px]  h-[40px] object-cover`}
+          className={
+            show
+              ? `hidden object-cover `
+              : `flex md:h-[60px]  h-[40px] object-cover`
+          }
         />
       </div>
       <div
@@ -99,7 +102,7 @@ const NavBar = ({ setStoredToken, storedToken }) => {
             Mwamba TV
           </Link>
           <Link
-            to="/"
+            to="/contact"
             className="  hover:underline transition-all duration-500 ease-in-out cursor-pointer"
           >
             Contact Us

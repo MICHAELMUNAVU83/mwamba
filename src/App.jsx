@@ -18,6 +18,7 @@ import Cart from "./pages/Cart";
 import Shop from "./pages/Shop";
 
 import "./App.css";
+import Contacts from "./pages/Contacts";
 
 function App() {
   const [storedToken, setStoredToken] = useState(localStorage.getItem("token"));
@@ -53,6 +54,7 @@ function App() {
         <Route path="/kulabu" element={<Kulabu />} />
         <Route path="/kababeri" element={<Kababeri />} />
         <Route path="/news" element={<News />} />
+        <Route path="/contact" element={<Contacts />} />
         <Route
           path="/cart"
           element={<Cart loggedInUserId={loggedInUserId} />}
