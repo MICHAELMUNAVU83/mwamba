@@ -47,7 +47,12 @@ function App() {
       <ScrollToTop />
       <NavBar setStoredToken={setStoredToken} storedToken={storedToken} />
       <Routes>
-        <Route path="/" element={<Hero />} />
+        <Route
+          path="/"
+          element={
+            <Hero setStoredToken={setStoredToken} storedToken={storedToken} />
+          }
+        />
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/team" element={<Team />} />

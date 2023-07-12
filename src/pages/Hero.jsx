@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import "swiper/css";
 import "swiper/css/autoplay";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -12,7 +13,7 @@ import slide7 from "../components/images/hero/slide7.png";
 import eventpicture from "../components/images/kababeri/eventpicture.jpeg";
 import { Pagination, Autoplay } from "swiper";
 
-const Hero = () => {
+const Hero = ({ setStoredToken, storedToken }) => {
   const slides = [
     {
       id: 1,
@@ -107,6 +108,85 @@ const Hero = () => {
 
   return (
     <>
+      <div class="fixed hidden md:flex top-12 left-0 poppins-regular text-2xl gap-4 text-white right-0  justify-center z-50">
+        <Link
+          to="/home"
+          className="  hover:scale-105  transition-all duration-500 ease-in-out cursor-pointer"
+        >
+          Home
+        </Link>
+        <Link
+          to="/about"
+          className="  hover:scale-105  transition-all duration-500 ease-in-out cursor-pointer"
+        >
+          About
+        </Link>
+        <Link
+          to="/team"
+          className="  hover:scale-105  transition-all duration-500 ease-in-out cursor-pointer"
+        >
+          Team
+        </Link>
+        <Link
+          to="/kulabu"
+          className="  hover:scale-105  transition-all duration-500 ease-in-out cursor-pointer"
+        >
+          Join The Kulabu
+        </Link>
+        <Link
+          to="/kababeri"
+          className="  hover:scale-105  transition-all duration-500 ease-in-out cursor-pointer"
+        >
+          Kabeberi Sevens
+        </Link>
+
+        <Link
+          to="/news "
+          className="  hover:scale-105  transition-all duration-500 ease-in-out cursor-pointer"
+        >
+          News
+        </Link>
+        <Link
+          to="/shop"
+          className="  hover:scale-105  transition-all duration-500 ease-in-out cursor-pointer"
+        >
+          Shop
+        </Link>
+        <a
+          href="https://www.youtube.com/@mwambatv9905"
+          rel="noreferrer"
+          target="_blank"
+          className="  hover:scale-105  transition-all duration-500 ease-in-out cursor-pointer"
+        >
+          Mwamba TV
+        </a>
+        <Link
+          to="/contact"
+          className="  hover:scale-105  transition-all duration-500 ease-in-out cursor-pointer"
+        >
+          Contact Us
+        </Link>
+        {storedToken && (
+          <>
+            <Link
+              to="/cart"
+              className="  hover:scale-105  transition-all duration-500 ease-in-out cursor-pointer"
+            >
+              Cart
+            </Link>
+
+            <p
+              onClick={() => {
+                localStorage.setItem("token", "");
+                setStoredToken("");
+              }}
+              className="  hover:scale-105  transition-all duration-500 ease-in-out cursor-pointer"
+            >
+              Logout
+            </p>
+          </>
+        )}
+      </div>
       {advertModal}
       <Swiper
         loop={true}
