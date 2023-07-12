@@ -2,9 +2,8 @@ import React from "react";
 import { BsInstagram, BsFacebook, BsTwitter } from "react-icons/bs";
 import { ImWhatsapp } from "react-icons/im";
 import { SiGmail } from "react-icons/si";
-import { BsFillKeyFill } from "react-icons/bs";
 import logo from "./images/logo.png";
-import { Link } from "react-router-dom";
+
 const Footer = () => {
   var currentYear = new Date().getFullYear();
   return (
@@ -38,7 +37,6 @@ const Footer = () => {
           <a href="mailto:mwambarfc@gmail.com" target="_blank" rel="noreferrer">
             <SiGmail className="md:text-6xl  text-3xl" />
           </a>
-          >>>>>>> 5c638ec9a01085a35cbb940983f1a83cec9d162e
         </div>
         <p className="bg-white h-[2px] w-[100%] my-4" />
         <div className="flex uppercase my-4 justify-between items-center">
