@@ -16,6 +16,84 @@ const NavBar = ({ setStoredToken, storedToken }) => {
           />
         </Link>
 
+        <div className="flex  poppins-regular text-white text-xl items-center gap-6">
+          <Link
+            to="/home"
+            className=" hover:scale-105  transition-all duration-500 ease-in-out cursor-pointer"
+          >
+            Home
+          </Link>
+          <Link
+            to="/about"
+            className=" hover:scale-105  transition-all duration-500 ease-in-out cursor-pointer"
+          >
+            About
+          </Link>
+          <Link
+            to="/team"
+            className=" hover:scale-105  transition-all duration-500 ease-in-out cursor-pointer"
+          >
+            Team
+          </Link>
+          <Link
+            to="/kulabu"
+            className=" hover:scale-105  transition-all duration-500 ease-in-out cursor-pointer"
+          >
+            Join The Kulabu
+          </Link>
+          <Link
+            to="/kababeri"
+            className=" hover:scale-105  transition-all duration-500 ease-in-out cursor-pointer"
+          >
+            Kabeberi Sevens
+          </Link>
+
+          <Link
+            to="/news "
+            className=" hover:scale-105  transition-all duration-500 ease-in-out cursor-pointer"
+          >
+            News
+          </Link>
+          <Link
+            to="/shop"
+            className=" hover:scale-105  transition-all duration-500 ease-in-out cursor-pointer"
+          >
+            Shop
+          </Link>
+          <Link
+            to="/"
+            className=" hover:scale-105  transition-all duration-500 ease-in-out cursor-pointer"
+          >
+            Mwamba TV
+          </Link>
+          <Link
+            to="/contact"
+            className=" hover:scale-105  transition-all duration-500 ease-in-out cursor-pointer"
+          >
+            Contact Us
+          </Link>
+          {storedToken && (
+            <>
+              <Link
+                to="/cart"
+                className=" hover:scale-105  transition-all duration-500 ease-in-out cursor-pointer"
+              >
+                Cart
+              </Link>
+
+              <p
+                onClick={() => {
+                  localStorage.setItem("token", "");
+                  setStoredToken("");
+                }}
+                className=" hover:scale-105  transition-all duration-500 ease-in-out cursor-pointer"
+              >
+                Logout
+              </p>
+            </>
+          )}
+        </div>
+
         <img
           src={bars}
           alt="bars"
