@@ -40,7 +40,9 @@ const KababeriHome = () => {
             </a>
 
             <a
-              href="#kababerivending"
+              href="https://apps.little.africa/events/2023-george-mwangi-kabeberi-sevens-"
+              rel="noreferrer"
+              target="_blank"
               className="w-[295px] flex items-center rounded-r-2xl justify-center h-[80px] bg-white text-[#1F2024]"
             >
               Buy Tickets
