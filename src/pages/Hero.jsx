@@ -108,7 +108,7 @@ const Hero = ({ setStoredToken, storedToken }) => {
 
   return (
     <>
-      <div class="fixed hidden md:flex top-12 left-0 poppins-regular text-xl uppercase gap-12 text-white right-0  justify-center z-50">
+      <div class="fixed hidden md:flex top-12 left-0 poppins-regular text-xl uppercase gap-4 text-white right-0  justify-center z-50">
         <Link
           to="/home"
           className="  hover:scale-105  transition-all duration-500 ease-in-out cursor-pointer"
