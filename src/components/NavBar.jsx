@@ -77,7 +77,7 @@ const NavBar = ({ setStoredToken, storedToken }) => {
             Join The Kulabu
           </Link>
           <Link
-            to="/kababeri"
+            to="/kabeberi7s/"
             className="  hover:underline transition-all duration-500 ease-in-out cursor-pointer"
           >
             Kabeberi Sevens

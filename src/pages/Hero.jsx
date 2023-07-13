@@ -134,7 +134,7 @@ const Hero = ({ setStoredToken, storedToken }) => {
           Join The Kulabu
         </Link>
         <Link
-          to="/kababeri"
+          to="/kabeberi7s"
           className="  hover:scale-105  transition-all duration-500 ease-in-out cursor-pointer"
         >
           Kabeberi Sevens
