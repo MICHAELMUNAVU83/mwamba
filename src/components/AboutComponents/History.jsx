@@ -3,7 +3,10 @@ import historypic from "../images/about/historypic.png";
 
 const History = () => {
   return (
-    <div id="historyabout" className="bg-white justify-between flex flex-col-reverse md:flex-row">
+    <div
+      id="historyabout"
+      className="bg-white justify-between flex flex-col-reverse items-center md:flex-row"
+    >
       <div className="md:w-[45%] w-[100%] poppins-light p-8 ">
         <p>
           Mwamba Rugby Football Club, famously known as Kulabu, is a Kenyan
@@ -63,14 +66,14 @@ const History = () => {
         </ul>
       </div>
       <div className="md:w-[50%] w-[100%] flex flex-col items-center  justify-center">
+        <p className="text-[#1F2024] font-bold poppins-bold text-7xl py-4">
+          History
+        </p>
         <img
           src={historypic}
           alt=""
           className="w-full h-[799px] object-cover"
         />
-        <p className="text-[#1F2024] font-bold poppins-bold text-7xl py-4">
-          History
-        </p>
       </div>
     </div>
   );

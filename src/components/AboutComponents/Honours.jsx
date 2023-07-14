@@ -127,14 +127,14 @@ const Honours = () => {
         </div>
       </div>
       <div className="md:w-[48%] w-[100%]">
+        <p className="text-7xl poppins-bold py-4  font-bold text-center text-[#1F2024]">
+          Honours
+        </p>
         <img
           src={honourspic}
           alt=""
           className="w-[100%] object-cover h-[530px]"
         />
-        <p className="text-7xl poppins-bold py-4  font-bold text-center text-[#1F2024]">
-          Honours
-        </p>
       </div>
     </div>
   );

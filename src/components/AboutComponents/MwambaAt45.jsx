@@ -9,14 +9,14 @@ const MwambaAt45 = () => {
     >
       <div className="flex  gap-12 flex-col md:flex-row  items-center">
         <div className="flex md:w-[50%] w-[100%]  flex-col  items-center ">
+          <p className="py-4 poppins-bold text-center  md:text-7xl text-5xl flex justify-center items-center  ">
+            Mwamba at 45
+          </p>
           <img
             src={mwambaat45}
             alt=""
             className="w-[100%] h-[80vh] object-cover"
           />
-          <p className="py-4 poppins-bold text-center  md:text-7xl text-5xl flex justify-center items-center  ">
-            Mwamba at 45
-          </p>
         </div>
         <div className="md:w-[45%] w-[100%] px-6 md:px-0 poppins-regular">
           <p>

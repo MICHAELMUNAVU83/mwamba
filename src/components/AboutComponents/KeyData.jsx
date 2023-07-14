@@ -43,21 +43,19 @@ const KeyData = () => {
     >
       <div className="flex flex-col md:flex-row   items-center">
         <div className="flex md:w-[50%] w-[100%]  flex-col  items-center ">
+          <p className="h-[17vh] poppins-bold  text-7xl flex justify-center items-center  ">
+            Key Data
+          </p>
           <img
             src={keydata}
             alt=""
             className="w-[100%] h-[80vh] object-cover"
           />
-          <p className="h-[17vh] poppins-bold  text-7xl flex justify-center items-center  ">
-            Key Data
-          </p>
         </div>
         <div className="flex md:w-[50%] w-[100%] py-4 md:py-0 px-8 flex-col gap-2">
           {data.map((item) => (
             <div className="flex justify-around   items-center">
-              <p className="poppins-bold text-3xl w-[100%]">
-                {item.name}:
-              </p>
+              <p className="poppins-bold text-3xl w-[100%]">{item.name}:</p>
               <p className="font-normal w-[100%] poppins-regular text-sm">
                 {item.value}
               </p>
