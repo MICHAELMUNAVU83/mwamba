@@ -43,12 +43,12 @@ const Testimonials = () => {
       className="flex flex-col md:flex-row justify-between  bg-[#1F2024] text-white"
     >
       <div className="md:w-[48%] flex flex-col justify-center items-center">
+        <p className="md:text-7xl text-5xl py-8 font-bold">Testimonials</p>
         <img
           src={kulabutestimonial}
           alt=""
           className="w-[100%] h-[80vh] object-cover bg-cover bg-center bg-no-repeat"
         />
-        <p className="md:text-7xl text-5xl py-8 font-bold">Testimonials</p>
       </div>
 
       <div className="md:w-[48%] w-[100%] py-4 md:py-0  flex  justify-center items-center">
@@ -64,7 +64,9 @@ const Testimonials = () => {
                       className="md:w-[50px] md:h-[50px] w-[30px] h-[30px] object-cover rounded-full"
                     />
                     <div className="flex flex-col justify-center items-start">
-                      <p className="md:text-2xl text-xl font-bold">{slide.name}</p>
+                      <p className="md:text-2xl text-xl font-bold">
+                        {slide.name}
+                      </p>
                       <p className="md:text-xl font-bold">{slide.position}</p>
                     </div>
                   </div>

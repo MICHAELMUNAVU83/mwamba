@@ -64,7 +64,13 @@ const Standings = () => {
     },
   ];
   return (
-    <div id="standings" className="bg-[#1E1E1E] flex flex-col justify-between  min-h-[100vh]">
+    <div
+      id="standings"
+      className="bg-[#1E1E1E] flex flex-col justify-between  min-h-[100vh]"
+    >
+      <div className="p-8 poppins-bold md:text-7xl text-6xl text-center font-bold text-white">
+        Standings
+      </div>
       <div className="flex pt-8 flex-col gap-2 items-start justify-end">
         <select className="bg-white text-[#1E1E1E] rounded-r-3xl md:w-[500px] w-[300px] md:h-[80px] h-[50px] text-2xl font-bold">
           <option value="2018/2019 Kenya Cup">2018/2019 Kenya Cup</option>
@@ -72,6 +78,7 @@ const Standings = () => {
         </select>
         <p className="text-white text-2xl">Which Cup Are You Interested In?</p>
       </div>
+
       <div className="flex  items-center mt-4 w-[80%] mx-auto justify-center">
         <div className="w-[100%] bg-white  p-4 overflow-x-auto ">
           <table className="w-full max-h-[80vh]   overflow-y-scroll text-sm text-left text-gray-5000">
@@ -115,7 +122,9 @@ const Standings = () => {
                   >
                     {standing.pos}
                   </th>
-                  <td className="px-6  text-xs md:text-md  py-4">{standing.team}</td>
+                  <td className="px-6  text-xs md:text-md  py-4">
+                    {standing.team}
+                  </td>
                   <td className="px-6 py-4">{standing.p}</td>
                   <td className="px-6 py-4">{standing.w}</td>
                   <td className="px-6 py-4">{standing.l}</td>
@@ -127,9 +136,6 @@ const Standings = () => {
             </tbody>
           </table>
         </div>
-      </div>
-      <div className="p-8 poppins-bold md:text-7xl text-6xl font-bold text-white">
-        Standings
       </div>
     </div>
   );

@@ -8,12 +8,12 @@ const TheEvent = () => {
       className="flex bg-[#1E1E1E] text-white md:flex-row flex-col justify-between items-center"
     >
       <div className="md:w-[50%] flex flex-col justify-center items-center">
+        <p className="text-7xl py-4 poppins-bold font-bold">The Event</p>
         <img
           src={kababerievent}
           alt=""
           className="w-[100%] object-cover h-[664px] "
         />
-        <p className="text-7xl py-4 poppins-bold font-bold">The Event</p>
       </div>
       <div className="md:w-[50%] flex flex-col justify-center items-center">
         <p className="md:w-[610px] p-4 md:p-0 poppins-light mx-auto">

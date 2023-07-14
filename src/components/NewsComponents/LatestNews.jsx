@@ -39,6 +39,9 @@ const LatestNews = () => {
           <MdOutlineArrowBackIosNew className="text-2xl" />
         </div>
         <div className="w-[94%] ">
+          <p className="md:text-7xl text-5xl py-8 font-bold ml-5">
+            Latest News
+          </p>
           <Swiper className="swiper-container w-[100%] " loop={true}>
             {slides.map((slide) => (
               <SwiperSlide className="flex cursor-pointer py-8  justify-center items-center ">
@@ -66,7 +69,6 @@ const LatestNews = () => {
           alt=""
           className="w-[100%] h-[80vh] object-cover bg-cover bg-center bg-no-repeat"
         />
-        <p className="md:text-7xl text-5xl py-8 font-bold">Latest News</p>
       </div>
     </div>
   );

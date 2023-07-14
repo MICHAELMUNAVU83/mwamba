@@ -40,7 +40,10 @@ const Registration = () => {
   };
 
   return (
-    <div id="membershipregistration" className="flex md:flex-row flex-col-reverse justify-between">
+    <div
+      id="membershipregistration"
+      className="flex md:flex-row items-center flex-col-reverse justify-between"
+    >
       <div className="md:w-[60%] w-[100%] flex flex-col py-8  md:pt-24 items-center">
         <div className="w-[90%] mx-auto flex flex-col gap-4">
           <div className="flex justify-between items-center">
@@ -132,12 +135,14 @@ const Registration = () => {
         </div>
       </div>
       <div className="md:w-[40%] w-[100%] flex flex-col justify-center items-center">
+        <p className="md:text-7xl  text-5xl md:py-8 py-2 font-bold">
+          Registration
+        </p>
         <img
           src={kulaburegistration}
           alt=""
           className="w-[100%] h-[80vh] object-cover bg-cover bg-center bg-no-repeat"
         />
-        <p className="md:text-7xl  text-5xl md:py-8 py-2 font-bold">Registration</p>
       </div>
     </div>
   );

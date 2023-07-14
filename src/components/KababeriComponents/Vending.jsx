@@ -8,7 +8,10 @@ const Vending = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   return (
-    <div  id="kababerivending" className="flex bg-white flex-col-reverse md:flex-row  justify-between items-center">
+    <div
+      id="kababerivending"
+      className="flex bg-white flex-col-reverse md:flex-row  justify-between items-center"
+    >
       <div className="md:w-[48%] p-4 flex flex-col gap-4 justify-center items-start ">
         <div className="flex flex-col justify-center items-start">
           <p className="text-3xl poppins-regular font-bold">
@@ -57,12 +60,14 @@ const Vending = () => {
         </button>
       </div>
       <div className="md:w-[48%] flex flex-col justify-center items-center">
+        <p className="md:text-7xl py-4 text-5xl  poppins-bold font-bold">
+          Opportunities{" "}
+        </p>
         <img
           src={kababerivending}
           alt=""
           className="w-[100%] object-cover h-[664px] "
         />
-        <p className="md:text-7xl py-4 text-5xl  poppins-bold font-bold">Opportunities </p>
       </div>
     </div>
   );

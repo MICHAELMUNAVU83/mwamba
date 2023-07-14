@@ -32,12 +32,12 @@ const History = () => {
       </div>
 
       <div className="md:w-[50%] w-[100%] flex flex-col justify-center items-center">
+        <p className="text-7xl py-4  poppins-bold font-bold">History</p>
         <img
           src={kababerihistory}
           alt=""
           className="w-[100%] object-cover h-[664px] "
         />
-        <p className="text-7xl py-4  poppins-bold font-bold">History</p>
       </div>
     </div>
   );

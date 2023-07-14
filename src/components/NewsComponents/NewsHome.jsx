@@ -12,26 +12,7 @@ const NewsHome = () => {
     >
       <div className="h-[100vh] flex flex-col justify-end items-end bg-[#1F2024]/50 ">
         <div className="w-[60%] hidden md:flex items-center h-[80vh]">
-          <div className="flex flex-col poppins-regular justify-center gap-8 text-2xl font-bold h-[80vh] text-white">
-            <a
-              href="#latestnews"
-              className="w-[295px] flex items-center rounded-l-2xl justify-center h-[80px] bg-white text-[#1F2024]"
-            >
-              Latest News
-            </a>
-            <a
-              href="#standings"
-              className="w-[295px] flex items-center rounded-l-2xl  justify-center h-[80px] bg-white text-[#1F2024]"
-            >
-              Standings
-            </a>
-          </div>
-          <div
-            style={{
-              backgroundImage: `url(${newspic})`,
-            }}
-            className="w-[80%] h-[80vh] bg-cover bg-center bg-no-repeat"
-          ></div>
+          <div className="w-[80%] h-[80vh] bg-cover bg-center bg-no-repeat"></div>
         </div>
         <div className="flex md:h-[20vh] h-[100vh] poppins-bold  text-[100px]  md:justify-start justify-center items-end p-12 md:items-center text-white  font-bold">
           News
